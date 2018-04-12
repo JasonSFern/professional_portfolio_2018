@@ -38,4 +38,4 @@ Route::get('/graphicd', 'GraphicController@index');
 Route::get('/contact', 'ContactController@show');
 Route::post('/contact',  'ContactController@mailToAdmin');
 
-Route::get('/websites/{id}', 'WebsiteController@webProject');
+Route::get('websites/{id}', 'WebsiteController@webProject');

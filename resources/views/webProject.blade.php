@@ -1,12 +1,15 @@
-@section('')
+@extends('layout')
 
-    <?php foreach($websites as $website): ?>
+@section('webd')
 
-        <div class="">
-          <h2><?php echo $website->title ?></h2>
-          <p><?php echo $website->subtitle ?></p>
-          <p><?php echo $website->content ?></p>
+  <title>Web Design</title>
+</head>
 
-    <?php endforeach ?>
+<body>
+
+
+            <h4><?php echo $websites->title ?></h4>
+            <h2><?php echo $websites->subtitle ?></h2>
+              <p><?php echo $websites->content ?></p>
 
 @endsection

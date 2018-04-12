@@ -21,19 +21,23 @@ class WebsiteController extends Controller
         return view('webd', $data);
     }
 
-    public function webProject($Id) {
-        // $user = User::where('id', $userId)
-        //     ->first();
-        //
-        // if (!$user) {
-        //     abort(404);
-        // }
+    // public function webProject($Id) {
+    //     // $user = User::where('id', $userId)
+    //     //     ->first();
+    //     //
+    //     // if (!$user) {
+    //     //     abort(404);
+    //     // }
+    //
+    //     $websites = $id->websites;
+    //
+    //     return view('webProject', [
+    //         'id' => $id,
+    //         'websites' => $websites
+    //     ]);
 
-        $websites = $id->websites;
-
-        return view('webProject', [
-            'id' => $id,
-            'websites' => $websites
-        ]);
-}
+    public function webProject($id) {
+        $websites = Website::find($id);
+        return view('webProject')->with('websites', $websites);
+    }
 }
