@@ -17,7 +17,10 @@
 @yield('contact')
 @yield('about')
 @yield('webProject')
-@yield('graphicProject')
+@yield('avix.avixHome')
+@yield('avix.avixAbout')
+@yield('avix.avixProducts')
+@yield('avix.avixContact')
 
   <script src='https://cdnjs.cloudflare.com/ajax/libs/lodash.js/3.10.1/lodash.min.js'></script>
   <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>

@@ -11,31 +11,45 @@
 |
 */
 
+//--------MAIN ROUTES--------//
+
 Route::get('/', function () {
     return view('splash');
 });
-
-// Route::get('/graphicd', function () {
-//     return view('graphicd');
-// });
-//
-// Route::get('/webd', function () {
-//     return view('webd');
-// });
-
 Route::get('/about', function () {
     return view('about');
 });
-
 Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/webProjects', 'WebsiteController@index');
+Route::get('/graphicProjects', 'GraphicController@index');
 
-Route::get('/webd', 'WebsiteController@index');
-Route::get('/graphicd', 'GraphicController@index');
+//--------PROJECT PAGE ROUTES--------//
 
-Route::get('/contact', 'ContactController@show');
-Route::post('/contact',  'ContactController@mailToAdmin');
+Route::get('webProjects/{id}', 'WebsiteController@webProject');
+Route::get('graphicProjects/{id}', 'GraphicsController@graphicProject');
 
-Route::get('websites/{id}', 'WebsiteController@webProject');
+//--------WEB PROJECT ROUTES--------//
+
+Route::get('/avix', function () {
+    return view('webDesign.webProjects.avix.avixHome');
+});
+Route::get('/avix/about', function () {
+    return view('webDesign.webProjects.avix.avixAbout');
+});
+Route::get('/avix/products', function () {
+    return view('webDesign.webProjects.avix.avixProducts');
+});
+Route::get('/avix/contact', function () {
+    return view('webDesign.webProjects.avix.avixContact');
+});
+Route::get('/calculator', function () {
+    return view('webDesign.webProjects.calculator.calculatorApp');
+});
+
+//--------GRAPHIC PROJECT ROUTES--------//
+
+// Route::get('/contact', 'ContactController@show');
+// Route::post('/contact',  'ContactController@mailToAdmin');

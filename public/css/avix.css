@@ -1,0 +1,1003 @@
+/* ***********************************************
+GENERAL STYLES
+*********************************************** */
+@font-face {
+    font-family: "Orbitron-Black";
+    src: url("/fonts/Orbitron-Black.ttf");
+}
+
+@font-face {
+    font-family: "Orbitron-Medium";
+    src: url("/fonts/Orbitron-Medium.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Bold";
+    src: url("/fonts/Lato-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("/fonts/Lato-Regular.ttf");
+}
+
+@font-face {
+    font-family: "Lato-Light";
+    src: url("/fonts/Lato-Light.ttf");
+}
+
+header {
+    background-color: #075583;
+    background-image: linear-gradient(
+        180deg,
+        rgba(7, 85,131, 0),
+        rgba(0, 9, 14, 1));
+    height: 100px;
+    padding-top: 20px;
+}
+
+h1 {
+    font-family: "Orbitron-Medium";
+    font-size: 70px;
+    font-weight: 700;
+    color: white;
+    text-shadow: 2px 2px 2px #black;
+}
+
+h2 {
+    font-family: "Orbitron-Black";
+    font-size: 90px;
+    font-weight: 900;
+    text-shadow: -1px -1px 1px #fff, 1px 1px 1px #000;
+  	color: #BLACK;
+  	opacity: 0.8;
+}
+
+h3 {
+    font-family: "Lato-Bold";
+    font-size: 37px;
+    font-weight: lighter;
+    color: black;
+}
+
+h4 {
+  	font-family: "Lato-Bold";
+      font-size: 29px;
+      font-weight: lighter;
+      color: black;
+}
+
+p {
+    font-family: "Lator-Light";
+  	margin-bottom: 0px;
+    font-size: 18px;
+}
+
+a,
+a:visited {
+    font-family: "Orbitron-Black";
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+a,
+a:visited {
+    font-family: "Orbitron-Black";
+    text-transform: uppercase;
+    color: #ffffff;
+}
+
+a:hover,
+a:focus,
+a:active {
+    text-decoration: none;
+  	background: transparent;
+    color: #006099;
+    border-color: #006099;
+  	text-transform: uppercase;
+    transition: .3s;
+}
+
+ul {
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+body, html {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+}
+
+.floatleft {
+  	float: left;
+}
+
+.floatright {
+  	float: right;
+}
+
+.alignright {
+    text-align: right;
+}
+
+.alignleft {
+    text-align: left;
+}
+
+.aligncenter {
+    text-align: center;
+}
+
+.wrapper {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+    width: 100%;
+}
+
+.logo {
+    background-image: url("/img/icon.png");
+    width: 50px;
+    height: 50px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    float: left;
+}
+
+.logo:hover,
+.logo:focus,
+.logo:active {
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    border-radius: 50%;
+    background-color: red;
+    transition: .3s;
+}
+
+.image-circle {
+    border-radius: 50%;
+    width: 80%;
+    max-width: 225px;
+    margin-bottom: 20px;
+	  margin-right: 40px;
+}
+
+.mobile-nav .image-circle {
+    margin-right: 0px;
+    max-width: 350px;
+    margin-bottom: 20px;
+}
+
+.team-container .image-circle {
+  	margin-right: 0px;
+}
+
+/* ***********************************************
+BUTTON STYLE
+*********************************************** */
+.button {
+    font-family: "Lato-Bold";
+  	background: transparent;
+    color: white;
+    border: 4px solid white;
+    font-size: 40px;
+   	padding: 7px 30px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top: 23px;
+}
+
+.button-big {
+    background: transparent;
+    color: white;
+    border: 4px solid white;
+    padding: 60px 30px 25px 30px;
+  	font-size: 15px;
+}
+
+.button-desk {
+  	margin-left: 5%;
+}
+
+.button-spacer {
+  	margin-bottom: 30px;
+}
+
+.button-footer {
+    font-family: "Orbitron-Medium";
+	  background: transparent;
+    color: white;
+    border: transparent;
+    font-size: 35px;
+ 	  padding: 7px 0px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top: 23px;
+}
+
+/* ***********************************************
+BACKGROUND AND IMAGE GENERAL STYLES
+*********************************************** */
+.cloud-overlay {
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.hero-overlay {
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/airship.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.flagship-overlay {
+    width: 100%;
+    height: 100%;
+    max-height: 700px;
+    background-image: url("/img/Kyoto.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    z-index: -5;
+}
+
+.halo-overlay {
+    width: 100%;
+    height: 100%;
+    background-image: url("/img/halo.png");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/* ***********************************************
+NAVIGATION DESKTOP STYLES
+*********************************************** */
+header .desktop-nav ul {
+    float: right;
+    margin-top: 10px;
+    padding: 0;
+    width: calc(100% - 60px);
+    text-align: right;
+}
+
+header .desktop-nav li {
+    display: inline-block;
+    margin-left: 25px;
+}
+
+/* ***********************************************
+NAVIGATION MOBILE STYLES
+*********************************************** */
+.mobile-nav {
+    display: none;
+}
+
+.mobile-nav button {
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.mobile-nav h1 {
+    font-size: 50px;
+}
+
+.mobile-nav h2 {
+    font-size: 60px;
+}
+
+/* ***********************************************
+MOBILE MENU
+*********************************************** */
+body {
+    overflow-x: hidden;
+}
+
+.menu-toggle {
+    display: block;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    z-index: 1;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+.menu-toggle input {
+    display: block;
+    width: 40px;
+    height: 32px;
+    position: absolute;
+    top: -3px;
+    left: -5px;
+    cursor: pointer;
+    opacity: 0;
+    z-index: 2;
+    -webkit-touch-callout: none;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 33px;
+    height: 4px;
+    margin-bottom: 15px;
+    position: relative;
+    margin-top: -10px;
+    background: white;
+    border-radius: 3px;
+    z-index: 1;
+    transform-origin: 4px 0px;
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
+              opacity 0.55s ease;
+}
+
+.menu-toggle span:first-child {
+    transform-origin: 0% 0%;
+}
+
+.menu-toggle span:nth-last-child(2) {
+    transform-origin: 0% 100%;
+}
+
+.menu-toggle input:checked ~ span {
+    opacity: 1;
+    transform: rotate(45deg) translate(-2px, -1px);
+    background: #006099;
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(3) {
+    opacity: 0;
+    transform: rotate(0deg) scale(0.2, 0.2);
+}
+
+.menu-toggle input:checked ~ span:nth-last-child(2) {
+    opacity: 1;
+    transform: rotate(-45deg) translate(0, -1px);
+}
+
+.menu {
+    position: absolute;
+    width: 300px;
+    margin: -100px 0 0 0;
+    padding: 50px;
+    padding-top: 125px;
+    right: -100px;
+    background: #033751;
+    background-image: linear-gradient(
+          180deg,
+          rgba(7, 85,131, 0),
+          rgba(0, 9, 14, 1));
+    list-style-type: none;
+    -webkit-font-smoothing: antialiased;
+    transform-origin: 0% 0%;
+    transform: translate(100%, 0);
+    transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+}
+
+.menu li {
+    padding: 10px 0;
+    font-size: 22px;
+}
+
+.menu-toggle input:checked ~ ul {
+    transform: scale(1.0, 1.0);
+    opacity: 1;
+}
+
+/* ***********************************************
+FOOTER GENERAL STYLES
+*********************************************** */
+footer {
+    background-color: #075583;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+        rgba(7, 85,131, 0));
+    padding-top: 50px;
+
+}
+
+footer .logo {
+    margin-bottom: 20px;
+}
+
+.social-icons li {
+    display: inline-block;
+    font-size: 16px;
+    color: #a7a6a6;
+  	padding-top: 20px;
+}
+
+.social-icons i {
+    font-size: 2.5em;
+    margin-right: 5px;
+    color: #ffffff;
+}
+
+.social-icons-footer li {
+  	display: inline-block;
+  	margin-right: 8px;
+}
+
+footer h1 {
+    font-size: 15px;
+  	text-transform: none;
+  	padding-top: 20px;
+}
+
+footer a, a:visited {
+    font-family: "Lato-Bold";
+    font-size: 12px;
+}
+
+footer a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .7;
+    transition: .3s;
+}
+
+footer .desktop-nav {
+    height: 150px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+
+footer .mobile-nav {
+    height: auto;
+    padding-left: 6%;
+    padding-right: 6%;
+    padding-bottom: 50px;
+}
+
+/* ***********************************************
+HOME PAGE
+*********************************************** */
+/* ***********************************************
+HERO STYLES
+*********************************************** */
+.hero-text-container {
+    padding-left: 5%;
+    padding-top: 50px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: calc(95vh - 200px);
+}
+
+.hero-text-container-2 {
+    width: 100%;
+    padding: 0% 5%;
+}
+
+.desktop-nav .hero {
+    height: calc(100vh - 60px);
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+        rgba(0, 0, 0, 0));
+}
+
+.mobile-nav .hero {
+    height: calc(83vh - 60px);
+    width: auto;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+        rgba(0, 0, 0, 0)),
+        url("/img/airship.jpg");
+    background-position: center;
+}
+
+.mobile-nav .hero-text-container {
+    margin-bottom: calc(72vh - 180px);
+}
+
+/* ***********************************************
+QUOTE STYLES
+*********************************************** */
+.quote-container {
+    background-image: url("/img/clouds.jpg");
+    height: 350px;
+    background-position: center
+}
+
+.quote-text-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 50px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 100px;
+    display: block;
+}
+
+.spacer {
+    margin-top: 350px;
+}
+
+.mobile-nav .quote-container {
+    background-image: url("/img/clouds.jpg");
+    background-position: center;
+    height: 600px;
+}
+
+/* ***********************************************
+FLAGSHIP STYLES
+*********************************************** */
+.flagship-container {
+    height: 700px;
+    padding-top: 20px;
+}
+
+.flagship-text-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 0px;
+    width: 100%;
+    height: 350px;
+    margin-bottom: 0px;
+}
+
+.flagship-text-container h1 {
+    color: maroon;
+}
+
+.flagship-text-container p {
+    font-size: 37px;
+    font-weight: 100;
+    margin-bottom: 15px;
+}
+
+.desktop-nav .flagship-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(225, 186, 137, .3),
+        rgba(225, 186, 137, .3),
+        rgba(225, 186, 137, .4),
+        rgba(225, 186, 137, .6));
+}
+
+.mobile-nav .flagship-container {
+    background-image: linear-gradient(
+        180deg,
+        rgba(225, 186, 137, .3),
+        rgba(225, 186, 137, .3),
+        rgba(225, 186, 137, .4),
+        rgba(225, 186, 137, .6)),
+        url("/img/Kyoto.jpg");
+    background-position: left;
+}
+
+/* ***********************************************
+FLAGSHIP FROSTED GLASS (DESKTOP) STYLES
+*********************************************** */
+.frosted-glass {
+    height: 750px;
+    z-index: 4;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+    padding-top: 35px;
+	  padding-bottom: 100px;
+    text-align: center;
+}
+
+.frosted-glass-text {
+  	margin: 0% 10%;
+}
+
+.frosted-glass::before {
+    content: '';
+    position: absolute;
+    top: 0; right: 0; bottom: 0; left: 0;
+    margin: -70px;
+    z-index: -1;
+    -webkit-filter: blur(15px);
+    filter: blur(15px);
+}
+
+.frosted-glass .button {
+    font-family: "Lato-Bold";
+  	background: transparent;
+    color: white;
+    border: 4px solid white;
+    font-size: 40px;
+   	padding: 7px 30px;
+    text-transform: uppercase;
+    border-radius: 20px;
+    margin-top: 23px;
+}
+
+.frosted-effect, .frosted-glass::before {
+    background: url("/img/Kyoto.jpg") 0 / cover fixed;
+}
+
+.frosted-effect a, a:visited {
+    transition: .3s;
+    transform:scale(1);
+    text-transform: none;
+}
+
+.frosted-effect a:hover, a:focus, a:active {
+    text-decoration: none;
+    color: #006099;
+    transform: scale(1.05);
+    border-color: #006099;
+    text-transform: none;
+    transition: .3s;
+}
+
+/* ***********************************************
+FLAGSHIP GRADIENT (MOBILE) STYLES
+*********************************************** */
+.gradient {
+    height: calc(100vh - 10%);
+    z-index: 4;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0 0 1px hsla(0,0%,100%,.3) inset, 0 .5em 1em rgba(0, 0, 0, 0.6);
+    text-shadow: 0 1px 1px hsla(0,0%,100%,.3);
+    padding-top: 50px;
+	   padding-bottom: 50px;
+    text-align: center;
+    background: url("/img/leather.jpg") 100%;
+}
+
+/* ***********************************************
+HALO STYLES
+*********************************************** */
+.desktop-nav .halo-container {
+    height: 100vh;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+		rgba(0, 9, 14, .1),
+		rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 9, 14, .1),
+        rgba(0, 9, 14, 1));
+}
+
+.halo-text-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 20px;
+    width: 100%;
+    height: calc(80% - 150px);
+    margin-bottom: 0px;
+}
+
+.halo-text-container h2 {
+    color: #181817;
+}
+
+.halo-text-container h3 {
+    font-size: 32px;
+    color: white;
+    margin-bottom: 0px;
+	  padding-top: 100px;
+}
+
+.mobile-nav .halo-text-container {
+    height:300px;
+}
+
+.mobile-nav .halo-container {
+    height: 675px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+		    rgba(0, 9, 14, .1),
+		    rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 9, 14, .1),
+        rgba(0, 9, 14, 1)),
+        url("/img/halo.png");
+    background-position: 75%;
+}
+
+/* ***********************************************
+PAGE 2 - ABOUT AVIX
+*********************************************** */
+/* ***********************************************
+HISTORY STYLES
+*********************************************** */
+.history-container {
+    background-image:
+		linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+        rgba(0, 0, 0, 0)),
+		url("/img/clouds.jpg");
+    height: 450px;
+    background-position: center;
+	  background-repeat: no-repeat;
+	  background-size: cover;
+}
+
+.history-text-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 120px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: 100px;
+    display: block;
+}
+
+.history-text-container h3 {
+    color: white;
+  	font-size: 30px;
+}
+
+/* ***********************************************
+TEAM STYLES
+*********************************************** */
+.team-card {
+    width: 29%;
+    max-width: 600px;
+    height: 585px;
+    min-height: 450px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 30px;
+    display: inline-block;
+    text-align: center;
+	  background-color: transparent;
+}
+
+.mobile-nav .team-card {
+    width: 95%;
+    max-height: 500px;
+    margin-bottom: 5%;
+    display: inline-block;
+    text-align: center;
+}
+
+.team-container {
+    height: 700px;
+    padding-top: 20px;
+    text-align: center;
+  	background: #F2F2F2;
+}
+
+.mobile-nav .team-container {
+    height: 1700px;
+    padding-top: 20px;
+    text-align: center;
+  	background: #F2F2F2;
+}
+
+.mobile-nav .team-image-circle {
+    max-width: 225px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+}
+
+/* ***********************************************
+CONTACT CALL TO ACTION STYLES
+*********************************************** */
+.contact-c2a {
+    background-image: url("/img/hangar.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+  	background-position: center;
+}
+
+.contact-c2a-container {
+    height: 450px;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+		rgba(0, 9, 14, .4),
+        rgba(0, 9, 14, .2),
+        rgba(0, 9, 14, 1));
+}
+
+.contact-c2a-text-container {
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 80px;
+    width: 100%;
+    height: calc(80% - 150px);
+    margin-bottom: 0px;
+}
+
+.contact-c2a-text-container h2 {
+    color: #181817;
+}
+
+.contact-c2a-text-container p {
+    font-size: 32px;
+    color: black;
+    margin-bottom: 0px;
+}
+
+/* ***********************************************
+PAGE 3 - PRODUCTS
+*********************************************** */
+/* ***********************************************
+PRODUCT STYLES
+*********************************************** */
+.product-int-container {
+    background-image:
+		linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+        rgba(0, 0, 0, 0)),
+		url("/img/hand-sky.jpeg");
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.desktop-nav .product-container {
+    height: 1300px;
+    max-height: none;
+    background: #F2F2F2;
+}
+
+.mobile-nav .product-container {
+    max-height: none;
+    height: calc(2000px - 25%);
+    background: #F2F2F2;
+}
+
+.product-text-container {
+    padding: 40px 5% 30px 5%;
+    width: 100%;
+    margin-bottom: 0px;
+}
+
+.product-text-container-l {
+    padding-left: 10%;
+    padding-right: 10%;
+    padding-top: 10px;
+}
+
+.desktop-nav .product-card {
+    width: 100%;
+    min-height: 375px;
+    margin-left: 2%;
+    margin-right: 2%;
+    padding: 30px;
+    background-color: transparent;
+    display: block;
+    text-align: left;
+    border-radius: 12px;
+}
+
+.mobile-nav .product-card {
+    width: 90%;
+    max-width: 600px;
+    height: calc(25% + 5em);
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 10%;
+    display: inline-block;
+    text-align: center;
+    border-radius: 12px;
+    background: transparent;
+}
+
+/* ***********************************************
+PAGE 4 - CONTACT
+*********************************************** */
+/* ***********************************************
+CONTACT STYLES
+*********************************************** */
+.contact-container {
+    height: 100vh;
+    background-image: linear-gradient(
+        180deg,
+        rgba(0, 9, 14, 1),
+        rgba(0, 0, 0, 0),
+        rgba(0, 0, 0, 0),
+        rgba(0, 9, 14, 1));
+}
+
+.mobile-nav .contact-container {
+  	height: 682px;
+}
+
+.contact-overlay {
+    width: 100%;
+    background-image: url("/img/contact.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-text-container {
+    padding-left: 5%;
+    padding-top: 40px;
+    width: 100%;
+    height: 250px;
+}
+
+.hero-text-container-co {
+    padding-left: 5%;
+    padding-top: 50px;
+    width: 100%;
+    height: 30px;
+    margin-bottom: calc(95vh - 200px);
+}
+
+.hero-text-container-co h1 {
+    font-size: 39px;
+}
+
+/* ***********************************************
+FORM STYLES
+*********************************************** */
+form {
+    display: inline;
+}
+
+input {
+    margin-bottom: 15px;
+    border-radius: 50px;
+    width: 300px;
+    text-decoration: none;
+    margin-left: 5%;
+    border: white solid 5px;
+    padding-left: 10px;
+}
+
+.mobile-nav input {
+    width: 95%;
+    margin-left: 0%;
+}
+
+textarea {
+    margin-bottom: 15px;
+    border-radius: 15px;
+    width: 300px;
+    height: 100px;
+    max-height: 170px;
+    text-decoration: none;
+    margin-left: 5%;
+    border: white solid 5px;
+    padding-left: 10px;
+}
+
+.mobile-nav textarea {
+	width: 95%;
+	margin-left: 0%;
+  height: 170px;
+}
+
+textarea:focus {
+    background-color: lightblue;
+    border: lightblue solid 5px;
+    outline: none;
+}
+
+input[type=text]:focus {
+    background-color: lightblue;
+    border: lightblue solid 5px;
+    outline: none;
+}
+
+/* ***********************************************
+MOBILE/DESKTOP RESPONSE CODE
+*********************************************** */
+@media (max-width: 950px) {
+    .mobile-nav {
+        display: block;
+    }
+    .desktop-nav {
+        display: none;
+    }
+}

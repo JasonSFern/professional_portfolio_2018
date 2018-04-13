@@ -408,7 +408,6 @@ i {
 .paraWrapper #a8,
 .paraWrapper #a9,
 .paraWrapper #a10 {
-  background-color: transparent;
   width: 50%;
   height: 60%;
   background-color: transparent;
@@ -426,9 +425,10 @@ i {
 .paraWrapper #a10 img {
   position: relative;
   float: right;
-  left: -155px;
+  left: -165px;
+  bottom: -105px;
   z-index: 99;
-  width: 10%;
+  width: 20%;
   opacity: 1.0;
 }
 

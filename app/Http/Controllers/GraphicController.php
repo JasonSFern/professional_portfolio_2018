@@ -18,7 +18,11 @@ class GraphicController extends Controller
             'websites' => $websites,
         ];
 
-        return view('graphicd', $data);
+        return view('graphicLanding', $data);
     }
 
+    public function graphicProject($id) {
+        $graphics = Graphic::find($id);
+        return view('graphicProject')->with('graphics', $graphics);
+    }
 }

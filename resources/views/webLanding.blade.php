@@ -40,9 +40,7 @@
           </div>
             <div>
               <div>
-                <a class="butn cardb" href="/websites/{{ $website->id }}">EXPLORE</a>
-
-
+                <a class="butn cardb" href="/webProjects/{{ $website->id }}">EXPLORE</a>
               </div>
             </div>
           </div>

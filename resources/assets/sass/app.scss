@@ -1,7 +1,7 @@
+
 body {
   background-color:black;
 }
-
 
 h1 {
   font-size: 150px;
@@ -448,7 +448,6 @@ textarea {
   }
 
   #a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10 {
-    background-color: transparent;
     width: 50%;
     height: 60%;
     background-color: transparent;
@@ -456,9 +455,10 @@ textarea {
     img {
         position: relative;
         float:right;
-        left:-155px;
+        left:-165px;
+        bottom:-105px;
         z-index: 99;
-        width:10%;
+        width:20%;
         opacity:1.0;
     }
   }
