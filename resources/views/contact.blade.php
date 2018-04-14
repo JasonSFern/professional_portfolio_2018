@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('contact')
+@section('content')
 
 
 

@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('about')
+@section('content')
 
 <body style="background-color:black; height:100%;">
 

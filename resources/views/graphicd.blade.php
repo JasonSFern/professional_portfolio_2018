@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('graphicd')
+@section('content')
 
   <title>Graphic Design</title>
 </head>

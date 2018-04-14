@@ -1,6 +1,6 @@
 @extends('layout')
 
-@section('splash')
+@section('content')
 
         <title>Welcome</title>
       </head>
@@ -23,7 +23,7 @@
 </div>
 </div>
 
-    <a href="/graphicd" class="navItem navItemNewsBlog splash-adjust">
+    <a href="/graphicProjects" class="navItem navItemNewsBlog splash-adjust">
       <span class="text">
         <h2>GRAPHICS</h2>
       </span>
@@ -49,7 +49,7 @@
       </span>
     </a>
 
-    <a href="/webd" class="navItem navItemProjects">
+    <a href="/webProjects" class="navItem navItemProjects">
       <span class="text">
         <h2>WEB</h2>
       </span>

@@ -17,11 +17,13 @@ class CreateGraphics extends Migration
             $table->increments('id');
             $table->string('title');
             $table->string('subtitle');
-            $table->string('content');
-            $table->string('route');
             $table->string('background');
             $table->string('backdrop');
             $table->string('photo');
+            $table->text('contents');
+            $table->string('photo2');
+            $table->string('photo3');
+            $table->string('photo4');
         });
     }
 

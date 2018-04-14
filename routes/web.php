@@ -29,7 +29,7 @@ Route::get('/graphicProjects', 'GraphicController@index');
 //--------PROJECT PAGE ROUTES--------//
 
 Route::get('webProjects/{id}', 'WebsiteController@webProject');
-Route::get('graphicProjects/{id}', 'GraphicsController@graphicProject');
+Route::get('graphicProjects/{id}', 'GraphicController@graphicProject');
 
 //--------WEB PROJECT ROUTES--------//
 

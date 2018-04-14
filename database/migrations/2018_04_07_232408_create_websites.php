@@ -17,12 +17,13 @@ class CreateWebsites extends Migration
              $table->increments('id');
              $table->string('title');
              $table->string('subtitle');
-             $table->string('content');
              $table->string('route');
              $table->string('background');
              $table->string('backdrop');
              $table->string('photo');
              $table->string('logo');
+             $table->text('contents');
+             $table->string('photo2');
          });
      }
 
@@ -31,8 +32,15 @@ class CreateWebsites extends Migration
      *
      * @return void
      */
+    // public function down()
+    // {
+    //     Schema::dropIfExists('websites');
+    // }
+
     public function down()
     {
-        Schema::dropIfExists('websites');
-    }
+    Schema::table('websites', function($table) {
+        $table->dropColumn('content');
+    });
+}
 }

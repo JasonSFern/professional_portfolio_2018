@@ -1,5 +1,65 @@
+.photo-slider {
+  width: 560px;
+  max-width: 100%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+
+.photo-slider-wrapper {
+  font-size: 0;
+  padding: 0;
+}
+
+.photo-slider-entry {
+  list-style: none;
+  font-size: 0;
+  display: inline-block;
+  width: 560px;
+  max-width: 100%;
+}
+
+.photo-slider-entry img {
+  max-width: 100%;
+}
+
+.photo-slider-nav {
+  margin: 0 auto;
+  padding: 0;
+  display: block;
+  text-align: center;
+}
+
+.expanded-paragraph {
+  margin-top: 30px;
+  margin: 30px 100px;
+}
+
+.expanded-card {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 90em;
+  margin-top: -20em;
+  /*set to a negative number 1/2 of your height*/
+  margin-bottom: 20em;
+  margin-left: -45em;
+  /*set to a negative number 1/2 of your width*/
+  padding: 30px;
+  text-align: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.expanded-project {
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
 body {
   background-color: black;
+  height: 100%;
+  width: 100%;
 }
 
 h1 {
@@ -12,6 +72,7 @@ h2 {
   font-size: 1.5em;
   font-family: 'Ubuntu', sans-serif;
   font-weight: bold;
+  color: white;
 }
 
 h3 {
@@ -35,15 +96,11 @@ h5 {
 p {
   font-size: 17px;
   font-family: 'Asap', sans-serif;
+  color: white;
 }
 
 html {
   height: 100%;
-}
-
-body {
-  height: 100%;
-  width: 100%;
 }
 
 #form {
@@ -515,6 +572,13 @@ i {
   outline: none;
 }
 
+.expanded-b {
+  display: inline-block;
+  list-style: none;
+  margin: 0.75rem 0.25rem;
+  text-decoration: none;
+}
+
 .butn-blue {
   color: white;
   padding-top: 50px;
@@ -555,6 +619,10 @@ i {
 
 .titles-container {
   height: 68%;
+}
+
+.titles-expanded {
+  height: auto;
 }
 
 .navigation-list-entries {

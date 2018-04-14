@@ -1,6 +1,6 @@
 @extends('webDesign.webProjects.avix.avixlayout')
 
-@section('avixContact')
+@section('content')
 
         <title>Contact Us</title>
     </head>

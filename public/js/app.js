@@ -14147,6 +14147,40 @@ $(document).on("mousemove", function (e) {
   card.attr("style", "transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-webkit-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg);-moz-transform: rotateY(" + ax + "deg) rotateX(" + ay + "deg)");
 });
 
+//------------------image slider
+
+(function ($) {
+
+  $(document).ready(function () {
+
+    var s = $('.photo-slider'),
+        sWrapper = s.find('.photo-slider-wrapper'),
+        sItem = s.find('.photo-slider-entry'),
+        btn = s.find('.photo-slider-link'),
+        sWidth = sItem.width(),
+        sCount = sItem.length,
+        sTotalWidth = sCount * sWidth;
+
+    sWrapper.css('width', sTotalWidth);
+    sWrapper.css('width', sTotalWidth);
+
+    var clickCount = 0;
+
+    btn.on('click', function (e) {
+      e.preventDefault();
+
+      if ($(this).is('#next')) {
+
+        clickCount < sCount - 1 ? clickCount++ : clickCount = 0;
+      } else if ($(this).is('#prev')) {
+
+        clickCount > 0 ? clickCount-- : clickCount = sCount - 1;
+      }
+      TweenMax.to(sWrapper, 1, { x: '-' + sWidth * clickCount });
+    });
+  });
+})(jQuery);
+
 /***/ }),
 /* 13 */
 /***/ (function(module, exports, __webpack_require__) {

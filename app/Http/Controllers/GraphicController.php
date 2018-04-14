@@ -23,6 +23,6 @@ class GraphicController extends Controller
 
     public function graphicProject($id) {
         $graphics = Graphic::find($id);
-        return view('graphicProject')->with('graphics', $graphics);
+        return view('graphicDesign.graphicProject')->with('graphics', $graphics);
     }
 }

@@ -1,6 +1,6 @@
 @extends('webDesign.webProjects.avix.avixlayout')
 
-@section('avixAbout')
+@section('content')
 
   <title>About Avix</title>
 </head>
