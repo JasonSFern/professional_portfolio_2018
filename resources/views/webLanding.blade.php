@@ -11,16 +11,16 @@
   <section id="s<?php echo $website->id ?>" class="background" style="background-image:url(<?php echo $website->background ?>);">
     <div class="content-wrapper paraWrapper">
 
-      <div id="b<?php echo $website->id ?>">
+      <div class="test1" id="b<?php echo $website->id ?>">
         <img src="<?php echo $website->photo ?>"/>
       </div>
 
-      <div id="a<?php echo $website->id ?>">
+      <div class="test2" id="a<?php echo $website->id ?>">
         <img src="<?php echo $website->logo ?>"/>
       </div>
 
 
-      <div class="content-card" id="c<?php echo $website->id ?>" style="background-image: linear-gradient(to bottom right,<?php echo $website->backdrop ?>);">
+      <div class="content-card test3" id="c<?php echo $website->id ?>" style="background-image: linear-gradient(to bottom right,<?php echo $website->backdrop ?>);">
 
         <div class="titles-container">
           <h4><?php echo $website->title ?></h4>

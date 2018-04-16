@@ -32,15 +32,20 @@
   margin: 30px 100px;
 }
 
+
+
+
 .expanded-card {
-position:absolute;
-top: 50%;
-left: 50%;
-width:90em;
+// position:absolute;
+// top: 50%;
+// left: 50%;
+width:90%;
+margin-left:5%;
+margin-top:5%;
 // height:40em;
-margin-top: -20em; /*set to a negative number 1/2 of your height*/
-margin-bottom:20em;
-margin-left: -45em; /*set to a negative number 1/2 of your width*/
+// margin-top: -15%; /*set to a negative number 1/2 of your height*/
+margin-bottom:5%;
+// margin-left: -45px; /*set to a negative number 1/2 of your width*/
 padding:30px;
 text-align: center;
 align-content: center;
@@ -470,47 +475,48 @@ textarea {
     margin-left: 2%;
     margin-right: 2%;
 
-    p {
-      margin:60px 0 60px 0;
-      width: 50%;
+    h4 {
+      // margin:60px 0 60px 0;
+      width: 250px;
     }
   }
 
   #c1, #c2, #c3, #c4, #c5, #c6, #c7, #c8, #c9, #c10 {
     // background-image: linear-gradient(to bottom right,#002f4b,#dc4225);
-    width: 50%;
-    height: 45%;
+    width: 500px;
+    height: 300px;
+    position: absolute;
   }
 
   #b1, #b2, #b3, #b4, #b5, #b6, #b7, #b8, #b9, #b10 {
     background-color: transparent;
-    width: 60%;
-    height: 70%;
+    width: 650px;
+    height: 397px;
 
     img {
         position: relative;
         float:right;
         left:-70px;
-        bottom:-195px;
+        bottom:-325px;
         z-index: 99;
-        width:40%;
+        width:245px;
         opacity:1.0;
         box-shadow: -11px 13px 82px -2px rgba(0,0,0,0.75);
     }
   }
 
   #a1, #a2, #a3, #a4, #a5, #a6, #a7, #a8, #a9, #a10 {
-    width: 50%;
-    height: 60%;
+    width: 540px;
+    height: 389px;
     background-color: transparent;
 
     img {
         position: relative;
         float:right;
-        left:-165px;
-        bottom:-105px;
+        left:-30px;
+        bottom:137px;
         z-index: 99;
-        width:20%;
+        height:55px;
         opacity:1.0;
     }
   }
@@ -532,7 +538,7 @@ textarea {
   top: 50%;
   right: 0;
   list-style: none;
-  width: 30%;
+  width: 450px;
   text-decoration: none;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -568,10 +574,16 @@ textarea {
      &:focus {
         color:#0070bf;
         transform: scale(1.2) translate(-7%) ;
+        outline: none;
 
      }
    }
   }
+}
+
+.active {
+  color:#0070bf;
+  transform: scale(1.2) translate(-7%) ;
 }
 
 .butn {
@@ -587,6 +599,7 @@ textarea {
   outline:none;
   margin: 0;
   position: relative;
+  bottom:-40px;
   background-color: white;
   box-shadow: 0px 4px 0px 0px #e2e2e2;
 
@@ -612,8 +625,11 @@ textarea {
 .expanded-b {
   display: inline-block;
   list-style: none;
-  margin: 0.75rem 0.25rem;
+  margin: 20px 0.25rem;
   text-decoration: none;
+  text-decoration: none;
+  border:none;
+  outline:none;
 }
 
 .butn-blue {
@@ -702,10 +718,17 @@ textarea {
 
 .logo-container {
   position:absolute;
-  top:50%;
+  top:33%;
   left:50%;
   margin-top: -8.5em;
   margin-left: -12.5em;
+  transform:scale(.75);
+
+  h2 {
+    margin:0px,0px;
+    text-align: center;
+    text-transform: uppercase;
+  }
 }
 
 .card{
@@ -716,7 +739,7 @@ textarea {
   border-radius: 5px;
   width: 25em;
   height: 17em;
-  margin: auto;
+  margin: 30px auto 30px auto;
   transform-style: preserve-3d;
   // backface-visibility: hidden;
   display: flex;

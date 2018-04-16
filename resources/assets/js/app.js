@@ -36,6 +36,7 @@ var scrollSensitivitySetting = 30; //Increase/decrease this number to change sen
 var slideDurationSetting = 600; //Amount of time for which slide is "locked"
 var currentSlideNumber = 0;
 var totalSlideNumber = $(".background").length;
+var linkedId = 0;
 
 var timer;
 var delay = 1500;
@@ -91,15 +92,29 @@ window.addEventListener(mousewheelEvent, _.throttle(parallaxScroll, 60), false);
 function nextItem() {
   var $previousSlide = $(".background").eq(currentSlideNumber - 1);
   $previousSlide.removeClass("up-scroll").addClass("down-scroll");
-
+  var linkedId = currentSlideNumber + 1;
+  $('#n' + linkedId).focus();
 }
 
 function previousItem() {
   var $currentSlide = $(".background").eq(currentSlideNumber);
   $currentSlide.removeClass("down-scroll").addClass("up-scroll");
+  $('#n1, #n2, #n3, #n4, #n5, #n6').blur();
+  var linkedId = currentSlideNumber + 1;
+  $('#n' + linkedId).focus();
 }
 
+$(document).ready(function() {
+  $('#n1').focus();
+});
+
 // ---------Slide function for mouse cards---------
+
+// var linkId = 1;
+// $('div').each(function() {
+//    $(this).attr('id', 'q' + idCount);
+//    idCount++;
+// });
 
 $("#n1").click(function()
 {
@@ -152,34 +167,35 @@ $("#n5").click(function()
 //   });
 // }
 // $("#b1").hover(function(){
-$(document).ready(function() {
-    $(".paraWrapper").mousemove(function(e) {
-      parallax(e, document.getElementById('a1'), 1);
-      parallax(e, document.getElementById('b1'), 2);
-      parallax(e, document.getElementById('c1'), 3);
-      parallax(e, document.getElementById('a2'), 1);
-      parallax(e, document.getElementById('b2'), 2);
-      parallax(e, document.getElementById('c2'), 3);
-      parallax(e, document.getElementById('a3'), 1);
-      parallax(e, document.getElementById('b3'), 2);
-      parallax(e, document.getElementById('c3'), 3);
-      parallax(e, document.getElementById('a4'), 1);
-      parallax(e, document.getElementById('b4'), 2);
-      parallax(e, document.getElementById('c4'), 3);
-      parallax(e, document.getElementById('a5'), 1);
-      parallax(e, document.getElementById('b5'), 2);
-      parallax(e, document.getElementById('c5'), 3);
-      parallax(e, document.getElementById('a6'), 1);
-      parallax(e, document.getElementById('b6'), 2);
-      parallax(e, document.getElementById('c6'), 3);
-      parallax(e, document.getElementById('a7'), 1);
-      parallax(e, document.getElementById('b7'), 2);
-      parallax(e, document.getElementById('c7'), 3);
-      parallax(e, document.getElementById('a8'), 1);
-      parallax(e, document.getElementById('b8'), 2);
-      parallax(e, document.getElementById('c8'), 3);
-    });
-});
+// var cubes = $(document).ready(function() {
+//     $(".paraWrapper").mousemove(function(e) {
+//       parallax(e, document.getElementById('a1'), 1);
+//       parallax(e, document.getElementById('b1'), 2);
+//       parallax(e, document.getElementById('c1'), 3);
+//       parallax(e, document.getElementById('a2'), 1);
+//       parallax(e, document.getElementById('b2'), 2);
+//       parallax(e, document.getElementById('c2'), 3);
+//       parallax(e, document.getElementById('a3'), 1);
+//       parallax(e, document.getElementById('b3'), 2);
+//       parallax(e, document.getElementById('c3'), 3);
+//       parallax(e, document.getElementById('a4'), 1);
+//       parallax(e, document.getElementById('b4'), 2);
+//       parallax(e, document.getElementById('c4'), 3);
+//       parallax(e, document.getElementById('a5'), 1);
+//       parallax(e, document.getElementById('b5'), 2);
+//       parallax(e, document.getElementById('c5'), 3);
+//       parallax(e, document.getElementById('a6'), 1);
+//       parallax(e, document.getElementById('b6'), 2);
+//       parallax(e, document.getElementById('c6'), 3);
+//       parallax(e, document.getElementById('a7'), 1);
+//       parallax(e, document.getElementById('b7'), 2);
+//       parallax(e, document.getElementById('c7'), 3);
+//       parallax(e, document.getElementById('a8'), 1);
+//       parallax(e, document.getElementById('b8'), 2);
+//       parallax(e, document.getElementById('c8'), 3);
+//     });
+// });
+
 
   //   $("div[id='b2']").mousemove(function(e) {
   //     parallax(e, document.getElementById('c2'), 1);
@@ -191,16 +207,16 @@ $(document).ready(function() {
   // }, delay);
   // });
 
-function parallax(e, target, layer) {
-	var strength = 40;
-	var layer_coeff = strength / layer;
-	var x = ($(window).width() - target.offsetWidth) / 5 - (e.pageX - ($(window).width() / 4)) / layer_coeff;
-	var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
-	$(target).offset({
-		top: y,
-		left: x
-	});
-};
+// function parallax(e, target, layer) {
+// 	var strength = 40;
+// 	var layer_coeff = strength / layer;
+// 	var x = ($(window).width() - target.offsetWidth) / 5 - (e.pageX - ($(window).width() / 4)) / layer_coeff;
+// 	var y = ($(window).height() - target.offsetHeight) / 2 - (e.pageY - ($(window).height() / 2)) / layer_coeff;
+// 	$(target).offset({
+// 		top: y,
+// 		left: x
+// 	});
+// };
 
 
 // --------------------------------------
@@ -237,7 +253,7 @@ var TxtType = function(el, toRotate, period) {
 
 
 //-------------------inject code into html doc
-		        this.el.innerHTML = '<p class="typewrite">'+this.txt+'</p>';
+		        this.el.innerHTML = '<h2 class="typewrite" style="margin:0px 0px;">I am a<h2 style="margin:0px 0px;">** ' + this.txt + '**</h2><h2>based in Calgary, AB</h2>';
 
 
 		        var that = this;
@@ -292,13 +308,13 @@ var TxtType = function(el, toRotate, period) {
 
 //-----------------------3D logo
 
-var card = $(".card");
-
-$(document).on("mousemove",function(e) {
-  var ax = -($(window).innerWidth()/2- e.pageX)/60;
-  var ay = ($(window).innerHeight()/2- e.pageY)/30;
-  card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
-});
+// var card = $(".card");
+//
+// $(document).on("mousemove",function(e) {
+//   var ax = -($(window).innerWidth()/2- e.pageX)/60;
+//   var ay = ($(window).innerHeight()/2- e.pageY)/30;
+//   card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+// });
 
 
 

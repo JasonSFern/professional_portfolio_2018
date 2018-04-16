@@ -7,27 +7,27 @@
 
 <body class="splash-background" id="bkg">
 
-<div class="">
 <div class="logo-container">
+
+  <h2>Hi, my name is Jason</h2>
+
   <div class="card">
     <div class="card3">
       <div class="card2"></div>
     </div>
   </div>
+
+  <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
+    <span class="textswap" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
+  </div>
+
 </div>
 
-<div class="logo-container" style="color:White; text-align:center; margin:0;">
-  <p>Hi, my name is Jason. I am a<p>
-  <p class="textswap" data-period="2000" data-type='[ "Graphic Designer.", "Web Developer.", "SEO Expert", "Entrepreneur" ]'></p>
-  <p>based in Calgary, AB</p>
-</div>
-</div>
-
-    <a href="/graphicProjects" class="navItem navItemNewsBlog splash-adjust">
+    <!-- <a href="/graphicProjects" class="navItem navItemNewsBlog splash-adjust">
       <span class="text">
         <h2>GRAPHICS</h2>
       </span>
-    </a>
+    </a> -->
 
 
     <!-- <a href="/graphicd" class="navItem navItemNewsBlog">
@@ -43,7 +43,7 @@
       </span>
     </a> -->
 
-    <a href="/contact" class="navItem navItemContact">
+    <!-- <a href="/contact" class="navItem navItemContact">
       <span class="text">
         <h2>CONTACT</h2>
       </span>
@@ -60,6 +60,6 @@
       <span class="text">
         <h2>ABOUT</h2>
       </span>
-    </a>
+    </a> -->
 
 @endsection

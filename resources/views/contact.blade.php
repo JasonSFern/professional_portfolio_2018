@@ -4,7 +4,7 @@
 
 
 
-<a href="/contact" class="navItem navItemContact2">
+<a href="/" class="navItem navItemContact2">
 	<span class="text">
 		<h2>CONTACT</h2>
 	</span>

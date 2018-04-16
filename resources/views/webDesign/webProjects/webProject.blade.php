@@ -30,8 +30,10 @@
         </ul>
 
         <ul class="photo-slider-nav">
-          <li class="butn expanded-b"><a href="{{ $websites->local_route }}">Launch Avix</a></li>
+          <li class="butn expanded-b"><a href="{{ $websites->local_route }}">Launch</a></li>
         </ul>
+        <br>
+        <br>
 
       </div>
     </div>
