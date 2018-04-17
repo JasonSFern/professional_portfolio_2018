@@ -2,11 +2,14 @@
 
 @section('content')
 
+<body class="splash-background">
 
-
-<a href="/" class="navItem navItemContact2">
-	<span class="text">
-		<h2>CONTACT</h2>
+<a href="/" class="navItem navItemback-l">
+	<span class="text navlink">
+		<h2>E</h2>
+		<h2>M</h2>
+		<h2>O</h2>
+		<h2>H</h2>
 	</span>
 </a>
 

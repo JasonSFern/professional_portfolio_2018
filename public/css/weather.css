@@ -1,0 +1,3342 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  background-color: #e74c3c;
+  color: #fafafa;
+  text-align: center;
+}
+.watch-case {
+  position: relative;
+  height: 300px;
+  width: 300px;
+  margin: 0 auto;
+}
+.watch {
+  height: 200px;
+  width: 200px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -100px;
+  margin-top: -100px;
+}
+.watch__face {
+  height: 100%;
+  width: 100%;
+  border-radius: 200px;
+  background-color: #fafafa;
+  border: 8px solid #111;
+}
+.watch__face:before {
+  content: '';
+  height: 4px;
+  width: 4px;
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  border-radius: 4px;
+  margin-left: -2px;
+  margin-top: -2px;
+  background-color: #00f;
+  box-shadow: 85px 0px 0 2px #808080,73.61215934px 42.5px 0 0 #808080,42.5px 73.61215934px 0 0 #808080,0px 85px 0 2px #808080,-42.5px 73.61215934px 0 0 #808080,-73.61215934px 42.5px 0 0 #808080,-85px 0px 0 2px #808080,-73.61215934px -42.5px 0 0 #808080,-42.5px -73.61215934px 0 0 #808080,0px -85px 0 2px #808080,42.5px -73.61215934px 0 0 #808080,73.61215934px -42.5px 0 0 #808080;
+}
+.watch__dial {
+  position: absolute;
+  left: 100%;
+  background-color: #808080;
+  height: 40px;
+  width: 20px;
+  top: 50%;
+  margin-top: -20px;
+  margin-left: -10px;
+  z-index: -1;
+}
+.watch__strap {
+  position: absolute;
+  width: 50%;
+  height: 150%;
+  background-color: #000;
+  top: 50%;
+  left: 50%;
+  margin-left: -25%;
+  margin-top: -75%;
+  z-index: -1;
+}
+.watch[start-seconds="0"] .watch-seconds {
+  transform: rotate(0deg);
+}
+.watch[start-minutes="0"] .watch-minutes {
+  transform: rotate(0deg);
+}
+.watch[start-minutes="0"][start-hours="0"] .watch-hours {
+  transform: rotate(0deg);
+}
+.watch[start-minutes="0"][start-hours="1"] .watch-hours {
+  transform: rotate(30deg);
+}
+.watch[start-minutes="0"][start-hours="2"] .watch-hours {
+  transform: rotate(60deg);
+}
+.watch[start-minutes="0"][start-hours="3"] .watch-hours {
+  transform: rotate(90deg);
+}
+.watch[start-minutes="0"][start-hours="4"] .watch-hours {
+  transform: rotate(120deg);
+}
+.watch[start-minutes="0"][start-hours="5"] .watch-hours {
+  transform: rotate(150deg);
+}
+.watch[start-minutes="0"][start-hours="6"] .watch-hours {
+  transform: rotate(180deg);
+}
+.watch[start-minutes="0"][start-hours="7"] .watch-hours {
+  transform: rotate(210deg);
+}
+.watch[start-minutes="0"][start-hours="8"] .watch-hours {
+  transform: rotate(240deg);
+}
+.watch[start-minutes="0"][start-hours="9"] .watch-hours {
+  transform: rotate(270deg);
+}
+.watch[start-minutes="0"][start-hours="10"] .watch-hours {
+  transform: rotate(300deg);
+}
+.watch[start-minutes="0"][start-hours="11"] .watch-hours {
+  transform: rotate(330deg);
+}
+.watch[start-minutes="0"][start-hours="12"] .watch-hours {
+  transform: rotate(360deg);
+}
+.watch[start-seconds="1"] .watch-seconds {
+  transform: rotate(6deg);
+}
+.watch[start-seconds="1"] .watch-minutes__hand {
+  animation-delay: 59s;
+}
+.watch[start-minutes="1"] .watch-minutes {
+  transform: rotate(12deg);
+}
+.watch[start-minutes="1"][start-hours="0"] .watch-hours {
+  transform: rotate(1deg);
+}
+.watch[start-minutes="1"][start-hours="1"] .watch-hours {
+  transform: rotate(31deg);
+}
+.watch[start-minutes="1"][start-hours="2"] .watch-hours {
+  transform: rotate(61deg);
+}
+.watch[start-minutes="1"][start-hours="3"] .watch-hours {
+  transform: rotate(91deg);
+}
+.watch[start-minutes="1"][start-hours="4"] .watch-hours {
+  transform: rotate(121deg);
+}
+.watch[start-minutes="1"][start-hours="5"] .watch-hours {
+  transform: rotate(151deg);
+}
+.watch[start-minutes="1"][start-hours="6"] .watch-hours {
+  transform: rotate(181deg);
+}
+.watch[start-minutes="1"][start-hours="7"] .watch-hours {
+  transform: rotate(211deg);
+}
+.watch[start-minutes="1"][start-hours="8"] .watch-hours {
+  transform: rotate(241deg);
+}
+.watch[start-minutes="1"][start-hours="9"] .watch-hours {
+  transform: rotate(271deg);
+}
+.watch[start-minutes="1"][start-hours="10"] .watch-hours {
+  transform: rotate(301deg);
+}
+.watch[start-minutes="1"][start-hours="11"] .watch-hours {
+  transform: rotate(331deg);
+}
+.watch[start-minutes="1"][start-hours="12"] .watch-hours {
+  transform: rotate(361deg);
+}
+.watch[start-seconds="2"] .watch-seconds {
+  transform: rotate(12deg);
+}
+.watch[start-seconds="2"] .watch-minutes__hand {
+  animation-delay: 58s;
+}
+.watch[start-minutes="2"] .watch-minutes {
+  transform: rotate(18deg);
+}
+.watch[start-minutes="2"][start-hours="0"] .watch-hours {
+  transform: rotate(1.5deg);
+}
+.watch[start-minutes="2"][start-hours="1"] .watch-hours {
+  transform: rotate(31.5deg);
+}
+.watch[start-minutes="2"][start-hours="2"] .watch-hours {
+  transform: rotate(61.5deg);
+}
+.watch[start-minutes="2"][start-hours="3"] .watch-hours {
+  transform: rotate(91.5deg);
+}
+.watch[start-minutes="2"][start-hours="4"] .watch-hours {
+  transform: rotate(121.5deg);
+}
+.watch[start-minutes="2"][start-hours="5"] .watch-hours {
+  transform: rotate(151.5deg);
+}
+.watch[start-minutes="2"][start-hours="6"] .watch-hours {
+  transform: rotate(181.5deg);
+}
+.watch[start-minutes="2"][start-hours="7"] .watch-hours {
+  transform: rotate(211.5deg);
+}
+.watch[start-minutes="2"][start-hours="8"] .watch-hours {
+  transform: rotate(241.5deg);
+}
+.watch[start-minutes="2"][start-hours="9"] .watch-hours {
+  transform: rotate(271.5deg);
+}
+.watch[start-minutes="2"][start-hours="10"] .watch-hours {
+  transform: rotate(301.5deg);
+}
+.watch[start-minutes="2"][start-hours="11"] .watch-hours {
+  transform: rotate(331.5deg);
+}
+.watch[start-minutes="2"][start-hours="12"] .watch-hours {
+  transform: rotate(361.5deg);
+}
+.watch[start-seconds="3"] .watch-seconds {
+  transform: rotate(18deg);
+}
+.watch[start-seconds="3"] .watch-minutes__hand {
+  animation-delay: 57s;
+}
+.watch[start-minutes="3"] .watch-minutes {
+  transform: rotate(24deg);
+}
+.watch[start-minutes="3"][start-hours="0"] .watch-hours {
+  transform: rotate(2deg);
+}
+.watch[start-minutes="3"][start-hours="1"] .watch-hours {
+  transform: rotate(32deg);
+}
+.watch[start-minutes="3"][start-hours="2"] .watch-hours {
+  transform: rotate(62deg);
+}
+.watch[start-minutes="3"][start-hours="3"] .watch-hours {
+  transform: rotate(92deg);
+}
+.watch[start-minutes="3"][start-hours="4"] .watch-hours {
+  transform: rotate(122deg);
+}
+.watch[start-minutes="3"][start-hours="5"] .watch-hours {
+  transform: rotate(152deg);
+}
+.watch[start-minutes="3"][start-hours="6"] .watch-hours {
+  transform: rotate(182deg);
+}
+.watch[start-minutes="3"][start-hours="7"] .watch-hours {
+  transform: rotate(212deg);
+}
+.watch[start-minutes="3"][start-hours="8"] .watch-hours {
+  transform: rotate(242deg);
+}
+.watch[start-minutes="3"][start-hours="9"] .watch-hours {
+  transform: rotate(272deg);
+}
+.watch[start-minutes="3"][start-hours="10"] .watch-hours {
+  transform: rotate(302deg);
+}
+.watch[start-minutes="3"][start-hours="11"] .watch-hours {
+  transform: rotate(332deg);
+}
+.watch[start-minutes="3"][start-hours="12"] .watch-hours {
+  transform: rotate(362deg);
+}
+.watch[start-seconds="4"] .watch-seconds {
+  transform: rotate(24deg);
+}
+.watch[start-seconds="4"] .watch-minutes__hand {
+  animation-delay: 56s;
+}
+.watch[start-minutes="4"] .watch-minutes {
+  transform: rotate(30deg);
+}
+.watch[start-minutes="4"][start-hours="0"] .watch-hours {
+  transform: rotate(2.5deg);
+}
+.watch[start-minutes="4"][start-hours="1"] .watch-hours {
+  transform: rotate(32.5deg);
+}
+.watch[start-minutes="4"][start-hours="2"] .watch-hours {
+  transform: rotate(62.5deg);
+}
+.watch[start-minutes="4"][start-hours="3"] .watch-hours {
+  transform: rotate(92.5deg);
+}
+.watch[start-minutes="4"][start-hours="4"] .watch-hours {
+  transform: rotate(122.5deg);
+}
+.watch[start-minutes="4"][start-hours="5"] .watch-hours {
+  transform: rotate(152.5deg);
+}
+.watch[start-minutes="4"][start-hours="6"] .watch-hours {
+  transform: rotate(182.5deg);
+}
+.watch[start-minutes="4"][start-hours="7"] .watch-hours {
+  transform: rotate(212.5deg);
+}
+.watch[start-minutes="4"][start-hours="8"] .watch-hours {
+  transform: rotate(242.5deg);
+}
+.watch[start-minutes="4"][start-hours="9"] .watch-hours {
+  transform: rotate(272.5deg);
+}
+.watch[start-minutes="4"][start-hours="10"] .watch-hours {
+  transform: rotate(302.5deg);
+}
+.watch[start-minutes="4"][start-hours="11"] .watch-hours {
+  transform: rotate(332.5deg);
+}
+.watch[start-minutes="4"][start-hours="12"] .watch-hours {
+  transform: rotate(362.5deg);
+}
+.watch[start-seconds="5"] .watch-seconds {
+  transform: rotate(30deg);
+}
+.watch[start-seconds="5"] .watch-minutes__hand {
+  animation-delay: 55s;
+}
+.watch[start-minutes="5"] .watch-minutes {
+  transform: rotate(36deg);
+}
+.watch[start-minutes="5"][start-hours="0"] .watch-hours {
+  transform: rotate(3deg);
+}
+.watch[start-minutes="5"][start-hours="1"] .watch-hours {
+  transform: rotate(33deg);
+}
+.watch[start-minutes="5"][start-hours="2"] .watch-hours {
+  transform: rotate(63deg);
+}
+.watch[start-minutes="5"][start-hours="3"] .watch-hours {
+  transform: rotate(93deg);
+}
+.watch[start-minutes="5"][start-hours="4"] .watch-hours {
+  transform: rotate(123deg);
+}
+.watch[start-minutes="5"][start-hours="5"] .watch-hours {
+  transform: rotate(153deg);
+}
+.watch[start-minutes="5"][start-hours="6"] .watch-hours {
+  transform: rotate(183deg);
+}
+.watch[start-minutes="5"][start-hours="7"] .watch-hours {
+  transform: rotate(213deg);
+}
+.watch[start-minutes="5"][start-hours="8"] .watch-hours {
+  transform: rotate(243deg);
+}
+.watch[start-minutes="5"][start-hours="9"] .watch-hours {
+  transform: rotate(273deg);
+}
+.watch[start-minutes="5"][start-hours="10"] .watch-hours {
+  transform: rotate(303deg);
+}
+.watch[start-minutes="5"][start-hours="11"] .watch-hours {
+  transform: rotate(333deg);
+}
+.watch[start-minutes="5"][start-hours="12"] .watch-hours {
+  transform: rotate(363deg);
+}
+.watch[start-seconds="6"] .watch-seconds {
+  transform: rotate(36deg);
+}
+.watch[start-seconds="6"] .watch-minutes__hand {
+  animation-delay: 54s;
+}
+.watch[start-minutes="6"] .watch-minutes {
+  transform: rotate(42deg);
+}
+.watch[start-minutes="6"][start-hours="0"] .watch-hours {
+  transform: rotate(3.5deg);
+}
+.watch[start-minutes="6"][start-hours="1"] .watch-hours {
+  transform: rotate(33.5deg);
+}
+.watch[start-minutes="6"][start-hours="2"] .watch-hours {
+  transform: rotate(63.5deg);
+}
+.watch[start-minutes="6"][start-hours="3"] .watch-hours {
+  transform: rotate(93.5deg);
+}
+.watch[start-minutes="6"][start-hours="4"] .watch-hours {
+  transform: rotate(123.5deg);
+}
+.watch[start-minutes="6"][start-hours="5"] .watch-hours {
+  transform: rotate(153.5deg);
+}
+.watch[start-minutes="6"][start-hours="6"] .watch-hours {
+  transform: rotate(183.5deg);
+}
+.watch[start-minutes="6"][start-hours="7"] .watch-hours {
+  transform: rotate(213.5deg);
+}
+.watch[start-minutes="6"][start-hours="8"] .watch-hours {
+  transform: rotate(243.5deg);
+}
+.watch[start-minutes="6"][start-hours="9"] .watch-hours {
+  transform: rotate(273.5deg);
+}
+.watch[start-minutes="6"][start-hours="10"] .watch-hours {
+  transform: rotate(303.5deg);
+}
+.watch[start-minutes="6"][start-hours="11"] .watch-hours {
+  transform: rotate(333.5deg);
+}
+.watch[start-minutes="6"][start-hours="12"] .watch-hours {
+  transform: rotate(363.5deg);
+}
+.watch[start-seconds="7"] .watch-seconds {
+  transform: rotate(42deg);
+}
+.watch[start-seconds="7"] .watch-minutes__hand {
+  animation-delay: 53s;
+}
+.watch[start-minutes="7"] .watch-minutes {
+  transform: rotate(48deg);
+}
+.watch[start-minutes="7"][start-hours="0"] .watch-hours {
+  transform: rotate(4deg);
+}
+.watch[start-minutes="7"][start-hours="1"] .watch-hours {
+  transform: rotate(34deg);
+}
+.watch[start-minutes="7"][start-hours="2"] .watch-hours {
+  transform: rotate(64deg);
+}
+.watch[start-minutes="7"][start-hours="3"] .watch-hours {
+  transform: rotate(94deg);
+}
+.watch[start-minutes="7"][start-hours="4"] .watch-hours {
+  transform: rotate(124deg);
+}
+.watch[start-minutes="7"][start-hours="5"] .watch-hours {
+  transform: rotate(154deg);
+}
+.watch[start-minutes="7"][start-hours="6"] .watch-hours {
+  transform: rotate(184deg);
+}
+.watch[start-minutes="7"][start-hours="7"] .watch-hours {
+  transform: rotate(214deg);
+}
+.watch[start-minutes="7"][start-hours="8"] .watch-hours {
+  transform: rotate(244deg);
+}
+.watch[start-minutes="7"][start-hours="9"] .watch-hours {
+  transform: rotate(274deg);
+}
+.watch[start-minutes="7"][start-hours="10"] .watch-hours {
+  transform: rotate(304deg);
+}
+.watch[start-minutes="7"][start-hours="11"] .watch-hours {
+  transform: rotate(334deg);
+}
+.watch[start-minutes="7"][start-hours="12"] .watch-hours {
+  transform: rotate(364deg);
+}
+.watch[start-seconds="8"] .watch-seconds {
+  transform: rotate(48deg);
+}
+.watch[start-seconds="8"] .watch-minutes__hand {
+  animation-delay: 52s;
+}
+.watch[start-minutes="8"] .watch-minutes {
+  transform: rotate(54deg);
+}
+.watch[start-minutes="8"][start-hours="0"] .watch-hours {
+  transform: rotate(4.5deg);
+}
+.watch[start-minutes="8"][start-hours="1"] .watch-hours {
+  transform: rotate(34.5deg);
+}
+.watch[start-minutes="8"][start-hours="2"] .watch-hours {
+  transform: rotate(64.5deg);
+}
+.watch[start-minutes="8"][start-hours="3"] .watch-hours {
+  transform: rotate(94.5deg);
+}
+.watch[start-minutes="8"][start-hours="4"] .watch-hours {
+  transform: rotate(124.5deg);
+}
+.watch[start-minutes="8"][start-hours="5"] .watch-hours {
+  transform: rotate(154.5deg);
+}
+.watch[start-minutes="8"][start-hours="6"] .watch-hours {
+  transform: rotate(184.5deg);
+}
+.watch[start-minutes="8"][start-hours="7"] .watch-hours {
+  transform: rotate(214.5deg);
+}
+.watch[start-minutes="8"][start-hours="8"] .watch-hours {
+  transform: rotate(244.5deg);
+}
+.watch[start-minutes="8"][start-hours="9"] .watch-hours {
+  transform: rotate(274.5deg);
+}
+.watch[start-minutes="8"][start-hours="10"] .watch-hours {
+  transform: rotate(304.5deg);
+}
+.watch[start-minutes="8"][start-hours="11"] .watch-hours {
+  transform: rotate(334.5deg);
+}
+.watch[start-minutes="8"][start-hours="12"] .watch-hours {
+  transform: rotate(364.5deg);
+}
+.watch[start-seconds="9"] .watch-seconds {
+  transform: rotate(54deg);
+}
+.watch[start-seconds="9"] .watch-minutes__hand {
+  animation-delay: 51s;
+}
+.watch[start-minutes="9"] .watch-minutes {
+  transform: rotate(60deg);
+}
+.watch[start-minutes="9"][start-hours="0"] .watch-hours {
+  transform: rotate(5deg);
+}
+.watch[start-minutes="9"][start-hours="1"] .watch-hours {
+  transform: rotate(35deg);
+}
+.watch[start-minutes="9"][start-hours="2"] .watch-hours {
+  transform: rotate(65deg);
+}
+.watch[start-minutes="9"][start-hours="3"] .watch-hours {
+  transform: rotate(95deg);
+}
+.watch[start-minutes="9"][start-hours="4"] .watch-hours {
+  transform: rotate(125deg);
+}
+.watch[start-minutes="9"][start-hours="5"] .watch-hours {
+  transform: rotate(155deg);
+}
+.watch[start-minutes="9"][start-hours="6"] .watch-hours {
+  transform: rotate(185deg);
+}
+.watch[start-minutes="9"][start-hours="7"] .watch-hours {
+  transform: rotate(215deg);
+}
+.watch[start-minutes="9"][start-hours="8"] .watch-hours {
+  transform: rotate(245deg);
+}
+.watch[start-minutes="9"][start-hours="9"] .watch-hours {
+  transform: rotate(275deg);
+}
+.watch[start-minutes="9"][start-hours="10"] .watch-hours {
+  transform: rotate(305deg);
+}
+.watch[start-minutes="9"][start-hours="11"] .watch-hours {
+  transform: rotate(335deg);
+}
+.watch[start-minutes="9"][start-hours="12"] .watch-hours {
+  transform: rotate(365deg);
+}
+.watch[start-seconds="10"] .watch-seconds {
+  transform: rotate(60deg);
+}
+.watch[start-seconds="10"] .watch-minutes__hand {
+  animation-delay: 50s;
+}
+.watch[start-minutes="10"] .watch-minutes {
+  transform: rotate(66deg);
+}
+.watch[start-minutes="10"][start-hours="0"] .watch-hours {
+  transform: rotate(5.5deg);
+}
+.watch[start-minutes="10"][start-hours="1"] .watch-hours {
+  transform: rotate(35.5deg);
+}
+.watch[start-minutes="10"][start-hours="2"] .watch-hours {
+  transform: rotate(65.5deg);
+}
+.watch[start-minutes="10"][start-hours="3"] .watch-hours {
+  transform: rotate(95.5deg);
+}
+.watch[start-minutes="10"][start-hours="4"] .watch-hours {
+  transform: rotate(125.5deg);
+}
+.watch[start-minutes="10"][start-hours="5"] .watch-hours {
+  transform: rotate(155.5deg);
+}
+.watch[start-minutes="10"][start-hours="6"] .watch-hours {
+  transform: rotate(185.5deg);
+}
+.watch[start-minutes="10"][start-hours="7"] .watch-hours {
+  transform: rotate(215.5deg);
+}
+.watch[start-minutes="10"][start-hours="8"] .watch-hours {
+  transform: rotate(245.5deg);
+}
+.watch[start-minutes="10"][start-hours="9"] .watch-hours {
+  transform: rotate(275.5deg);
+}
+.watch[start-minutes="10"][start-hours="10"] .watch-hours {
+  transform: rotate(305.5deg);
+}
+.watch[start-minutes="10"][start-hours="11"] .watch-hours {
+  transform: rotate(335.5deg);
+}
+.watch[start-minutes="10"][start-hours="12"] .watch-hours {
+  transform: rotate(365.5deg);
+}
+.watch[start-seconds="11"] .watch-seconds {
+  transform: rotate(66deg);
+}
+.watch[start-seconds="11"] .watch-minutes__hand {
+  animation-delay: 49s;
+}
+.watch[start-minutes="11"] .watch-minutes {
+  transform: rotate(72deg);
+}
+.watch[start-minutes="11"][start-hours="0"] .watch-hours {
+  transform: rotate(6deg);
+}
+.watch[start-minutes="11"][start-hours="1"] .watch-hours {
+  transform: rotate(36deg);
+}
+.watch[start-minutes="11"][start-hours="2"] .watch-hours {
+  transform: rotate(66deg);
+}
+.watch[start-minutes="11"][start-hours="3"] .watch-hours {
+  transform: rotate(96deg);
+}
+.watch[start-minutes="11"][start-hours="4"] .watch-hours {
+  transform: rotate(126deg);
+}
+.watch[start-minutes="11"][start-hours="5"] .watch-hours {
+  transform: rotate(156deg);
+}
+.watch[start-minutes="11"][start-hours="6"] .watch-hours {
+  transform: rotate(186deg);
+}
+.watch[start-minutes="11"][start-hours="7"] .watch-hours {
+  transform: rotate(216deg);
+}
+.watch[start-minutes="11"][start-hours="8"] .watch-hours {
+  transform: rotate(246deg);
+}
+.watch[start-minutes="11"][start-hours="9"] .watch-hours {
+  transform: rotate(276deg);
+}
+.watch[start-minutes="11"][start-hours="10"] .watch-hours {
+  transform: rotate(306deg);
+}
+.watch[start-minutes="11"][start-hours="11"] .watch-hours {
+  transform: rotate(336deg);
+}
+.watch[start-minutes="11"][start-hours="12"] .watch-hours {
+  transform: rotate(366deg);
+}
+.watch[start-seconds="12"] .watch-seconds {
+  transform: rotate(72deg);
+}
+.watch[start-seconds="12"] .watch-minutes__hand {
+  animation-delay: 48s;
+}
+.watch[start-minutes="12"] .watch-minutes {
+  transform: rotate(78deg);
+}
+.watch[start-minutes="12"][start-hours="0"] .watch-hours {
+  transform: rotate(6.5deg);
+}
+.watch[start-minutes="12"][start-hours="1"] .watch-hours {
+  transform: rotate(36.5deg);
+}
+.watch[start-minutes="12"][start-hours="2"] .watch-hours {
+  transform: rotate(66.5deg);
+}
+.watch[start-minutes="12"][start-hours="3"] .watch-hours {
+  transform: rotate(96.5deg);
+}
+.watch[start-minutes="12"][start-hours="4"] .watch-hours {
+  transform: rotate(126.5deg);
+}
+.watch[start-minutes="12"][start-hours="5"] .watch-hours {
+  transform: rotate(156.5deg);
+}
+.watch[start-minutes="12"][start-hours="6"] .watch-hours {
+  transform: rotate(186.5deg);
+}
+.watch[start-minutes="12"][start-hours="7"] .watch-hours {
+  transform: rotate(216.5deg);
+}
+.watch[start-minutes="12"][start-hours="8"] .watch-hours {
+  transform: rotate(246.5deg);
+}
+.watch[start-minutes="12"][start-hours="9"] .watch-hours {
+  transform: rotate(276.5deg);
+}
+.watch[start-minutes="12"][start-hours="10"] .watch-hours {
+  transform: rotate(306.5deg);
+}
+.watch[start-minutes="12"][start-hours="11"] .watch-hours {
+  transform: rotate(336.5deg);
+}
+.watch[start-minutes="12"][start-hours="12"] .watch-hours {
+  transform: rotate(366.5deg);
+}
+.watch[start-seconds="13"] .watch-seconds {
+  transform: rotate(78deg);
+}
+.watch[start-seconds="13"] .watch-minutes__hand {
+  animation-delay: 47s;
+}
+.watch[start-minutes="13"] .watch-minutes {
+  transform: rotate(84deg);
+}
+.watch[start-minutes="13"][start-hours="0"] .watch-hours {
+  transform: rotate(7deg);
+}
+.watch[start-minutes="13"][start-hours="1"] .watch-hours {
+  transform: rotate(37deg);
+}
+.watch[start-minutes="13"][start-hours="2"] .watch-hours {
+  transform: rotate(67deg);
+}
+.watch[start-minutes="13"][start-hours="3"] .watch-hours {
+  transform: rotate(97deg);
+}
+.watch[start-minutes="13"][start-hours="4"] .watch-hours {
+  transform: rotate(127deg);
+}
+.watch[start-minutes="13"][start-hours="5"] .watch-hours {
+  transform: rotate(157deg);
+}
+.watch[start-minutes="13"][start-hours="6"] .watch-hours {
+  transform: rotate(187deg);
+}
+.watch[start-minutes="13"][start-hours="7"] .watch-hours {
+  transform: rotate(217deg);
+}
+.watch[start-minutes="13"][start-hours="8"] .watch-hours {
+  transform: rotate(247deg);
+}
+.watch[start-minutes="13"][start-hours="9"] .watch-hours {
+  transform: rotate(277deg);
+}
+.watch[start-minutes="13"][start-hours="10"] .watch-hours {
+  transform: rotate(307deg);
+}
+.watch[start-minutes="13"][start-hours="11"] .watch-hours {
+  transform: rotate(337deg);
+}
+.watch[start-minutes="13"][start-hours="12"] .watch-hours {
+  transform: rotate(367deg);
+}
+.watch[start-seconds="14"] .watch-seconds {
+  transform: rotate(84deg);
+}
+.watch[start-seconds="14"] .watch-minutes__hand {
+  animation-delay: 46s;
+}
+.watch[start-minutes="14"] .watch-minutes {
+  transform: rotate(90deg);
+}
+.watch[start-minutes="14"][start-hours="0"] .watch-hours {
+  transform: rotate(7.5deg);
+}
+.watch[start-minutes="14"][start-hours="1"] .watch-hours {
+  transform: rotate(37.5deg);
+}
+.watch[start-minutes="14"][start-hours="2"] .watch-hours {
+  transform: rotate(67.5deg);
+}
+.watch[start-minutes="14"][start-hours="3"] .watch-hours {
+  transform: rotate(97.5deg);
+}
+.watch[start-minutes="14"][start-hours="4"] .watch-hours {
+  transform: rotate(127.5deg);
+}
+.watch[start-minutes="14"][start-hours="5"] .watch-hours {
+  transform: rotate(157.5deg);
+}
+.watch[start-minutes="14"][start-hours="6"] .watch-hours {
+  transform: rotate(187.5deg);
+}
+.watch[start-minutes="14"][start-hours="7"] .watch-hours {
+  transform: rotate(217.5deg);
+}
+.watch[start-minutes="14"][start-hours="8"] .watch-hours {
+  transform: rotate(247.5deg);
+}
+.watch[start-minutes="14"][start-hours="9"] .watch-hours {
+  transform: rotate(277.5deg);
+}
+.watch[start-minutes="14"][start-hours="10"] .watch-hours {
+  transform: rotate(307.5deg);
+}
+.watch[start-minutes="14"][start-hours="11"] .watch-hours {
+  transform: rotate(337.5deg);
+}
+.watch[start-minutes="14"][start-hours="12"] .watch-hours {
+  transform: rotate(367.5deg);
+}
+.watch[start-seconds="15"] .watch-seconds {
+  transform: rotate(90deg);
+}
+.watch[start-seconds="15"] .watch-minutes__hand {
+  animation-delay: 45s;
+}
+.watch[start-minutes="15"] .watch-minutes {
+  transform: rotate(96deg);
+}
+.watch[start-minutes="15"][start-hours="0"] .watch-hours {
+  transform: rotate(8deg);
+}
+.watch[start-minutes="15"][start-hours="1"] .watch-hours {
+  transform: rotate(38deg);
+}
+.watch[start-minutes="15"][start-hours="2"] .watch-hours {
+  transform: rotate(68deg);
+}
+.watch[start-minutes="15"][start-hours="3"] .watch-hours {
+  transform: rotate(98deg);
+}
+.watch[start-minutes="15"][start-hours="4"] .watch-hours {
+  transform: rotate(128deg);
+}
+.watch[start-minutes="15"][start-hours="5"] .watch-hours {
+  transform: rotate(158deg);
+}
+.watch[start-minutes="15"][start-hours="6"] .watch-hours {
+  transform: rotate(188deg);
+}
+.watch[start-minutes="15"][start-hours="7"] .watch-hours {
+  transform: rotate(218deg);
+}
+.watch[start-minutes="15"][start-hours="8"] .watch-hours {
+  transform: rotate(248deg);
+}
+.watch[start-minutes="15"][start-hours="9"] .watch-hours {
+  transform: rotate(278deg);
+}
+.watch[start-minutes="15"][start-hours="10"] .watch-hours {
+  transform: rotate(308deg);
+}
+.watch[start-minutes="15"][start-hours="11"] .watch-hours {
+  transform: rotate(338deg);
+}
+.watch[start-minutes="15"][start-hours="12"] .watch-hours {
+  transform: rotate(368deg);
+}
+.watch[start-seconds="16"] .watch-seconds {
+  transform: rotate(96deg);
+}
+.watch[start-seconds="16"] .watch-minutes__hand {
+  animation-delay: 44s;
+}
+.watch[start-minutes="16"] .watch-minutes {
+  transform: rotate(102deg);
+}
+.watch[start-minutes="16"][start-hours="0"] .watch-hours {
+  transform: rotate(8.5deg);
+}
+.watch[start-minutes="16"][start-hours="1"] .watch-hours {
+  transform: rotate(38.5deg);
+}
+.watch[start-minutes="16"][start-hours="2"] .watch-hours {
+  transform: rotate(68.5deg);
+}
+.watch[start-minutes="16"][start-hours="3"] .watch-hours {
+  transform: rotate(98.5deg);
+}
+.watch[start-minutes="16"][start-hours="4"] .watch-hours {
+  transform: rotate(128.5deg);
+}
+.watch[start-minutes="16"][start-hours="5"] .watch-hours {
+  transform: rotate(158.5deg);
+}
+.watch[start-minutes="16"][start-hours="6"] .watch-hours {
+  transform: rotate(188.5deg);
+}
+.watch[start-minutes="16"][start-hours="7"] .watch-hours {
+  transform: rotate(218.5deg);
+}
+.watch[start-minutes="16"][start-hours="8"] .watch-hours {
+  transform: rotate(248.5deg);
+}
+.watch[start-minutes="16"][start-hours="9"] .watch-hours {
+  transform: rotate(278.5deg);
+}
+.watch[start-minutes="16"][start-hours="10"] .watch-hours {
+  transform: rotate(308.5deg);
+}
+.watch[start-minutes="16"][start-hours="11"] .watch-hours {
+  transform: rotate(338.5deg);
+}
+.watch[start-minutes="16"][start-hours="12"] .watch-hours {
+  transform: rotate(368.5deg);
+}
+.watch[start-seconds="17"] .watch-seconds {
+  transform: rotate(102deg);
+}
+.watch[start-seconds="17"] .watch-minutes__hand {
+  animation-delay: 43s;
+}
+.watch[start-minutes="17"] .watch-minutes {
+  transform: rotate(108deg);
+}
+.watch[start-minutes="17"][start-hours="0"] .watch-hours {
+  transform: rotate(9deg);
+}
+.watch[start-minutes="17"][start-hours="1"] .watch-hours {
+  transform: rotate(39deg);
+}
+.watch[start-minutes="17"][start-hours="2"] .watch-hours {
+  transform: rotate(69deg);
+}
+.watch[start-minutes="17"][start-hours="3"] .watch-hours {
+  transform: rotate(99deg);
+}
+.watch[start-minutes="17"][start-hours="4"] .watch-hours {
+  transform: rotate(129deg);
+}
+.watch[start-minutes="17"][start-hours="5"] .watch-hours {
+  transform: rotate(159deg);
+}
+.watch[start-minutes="17"][start-hours="6"] .watch-hours {
+  transform: rotate(189deg);
+}
+.watch[start-minutes="17"][start-hours="7"] .watch-hours {
+  transform: rotate(219deg);
+}
+.watch[start-minutes="17"][start-hours="8"] .watch-hours {
+  transform: rotate(249deg);
+}
+.watch[start-minutes="17"][start-hours="9"] .watch-hours {
+  transform: rotate(279deg);
+}
+.watch[start-minutes="17"][start-hours="10"] .watch-hours {
+  transform: rotate(309deg);
+}
+.watch[start-minutes="17"][start-hours="11"] .watch-hours {
+  transform: rotate(339deg);
+}
+.watch[start-minutes="17"][start-hours="12"] .watch-hours {
+  transform: rotate(369deg);
+}
+.watch[start-seconds="18"] .watch-seconds {
+  transform: rotate(108deg);
+}
+.watch[start-seconds="18"] .watch-minutes__hand {
+  animation-delay: 42s;
+}
+.watch[start-minutes="18"] .watch-minutes {
+  transform: rotate(114deg);
+}
+.watch[start-minutes="18"][start-hours="0"] .watch-hours {
+  transform: rotate(9.5deg);
+}
+.watch[start-minutes="18"][start-hours="1"] .watch-hours {
+  transform: rotate(39.5deg);
+}
+.watch[start-minutes="18"][start-hours="2"] .watch-hours {
+  transform: rotate(69.5deg);
+}
+.watch[start-minutes="18"][start-hours="3"] .watch-hours {
+  transform: rotate(99.5deg);
+}
+.watch[start-minutes="18"][start-hours="4"] .watch-hours {
+  transform: rotate(129.5deg);
+}
+.watch[start-minutes="18"][start-hours="5"] .watch-hours {
+  transform: rotate(159.5deg);
+}
+.watch[start-minutes="18"][start-hours="6"] .watch-hours {
+  transform: rotate(189.5deg);
+}
+.watch[start-minutes="18"][start-hours="7"] .watch-hours {
+  transform: rotate(219.5deg);
+}
+.watch[start-minutes="18"][start-hours="8"] .watch-hours {
+  transform: rotate(249.5deg);
+}
+.watch[start-minutes="18"][start-hours="9"] .watch-hours {
+  transform: rotate(279.5deg);
+}
+.watch[start-minutes="18"][start-hours="10"] .watch-hours {
+  transform: rotate(309.5deg);
+}
+.watch[start-minutes="18"][start-hours="11"] .watch-hours {
+  transform: rotate(339.5deg);
+}
+.watch[start-minutes="18"][start-hours="12"] .watch-hours {
+  transform: rotate(369.5deg);
+}
+.watch[start-seconds="19"] .watch-seconds {
+  transform: rotate(114deg);
+}
+.watch[start-seconds="19"] .watch-minutes__hand {
+  animation-delay: 41s;
+}
+.watch[start-minutes="19"] .watch-minutes {
+  transform: rotate(120deg);
+}
+.watch[start-minutes="19"][start-hours="0"] .watch-hours {
+  transform: rotate(10deg);
+}
+.watch[start-minutes="19"][start-hours="1"] .watch-hours {
+  transform: rotate(40deg);
+}
+.watch[start-minutes="19"][start-hours="2"] .watch-hours {
+  transform: rotate(70deg);
+}
+.watch[start-minutes="19"][start-hours="3"] .watch-hours {
+  transform: rotate(100deg);
+}
+.watch[start-minutes="19"][start-hours="4"] .watch-hours {
+  transform: rotate(130deg);
+}
+.watch[start-minutes="19"][start-hours="5"] .watch-hours {
+  transform: rotate(160deg);
+}
+.watch[start-minutes="19"][start-hours="6"] .watch-hours {
+  transform: rotate(190deg);
+}
+.watch[start-minutes="19"][start-hours="7"] .watch-hours {
+  transform: rotate(220deg);
+}
+.watch[start-minutes="19"][start-hours="8"] .watch-hours {
+  transform: rotate(250deg);
+}
+.watch[start-minutes="19"][start-hours="9"] .watch-hours {
+  transform: rotate(280deg);
+}
+.watch[start-minutes="19"][start-hours="10"] .watch-hours {
+  transform: rotate(310deg);
+}
+.watch[start-minutes="19"][start-hours="11"] .watch-hours {
+  transform: rotate(340deg);
+}
+.watch[start-minutes="19"][start-hours="12"] .watch-hours {
+  transform: rotate(370deg);
+}
+.watch[start-seconds="20"] .watch-seconds {
+  transform: rotate(120deg);
+}
+.watch[start-seconds="20"] .watch-minutes__hand {
+  animation-delay: 40s;
+}
+.watch[start-minutes="20"] .watch-minutes {
+  transform: rotate(126deg);
+}
+.watch[start-minutes="20"][start-hours="0"] .watch-hours {
+  transform: rotate(10.5deg);
+}
+.watch[start-minutes="20"][start-hours="1"] .watch-hours {
+  transform: rotate(40.5deg);
+}
+.watch[start-minutes="20"][start-hours="2"] .watch-hours {
+  transform: rotate(70.5deg);
+}
+.watch[start-minutes="20"][start-hours="3"] .watch-hours {
+  transform: rotate(100.5deg);
+}
+.watch[start-minutes="20"][start-hours="4"] .watch-hours {
+  transform: rotate(130.5deg);
+}
+.watch[start-minutes="20"][start-hours="5"] .watch-hours {
+  transform: rotate(160.5deg);
+}
+.watch[start-minutes="20"][start-hours="6"] .watch-hours {
+  transform: rotate(190.5deg);
+}
+.watch[start-minutes="20"][start-hours="7"] .watch-hours {
+  transform: rotate(220.5deg);
+}
+.watch[start-minutes="20"][start-hours="8"] .watch-hours {
+  transform: rotate(250.5deg);
+}
+.watch[start-minutes="20"][start-hours="9"] .watch-hours {
+  transform: rotate(280.5deg);
+}
+.watch[start-minutes="20"][start-hours="10"] .watch-hours {
+  transform: rotate(310.5deg);
+}
+.watch[start-minutes="20"][start-hours="11"] .watch-hours {
+  transform: rotate(340.5deg);
+}
+.watch[start-minutes="20"][start-hours="12"] .watch-hours {
+  transform: rotate(370.5deg);
+}
+.watch[start-seconds="21"] .watch-seconds {
+  transform: rotate(126deg);
+}
+.watch[start-seconds="21"] .watch-minutes__hand {
+  animation-delay: 39s;
+}
+.watch[start-minutes="21"] .watch-minutes {
+  transform: rotate(132deg);
+}
+.watch[start-minutes="21"][start-hours="0"] .watch-hours {
+  transform: rotate(11deg);
+}
+.watch[start-minutes="21"][start-hours="1"] .watch-hours {
+  transform: rotate(41deg);
+}
+.watch[start-minutes="21"][start-hours="2"] .watch-hours {
+  transform: rotate(71deg);
+}
+.watch[start-minutes="21"][start-hours="3"] .watch-hours {
+  transform: rotate(101deg);
+}
+.watch[start-minutes="21"][start-hours="4"] .watch-hours {
+  transform: rotate(131deg);
+}
+.watch[start-minutes="21"][start-hours="5"] .watch-hours {
+  transform: rotate(161deg);
+}
+.watch[start-minutes="21"][start-hours="6"] .watch-hours {
+  transform: rotate(191deg);
+}
+.watch[start-minutes="21"][start-hours="7"] .watch-hours {
+  transform: rotate(221deg);
+}
+.watch[start-minutes="21"][start-hours="8"] .watch-hours {
+  transform: rotate(251deg);
+}
+.watch[start-minutes="21"][start-hours="9"] .watch-hours {
+  transform: rotate(281deg);
+}
+.watch[start-minutes="21"][start-hours="10"] .watch-hours {
+  transform: rotate(311deg);
+}
+.watch[start-minutes="21"][start-hours="11"] .watch-hours {
+  transform: rotate(341deg);
+}
+.watch[start-minutes="21"][start-hours="12"] .watch-hours {
+  transform: rotate(371deg);
+}
+.watch[start-seconds="22"] .watch-seconds {
+  transform: rotate(132deg);
+}
+.watch[start-seconds="22"] .watch-minutes__hand {
+  animation-delay: 38s;
+}
+.watch[start-minutes="22"] .watch-minutes {
+  transform: rotate(138deg);
+}
+.watch[start-minutes="22"][start-hours="0"] .watch-hours {
+  transform: rotate(11.5deg);
+}
+.watch[start-minutes="22"][start-hours="1"] .watch-hours {
+  transform: rotate(41.5deg);
+}
+.watch[start-minutes="22"][start-hours="2"] .watch-hours {
+  transform: rotate(71.5deg);
+}
+.watch[start-minutes="22"][start-hours="3"] .watch-hours {
+  transform: rotate(101.5deg);
+}
+.watch[start-minutes="22"][start-hours="4"] .watch-hours {
+  transform: rotate(131.5deg);
+}
+.watch[start-minutes="22"][start-hours="5"] .watch-hours {
+  transform: rotate(161.5deg);
+}
+.watch[start-minutes="22"][start-hours="6"] .watch-hours {
+  transform: rotate(191.5deg);
+}
+.watch[start-minutes="22"][start-hours="7"] .watch-hours {
+  transform: rotate(221.5deg);
+}
+.watch[start-minutes="22"][start-hours="8"] .watch-hours {
+  transform: rotate(251.5deg);
+}
+.watch[start-minutes="22"][start-hours="9"] .watch-hours {
+  transform: rotate(281.5deg);
+}
+.watch[start-minutes="22"][start-hours="10"] .watch-hours {
+  transform: rotate(311.5deg);
+}
+.watch[start-minutes="22"][start-hours="11"] .watch-hours {
+  transform: rotate(341.5deg);
+}
+.watch[start-minutes="22"][start-hours="12"] .watch-hours {
+  transform: rotate(371.5deg);
+}
+.watch[start-seconds="23"] .watch-seconds {
+  transform: rotate(138deg);
+}
+.watch[start-seconds="23"] .watch-minutes__hand {
+  animation-delay: 37s;
+}
+.watch[start-minutes="23"] .watch-minutes {
+  transform: rotate(144deg);
+}
+.watch[start-minutes="23"][start-hours="0"] .watch-hours {
+  transform: rotate(12deg);
+}
+.watch[start-minutes="23"][start-hours="1"] .watch-hours {
+  transform: rotate(42deg);
+}
+.watch[start-minutes="23"][start-hours="2"] .watch-hours {
+  transform: rotate(72deg);
+}
+.watch[start-minutes="23"][start-hours="3"] .watch-hours {
+  transform: rotate(102deg);
+}
+.watch[start-minutes="23"][start-hours="4"] .watch-hours {
+  transform: rotate(132deg);
+}
+.watch[start-minutes="23"][start-hours="5"] .watch-hours {
+  transform: rotate(162deg);
+}
+.watch[start-minutes="23"][start-hours="6"] .watch-hours {
+  transform: rotate(192deg);
+}
+.watch[start-minutes="23"][start-hours="7"] .watch-hours {
+  transform: rotate(222deg);
+}
+.watch[start-minutes="23"][start-hours="8"] .watch-hours {
+  transform: rotate(252deg);
+}
+.watch[start-minutes="23"][start-hours="9"] .watch-hours {
+  transform: rotate(282deg);
+}
+.watch[start-minutes="23"][start-hours="10"] .watch-hours {
+  transform: rotate(312deg);
+}
+.watch[start-minutes="23"][start-hours="11"] .watch-hours {
+  transform: rotate(342deg);
+}
+.watch[start-minutes="23"][start-hours="12"] .watch-hours {
+  transform: rotate(372deg);
+}
+.watch[start-seconds="24"] .watch-seconds {
+  transform: rotate(144deg);
+}
+.watch[start-seconds="24"] .watch-minutes__hand {
+  animation-delay: 36s;
+}
+.watch[start-minutes="24"] .watch-minutes {
+  transform: rotate(150deg);
+}
+.watch[start-minutes="24"][start-hours="0"] .watch-hours {
+  transform: rotate(12.5deg);
+}
+.watch[start-minutes="24"][start-hours="1"] .watch-hours {
+  transform: rotate(42.5deg);
+}
+.watch[start-minutes="24"][start-hours="2"] .watch-hours {
+  transform: rotate(72.5deg);
+}
+.watch[start-minutes="24"][start-hours="3"] .watch-hours {
+  transform: rotate(102.5deg);
+}
+.watch[start-minutes="24"][start-hours="4"] .watch-hours {
+  transform: rotate(132.5deg);
+}
+.watch[start-minutes="24"][start-hours="5"] .watch-hours {
+  transform: rotate(162.5deg);
+}
+.watch[start-minutes="24"][start-hours="6"] .watch-hours {
+  transform: rotate(192.5deg);
+}
+.watch[start-minutes="24"][start-hours="7"] .watch-hours {
+  transform: rotate(222.5deg);
+}
+.watch[start-minutes="24"][start-hours="8"] .watch-hours {
+  transform: rotate(252.5deg);
+}
+.watch[start-minutes="24"][start-hours="9"] .watch-hours {
+  transform: rotate(282.5deg);
+}
+.watch[start-minutes="24"][start-hours="10"] .watch-hours {
+  transform: rotate(312.5deg);
+}
+.watch[start-minutes="24"][start-hours="11"] .watch-hours {
+  transform: rotate(342.5deg);
+}
+.watch[start-minutes="24"][start-hours="12"] .watch-hours {
+  transform: rotate(372.5deg);
+}
+.watch[start-seconds="25"] .watch-seconds {
+  transform: rotate(150deg);
+}
+.watch[start-seconds="25"] .watch-minutes__hand {
+  animation-delay: 35s;
+}
+.watch[start-minutes="25"] .watch-minutes {
+  transform: rotate(156deg);
+}
+.watch[start-minutes="25"][start-hours="0"] .watch-hours {
+  transform: rotate(13deg);
+}
+.watch[start-minutes="25"][start-hours="1"] .watch-hours {
+  transform: rotate(43deg);
+}
+.watch[start-minutes="25"][start-hours="2"] .watch-hours {
+  transform: rotate(73deg);
+}
+.watch[start-minutes="25"][start-hours="3"] .watch-hours {
+  transform: rotate(103deg);
+}
+.watch[start-minutes="25"][start-hours="4"] .watch-hours {
+  transform: rotate(133deg);
+}
+.watch[start-minutes="25"][start-hours="5"] .watch-hours {
+  transform: rotate(163deg);
+}
+.watch[start-minutes="25"][start-hours="6"] .watch-hours {
+  transform: rotate(193deg);
+}
+.watch[start-minutes="25"][start-hours="7"] .watch-hours {
+  transform: rotate(223deg);
+}
+.watch[start-minutes="25"][start-hours="8"] .watch-hours {
+  transform: rotate(253deg);
+}
+.watch[start-minutes="25"][start-hours="9"] .watch-hours {
+  transform: rotate(283deg);
+}
+.watch[start-minutes="25"][start-hours="10"] .watch-hours {
+  transform: rotate(313deg);
+}
+.watch[start-minutes="25"][start-hours="11"] .watch-hours {
+  transform: rotate(343deg);
+}
+.watch[start-minutes="25"][start-hours="12"] .watch-hours {
+  transform: rotate(373deg);
+}
+.watch[start-seconds="26"] .watch-seconds {
+  transform: rotate(156deg);
+}
+.watch[start-seconds="26"] .watch-minutes__hand {
+  animation-delay: 34s;
+}
+.watch[start-minutes="26"] .watch-minutes {
+  transform: rotate(162deg);
+}
+.watch[start-minutes="26"][start-hours="0"] .watch-hours {
+  transform: rotate(13.5deg);
+}
+.watch[start-minutes="26"][start-hours="1"] .watch-hours {
+  transform: rotate(43.5deg);
+}
+.watch[start-minutes="26"][start-hours="2"] .watch-hours {
+  transform: rotate(73.5deg);
+}
+.watch[start-minutes="26"][start-hours="3"] .watch-hours {
+  transform: rotate(103.5deg);
+}
+.watch[start-minutes="26"][start-hours="4"] .watch-hours {
+  transform: rotate(133.5deg);
+}
+.watch[start-minutes="26"][start-hours="5"] .watch-hours {
+  transform: rotate(163.5deg);
+}
+.watch[start-minutes="26"][start-hours="6"] .watch-hours {
+  transform: rotate(193.5deg);
+}
+.watch[start-minutes="26"][start-hours="7"] .watch-hours {
+  transform: rotate(223.5deg);
+}
+.watch[start-minutes="26"][start-hours="8"] .watch-hours {
+  transform: rotate(253.5deg);
+}
+.watch[start-minutes="26"][start-hours="9"] .watch-hours {
+  transform: rotate(283.5deg);
+}
+.watch[start-minutes="26"][start-hours="10"] .watch-hours {
+  transform: rotate(313.5deg);
+}
+.watch[start-minutes="26"][start-hours="11"] .watch-hours {
+  transform: rotate(343.5deg);
+}
+.watch[start-minutes="26"][start-hours="12"] .watch-hours {
+  transform: rotate(373.5deg);
+}
+.watch[start-seconds="27"] .watch-seconds {
+  transform: rotate(162deg);
+}
+.watch[start-seconds="27"] .watch-minutes__hand {
+  animation-delay: 33s;
+}
+.watch[start-minutes="27"] .watch-minutes {
+  transform: rotate(168deg);
+}
+.watch[start-minutes="27"][start-hours="0"] .watch-hours {
+  transform: rotate(14deg);
+}
+.watch[start-minutes="27"][start-hours="1"] .watch-hours {
+  transform: rotate(44deg);
+}
+.watch[start-minutes="27"][start-hours="2"] .watch-hours {
+  transform: rotate(74deg);
+}
+.watch[start-minutes="27"][start-hours="3"] .watch-hours {
+  transform: rotate(104deg);
+}
+.watch[start-minutes="27"][start-hours="4"] .watch-hours {
+  transform: rotate(134deg);
+}
+.watch[start-minutes="27"][start-hours="5"] .watch-hours {
+  transform: rotate(164deg);
+}
+.watch[start-minutes="27"][start-hours="6"] .watch-hours {
+  transform: rotate(194deg);
+}
+.watch[start-minutes="27"][start-hours="7"] .watch-hours {
+  transform: rotate(224deg);
+}
+.watch[start-minutes="27"][start-hours="8"] .watch-hours {
+  transform: rotate(254deg);
+}
+.watch[start-minutes="27"][start-hours="9"] .watch-hours {
+  transform: rotate(284deg);
+}
+.watch[start-minutes="27"][start-hours="10"] .watch-hours {
+  transform: rotate(314deg);
+}
+.watch[start-minutes="27"][start-hours="11"] .watch-hours {
+  transform: rotate(344deg);
+}
+.watch[start-minutes="27"][start-hours="12"] .watch-hours {
+  transform: rotate(374deg);
+}
+.watch[start-seconds="28"] .watch-seconds {
+  transform: rotate(168deg);
+}
+.watch[start-seconds="28"] .watch-minutes__hand {
+  animation-delay: 32s;
+}
+.watch[start-minutes="28"] .watch-minutes {
+  transform: rotate(174deg);
+}
+.watch[start-minutes="28"][start-hours="0"] .watch-hours {
+  transform: rotate(14.5deg);
+}
+.watch[start-minutes="28"][start-hours="1"] .watch-hours {
+  transform: rotate(44.5deg);
+}
+.watch[start-minutes="28"][start-hours="2"] .watch-hours {
+  transform: rotate(74.5deg);
+}
+.watch[start-minutes="28"][start-hours="3"] .watch-hours {
+  transform: rotate(104.5deg);
+}
+.watch[start-minutes="28"][start-hours="4"] .watch-hours {
+  transform: rotate(134.5deg);
+}
+.watch[start-minutes="28"][start-hours="5"] .watch-hours {
+  transform: rotate(164.5deg);
+}
+.watch[start-minutes="28"][start-hours="6"] .watch-hours {
+  transform: rotate(194.5deg);
+}
+.watch[start-minutes="28"][start-hours="7"] .watch-hours {
+  transform: rotate(224.5deg);
+}
+.watch[start-minutes="28"][start-hours="8"] .watch-hours {
+  transform: rotate(254.5deg);
+}
+.watch[start-minutes="28"][start-hours="9"] .watch-hours {
+  transform: rotate(284.5deg);
+}
+.watch[start-minutes="28"][start-hours="10"] .watch-hours {
+  transform: rotate(314.5deg);
+}
+.watch[start-minutes="28"][start-hours="11"] .watch-hours {
+  transform: rotate(344.5deg);
+}
+.watch[start-minutes="28"][start-hours="12"] .watch-hours {
+  transform: rotate(374.5deg);
+}
+.watch[start-seconds="29"] .watch-seconds {
+  transform: rotate(174deg);
+}
+.watch[start-seconds="29"] .watch-minutes__hand {
+  animation-delay: 31s;
+}
+.watch[start-minutes="29"] .watch-minutes {
+  transform: rotate(180deg);
+}
+.watch[start-minutes="29"][start-hours="0"] .watch-hours {
+  transform: rotate(15deg);
+}
+.watch[start-minutes="29"][start-hours="1"] .watch-hours {
+  transform: rotate(45deg);
+}
+.watch[start-minutes="29"][start-hours="2"] .watch-hours {
+  transform: rotate(75deg);
+}
+.watch[start-minutes="29"][start-hours="3"] .watch-hours {
+  transform: rotate(105deg);
+}
+.watch[start-minutes="29"][start-hours="4"] .watch-hours {
+  transform: rotate(135deg);
+}
+.watch[start-minutes="29"][start-hours="5"] .watch-hours {
+  transform: rotate(165deg);
+}
+.watch[start-minutes="29"][start-hours="6"] .watch-hours {
+  transform: rotate(195deg);
+}
+.watch[start-minutes="29"][start-hours="7"] .watch-hours {
+  transform: rotate(225deg);
+}
+.watch[start-minutes="29"][start-hours="8"] .watch-hours {
+  transform: rotate(255deg);
+}
+.watch[start-minutes="29"][start-hours="9"] .watch-hours {
+  transform: rotate(285deg);
+}
+.watch[start-minutes="29"][start-hours="10"] .watch-hours {
+  transform: rotate(315deg);
+}
+.watch[start-minutes="29"][start-hours="11"] .watch-hours {
+  transform: rotate(345deg);
+}
+.watch[start-minutes="29"][start-hours="12"] .watch-hours {
+  transform: rotate(375deg);
+}
+.watch[start-seconds="30"] .watch-seconds {
+  transform: rotate(180deg);
+}
+.watch[start-seconds="30"] .watch-minutes__hand {
+  animation-delay: 30s;
+}
+.watch[start-minutes="30"] .watch-minutes {
+  transform: rotate(186deg);
+}
+.watch[start-minutes="30"][start-hours="0"] .watch-hours {
+  transform: rotate(15.5deg);
+}
+.watch[start-minutes="30"][start-hours="1"] .watch-hours {
+  transform: rotate(45.5deg);
+}
+.watch[start-minutes="30"][start-hours="2"] .watch-hours {
+  transform: rotate(75.5deg);
+}
+.watch[start-minutes="30"][start-hours="3"] .watch-hours {
+  transform: rotate(105.5deg);
+}
+.watch[start-minutes="30"][start-hours="4"] .watch-hours {
+  transform: rotate(135.5deg);
+}
+.watch[start-minutes="30"][start-hours="5"] .watch-hours {
+  transform: rotate(165.5deg);
+}
+.watch[start-minutes="30"][start-hours="6"] .watch-hours {
+  transform: rotate(195.5deg);
+}
+.watch[start-minutes="30"][start-hours="7"] .watch-hours {
+  transform: rotate(225.5deg);
+}
+.watch[start-minutes="30"][start-hours="8"] .watch-hours {
+  transform: rotate(255.5deg);
+}
+.watch[start-minutes="30"][start-hours="9"] .watch-hours {
+  transform: rotate(285.5deg);
+}
+.watch[start-minutes="30"][start-hours="10"] .watch-hours {
+  transform: rotate(315.5deg);
+}
+.watch[start-minutes="30"][start-hours="11"] .watch-hours {
+  transform: rotate(345.5deg);
+}
+.watch[start-minutes="30"][start-hours="12"] .watch-hours {
+  transform: rotate(375.5deg);
+}
+.watch[start-seconds="31"] .watch-seconds {
+  transform: rotate(186deg);
+}
+.watch[start-seconds="31"] .watch-minutes__hand {
+  animation-delay: 29s;
+}
+.watch[start-minutes="31"] .watch-minutes {
+  transform: rotate(192deg);
+}
+.watch[start-minutes="31"][start-hours="0"] .watch-hours {
+  transform: rotate(16deg);
+}
+.watch[start-minutes="31"][start-hours="1"] .watch-hours {
+  transform: rotate(46deg);
+}
+.watch[start-minutes="31"][start-hours="2"] .watch-hours {
+  transform: rotate(76deg);
+}
+.watch[start-minutes="31"][start-hours="3"] .watch-hours {
+  transform: rotate(106deg);
+}
+.watch[start-minutes="31"][start-hours="4"] .watch-hours {
+  transform: rotate(136deg);
+}
+.watch[start-minutes="31"][start-hours="5"] .watch-hours {
+  transform: rotate(166deg);
+}
+.watch[start-minutes="31"][start-hours="6"] .watch-hours {
+  transform: rotate(196deg);
+}
+.watch[start-minutes="31"][start-hours="7"] .watch-hours {
+  transform: rotate(226deg);
+}
+.watch[start-minutes="31"][start-hours="8"] .watch-hours {
+  transform: rotate(256deg);
+}
+.watch[start-minutes="31"][start-hours="9"] .watch-hours {
+  transform: rotate(286deg);
+}
+.watch[start-minutes="31"][start-hours="10"] .watch-hours {
+  transform: rotate(316deg);
+}
+.watch[start-minutes="31"][start-hours="11"] .watch-hours {
+  transform: rotate(346deg);
+}
+.watch[start-minutes="31"][start-hours="12"] .watch-hours {
+  transform: rotate(376deg);
+}
+.watch[start-seconds="32"] .watch-seconds {
+  transform: rotate(192deg);
+}
+.watch[start-seconds="32"] .watch-minutes__hand {
+  animation-delay: 28s;
+}
+.watch[start-minutes="32"] .watch-minutes {
+  transform: rotate(198deg);
+}
+.watch[start-minutes="32"][start-hours="0"] .watch-hours {
+  transform: rotate(16.5deg);
+}
+.watch[start-minutes="32"][start-hours="1"] .watch-hours {
+  transform: rotate(46.5deg);
+}
+.watch[start-minutes="32"][start-hours="2"] .watch-hours {
+  transform: rotate(76.5deg);
+}
+.watch[start-minutes="32"][start-hours="3"] .watch-hours {
+  transform: rotate(106.5deg);
+}
+.watch[start-minutes="32"][start-hours="4"] .watch-hours {
+  transform: rotate(136.5deg);
+}
+.watch[start-minutes="32"][start-hours="5"] .watch-hours {
+  transform: rotate(166.5deg);
+}
+.watch[start-minutes="32"][start-hours="6"] .watch-hours {
+  transform: rotate(196.5deg);
+}
+.watch[start-minutes="32"][start-hours="7"] .watch-hours {
+  transform: rotate(226.5deg);
+}
+.watch[start-minutes="32"][start-hours="8"] .watch-hours {
+  transform: rotate(256.5deg);
+}
+.watch[start-minutes="32"][start-hours="9"] .watch-hours {
+  transform: rotate(286.5deg);
+}
+.watch[start-minutes="32"][start-hours="10"] .watch-hours {
+  transform: rotate(316.5deg);
+}
+.watch[start-minutes="32"][start-hours="11"] .watch-hours {
+  transform: rotate(346.5deg);
+}
+.watch[start-minutes="32"][start-hours="12"] .watch-hours {
+  transform: rotate(376.5deg);
+}
+.watch[start-seconds="33"] .watch-seconds {
+  transform: rotate(198deg);
+}
+.watch[start-seconds="33"] .watch-minutes__hand {
+  animation-delay: 27s;
+}
+.watch[start-minutes="33"] .watch-minutes {
+  transform: rotate(204deg);
+}
+.watch[start-minutes="33"][start-hours="0"] .watch-hours {
+  transform: rotate(17deg);
+}
+.watch[start-minutes="33"][start-hours="1"] .watch-hours {
+  transform: rotate(47deg);
+}
+.watch[start-minutes="33"][start-hours="2"] .watch-hours {
+  transform: rotate(77deg);
+}
+.watch[start-minutes="33"][start-hours="3"] .watch-hours {
+  transform: rotate(107deg);
+}
+.watch[start-minutes="33"][start-hours="4"] .watch-hours {
+  transform: rotate(137deg);
+}
+.watch[start-minutes="33"][start-hours="5"] .watch-hours {
+  transform: rotate(167deg);
+}
+.watch[start-minutes="33"][start-hours="6"] .watch-hours {
+  transform: rotate(197deg);
+}
+.watch[start-minutes="33"][start-hours="7"] .watch-hours {
+  transform: rotate(227deg);
+}
+.watch[start-minutes="33"][start-hours="8"] .watch-hours {
+  transform: rotate(257deg);
+}
+.watch[start-minutes="33"][start-hours="9"] .watch-hours {
+  transform: rotate(287deg);
+}
+.watch[start-minutes="33"][start-hours="10"] .watch-hours {
+  transform: rotate(317deg);
+}
+.watch[start-minutes="33"][start-hours="11"] .watch-hours {
+  transform: rotate(347deg);
+}
+.watch[start-minutes="33"][start-hours="12"] .watch-hours {
+  transform: rotate(377deg);
+}
+.watch[start-seconds="34"] .watch-seconds {
+  transform: rotate(204deg);
+}
+.watch[start-seconds="34"] .watch-minutes__hand {
+  animation-delay: 26s;
+}
+.watch[start-minutes="34"] .watch-minutes {
+  transform: rotate(210deg);
+}
+.watch[start-minutes="34"][start-hours="0"] .watch-hours {
+  transform: rotate(17.5deg);
+}
+.watch[start-minutes="34"][start-hours="1"] .watch-hours {
+  transform: rotate(47.5deg);
+}
+.watch[start-minutes="34"][start-hours="2"] .watch-hours {
+  transform: rotate(77.5deg);
+}
+.watch[start-minutes="34"][start-hours="3"] .watch-hours {
+  transform: rotate(107.5deg);
+}
+.watch[start-minutes="34"][start-hours="4"] .watch-hours {
+  transform: rotate(137.5deg);
+}
+.watch[start-minutes="34"][start-hours="5"] .watch-hours {
+  transform: rotate(167.5deg);
+}
+.watch[start-minutes="34"][start-hours="6"] .watch-hours {
+  transform: rotate(197.5deg);
+}
+.watch[start-minutes="34"][start-hours="7"] .watch-hours {
+  transform: rotate(227.5deg);
+}
+.watch[start-minutes="34"][start-hours="8"] .watch-hours {
+  transform: rotate(257.5deg);
+}
+.watch[start-minutes="34"][start-hours="9"] .watch-hours {
+  transform: rotate(287.5deg);
+}
+.watch[start-minutes="34"][start-hours="10"] .watch-hours {
+  transform: rotate(317.5deg);
+}
+.watch[start-minutes="34"][start-hours="11"] .watch-hours {
+  transform: rotate(347.5deg);
+}
+.watch[start-minutes="34"][start-hours="12"] .watch-hours {
+  transform: rotate(377.5deg);
+}
+.watch[start-seconds="35"] .watch-seconds {
+  transform: rotate(210deg);
+}
+.watch[start-seconds="35"] .watch-minutes__hand {
+  animation-delay: 25s;
+}
+.watch[start-minutes="35"] .watch-minutes {
+  transform: rotate(216deg);
+}
+.watch[start-minutes="35"][start-hours="0"] .watch-hours {
+  transform: rotate(18deg);
+}
+.watch[start-minutes="35"][start-hours="1"] .watch-hours {
+  transform: rotate(48deg);
+}
+.watch[start-minutes="35"][start-hours="2"] .watch-hours {
+  transform: rotate(78deg);
+}
+.watch[start-minutes="35"][start-hours="3"] .watch-hours {
+  transform: rotate(108deg);
+}
+.watch[start-minutes="35"][start-hours="4"] .watch-hours {
+  transform: rotate(138deg);
+}
+.watch[start-minutes="35"][start-hours="5"] .watch-hours {
+  transform: rotate(168deg);
+}
+.watch[start-minutes="35"][start-hours="6"] .watch-hours {
+  transform: rotate(198deg);
+}
+.watch[start-minutes="35"][start-hours="7"] .watch-hours {
+  transform: rotate(228deg);
+}
+.watch[start-minutes="35"][start-hours="8"] .watch-hours {
+  transform: rotate(258deg);
+}
+.watch[start-minutes="35"][start-hours="9"] .watch-hours {
+  transform: rotate(288deg);
+}
+.watch[start-minutes="35"][start-hours="10"] .watch-hours {
+  transform: rotate(318deg);
+}
+.watch[start-minutes="35"][start-hours="11"] .watch-hours {
+  transform: rotate(348deg);
+}
+.watch[start-minutes="35"][start-hours="12"] .watch-hours {
+  transform: rotate(378deg);
+}
+.watch[start-seconds="36"] .watch-seconds {
+  transform: rotate(216deg);
+}
+.watch[start-seconds="36"] .watch-minutes__hand {
+  animation-delay: 24s;
+}
+.watch[start-minutes="36"] .watch-minutes {
+  transform: rotate(222deg);
+}
+.watch[start-minutes="36"][start-hours="0"] .watch-hours {
+  transform: rotate(18.5deg);
+}
+.watch[start-minutes="36"][start-hours="1"] .watch-hours {
+  transform: rotate(48.5deg);
+}
+.watch[start-minutes="36"][start-hours="2"] .watch-hours {
+  transform: rotate(78.5deg);
+}
+.watch[start-minutes="36"][start-hours="3"] .watch-hours {
+  transform: rotate(108.5deg);
+}
+.watch[start-minutes="36"][start-hours="4"] .watch-hours {
+  transform: rotate(138.5deg);
+}
+.watch[start-minutes="36"][start-hours="5"] .watch-hours {
+  transform: rotate(168.5deg);
+}
+.watch[start-minutes="36"][start-hours="6"] .watch-hours {
+  transform: rotate(198.5deg);
+}
+.watch[start-minutes="36"][start-hours="7"] .watch-hours {
+  transform: rotate(228.5deg);
+}
+.watch[start-minutes="36"][start-hours="8"] .watch-hours {
+  transform: rotate(258.5deg);
+}
+.watch[start-minutes="36"][start-hours="9"] .watch-hours {
+  transform: rotate(288.5deg);
+}
+.watch[start-minutes="36"][start-hours="10"] .watch-hours {
+  transform: rotate(318.5deg);
+}
+.watch[start-minutes="36"][start-hours="11"] .watch-hours {
+  transform: rotate(348.5deg);
+}
+.watch[start-minutes="36"][start-hours="12"] .watch-hours {
+  transform: rotate(378.5deg);
+}
+.watch[start-seconds="37"] .watch-seconds {
+  transform: rotate(222deg);
+}
+.watch[start-seconds="37"] .watch-minutes__hand {
+  animation-delay: 23s;
+}
+.watch[start-minutes="37"] .watch-minutes {
+  transform: rotate(228deg);
+}
+.watch[start-minutes="37"][start-hours="0"] .watch-hours {
+  transform: rotate(19deg);
+}
+.watch[start-minutes="37"][start-hours="1"] .watch-hours {
+  transform: rotate(49deg);
+}
+.watch[start-minutes="37"][start-hours="2"] .watch-hours {
+  transform: rotate(79deg);
+}
+.watch[start-minutes="37"][start-hours="3"] .watch-hours {
+  transform: rotate(109deg);
+}
+.watch[start-minutes="37"][start-hours="4"] .watch-hours {
+  transform: rotate(139deg);
+}
+.watch[start-minutes="37"][start-hours="5"] .watch-hours {
+  transform: rotate(169deg);
+}
+.watch[start-minutes="37"][start-hours="6"] .watch-hours {
+  transform: rotate(199deg);
+}
+.watch[start-minutes="37"][start-hours="7"] .watch-hours {
+  transform: rotate(229deg);
+}
+.watch[start-minutes="37"][start-hours="8"] .watch-hours {
+  transform: rotate(259deg);
+}
+.watch[start-minutes="37"][start-hours="9"] .watch-hours {
+  transform: rotate(289deg);
+}
+.watch[start-minutes="37"][start-hours="10"] .watch-hours {
+  transform: rotate(319deg);
+}
+.watch[start-minutes="37"][start-hours="11"] .watch-hours {
+  transform: rotate(349deg);
+}
+.watch[start-minutes="37"][start-hours="12"] .watch-hours {
+  transform: rotate(379deg);
+}
+.watch[start-seconds="38"] .watch-seconds {
+  transform: rotate(228deg);
+}
+.watch[start-seconds="38"] .watch-minutes__hand {
+  animation-delay: 22s;
+}
+.watch[start-minutes="38"] .watch-minutes {
+  transform: rotate(234deg);
+}
+.watch[start-minutes="38"][start-hours="0"] .watch-hours {
+  transform: rotate(19.5deg);
+}
+.watch[start-minutes="38"][start-hours="1"] .watch-hours {
+  transform: rotate(49.5deg);
+}
+.watch[start-minutes="38"][start-hours="2"] .watch-hours {
+  transform: rotate(79.5deg);
+}
+.watch[start-minutes="38"][start-hours="3"] .watch-hours {
+  transform: rotate(109.5deg);
+}
+.watch[start-minutes="38"][start-hours="4"] .watch-hours {
+  transform: rotate(139.5deg);
+}
+.watch[start-minutes="38"][start-hours="5"] .watch-hours {
+  transform: rotate(169.5deg);
+}
+.watch[start-minutes="38"][start-hours="6"] .watch-hours {
+  transform: rotate(199.5deg);
+}
+.watch[start-minutes="38"][start-hours="7"] .watch-hours {
+  transform: rotate(229.5deg);
+}
+.watch[start-minutes="38"][start-hours="8"] .watch-hours {
+  transform: rotate(259.5deg);
+}
+.watch[start-minutes="38"][start-hours="9"] .watch-hours {
+  transform: rotate(289.5deg);
+}
+.watch[start-minutes="38"][start-hours="10"] .watch-hours {
+  transform: rotate(319.5deg);
+}
+.watch[start-minutes="38"][start-hours="11"] .watch-hours {
+  transform: rotate(349.5deg);
+}
+.watch[start-minutes="38"][start-hours="12"] .watch-hours {
+  transform: rotate(379.5deg);
+}
+.watch[start-seconds="39"] .watch-seconds {
+  transform: rotate(234deg);
+}
+.watch[start-seconds="39"] .watch-minutes__hand {
+  animation-delay: 21s;
+}
+.watch[start-minutes="39"] .watch-minutes {
+  transform: rotate(240deg);
+}
+.watch[start-minutes="39"][start-hours="0"] .watch-hours {
+  transform: rotate(20deg);
+}
+.watch[start-minutes="39"][start-hours="1"] .watch-hours {
+  transform: rotate(50deg);
+}
+.watch[start-minutes="39"][start-hours="2"] .watch-hours {
+  transform: rotate(80deg);
+}
+.watch[start-minutes="39"][start-hours="3"] .watch-hours {
+  transform: rotate(110deg);
+}
+.watch[start-minutes="39"][start-hours="4"] .watch-hours {
+  transform: rotate(140deg);
+}
+.watch[start-minutes="39"][start-hours="5"] .watch-hours {
+  transform: rotate(170deg);
+}
+.watch[start-minutes="39"][start-hours="6"] .watch-hours {
+  transform: rotate(200deg);
+}
+.watch[start-minutes="39"][start-hours="7"] .watch-hours {
+  transform: rotate(230deg);
+}
+.watch[start-minutes="39"][start-hours="8"] .watch-hours {
+  transform: rotate(260deg);
+}
+.watch[start-minutes="39"][start-hours="9"] .watch-hours {
+  transform: rotate(290deg);
+}
+.watch[start-minutes="39"][start-hours="10"] .watch-hours {
+  transform: rotate(320deg);
+}
+.watch[start-minutes="39"][start-hours="11"] .watch-hours {
+  transform: rotate(350deg);
+}
+.watch[start-minutes="39"][start-hours="12"] .watch-hours {
+  transform: rotate(380deg);
+}
+.watch[start-seconds="40"] .watch-seconds {
+  transform: rotate(240deg);
+}
+.watch[start-seconds="40"] .watch-minutes__hand {
+  animation-delay: 20s;
+}
+.watch[start-minutes="40"] .watch-minutes {
+  transform: rotate(246deg);
+}
+.watch[start-minutes="40"][start-hours="0"] .watch-hours {
+  transform: rotate(20.5deg);
+}
+.watch[start-minutes="40"][start-hours="1"] .watch-hours {
+  transform: rotate(50.5deg);
+}
+.watch[start-minutes="40"][start-hours="2"] .watch-hours {
+  transform: rotate(80.5deg);
+}
+.watch[start-minutes="40"][start-hours="3"] .watch-hours {
+  transform: rotate(110.5deg);
+}
+.watch[start-minutes="40"][start-hours="4"] .watch-hours {
+  transform: rotate(140.5deg);
+}
+.watch[start-minutes="40"][start-hours="5"] .watch-hours {
+  transform: rotate(170.5deg);
+}
+.watch[start-minutes="40"][start-hours="6"] .watch-hours {
+  transform: rotate(200.5deg);
+}
+.watch[start-minutes="40"][start-hours="7"] .watch-hours {
+  transform: rotate(230.5deg);
+}
+.watch[start-minutes="40"][start-hours="8"] .watch-hours {
+  transform: rotate(260.5deg);
+}
+.watch[start-minutes="40"][start-hours="9"] .watch-hours {
+  transform: rotate(290.5deg);
+}
+.watch[start-minutes="40"][start-hours="10"] .watch-hours {
+  transform: rotate(320.5deg);
+}
+.watch[start-minutes="40"][start-hours="11"] .watch-hours {
+  transform: rotate(350.5deg);
+}
+.watch[start-minutes="40"][start-hours="12"] .watch-hours {
+  transform: rotate(380.5deg);
+}
+.watch[start-seconds="41"] .watch-seconds {
+  transform: rotate(246deg);
+}
+.watch[start-seconds="41"] .watch-minutes__hand {
+  animation-delay: 19s;
+}
+.watch[start-minutes="41"] .watch-minutes {
+  transform: rotate(252deg);
+}
+.watch[start-minutes="41"][start-hours="0"] .watch-hours {
+  transform: rotate(21deg);
+}
+.watch[start-minutes="41"][start-hours="1"] .watch-hours {
+  transform: rotate(51deg);
+}
+.watch[start-minutes="41"][start-hours="2"] .watch-hours {
+  transform: rotate(81deg);
+}
+.watch[start-minutes="41"][start-hours="3"] .watch-hours {
+  transform: rotate(111deg);
+}
+.watch[start-minutes="41"][start-hours="4"] .watch-hours {
+  transform: rotate(141deg);
+}
+.watch[start-minutes="41"][start-hours="5"] .watch-hours {
+  transform: rotate(171deg);
+}
+.watch[start-minutes="41"][start-hours="6"] .watch-hours {
+  transform: rotate(201deg);
+}
+.watch[start-minutes="41"][start-hours="7"] .watch-hours {
+  transform: rotate(231deg);
+}
+.watch[start-minutes="41"][start-hours="8"] .watch-hours {
+  transform: rotate(261deg);
+}
+.watch[start-minutes="41"][start-hours="9"] .watch-hours {
+  transform: rotate(291deg);
+}
+.watch[start-minutes="41"][start-hours="10"] .watch-hours {
+  transform: rotate(321deg);
+}
+.watch[start-minutes="41"][start-hours="11"] .watch-hours {
+  transform: rotate(351deg);
+}
+.watch[start-minutes="41"][start-hours="12"] .watch-hours {
+  transform: rotate(381deg);
+}
+.watch[start-seconds="42"] .watch-seconds {
+  transform: rotate(252deg);
+}
+.watch[start-seconds="42"] .watch-minutes__hand {
+  animation-delay: 18s;
+}
+.watch[start-minutes="42"] .watch-minutes {
+  transform: rotate(258deg);
+}
+.watch[start-minutes="42"][start-hours="0"] .watch-hours {
+  transform: rotate(21.5deg);
+}
+.watch[start-minutes="42"][start-hours="1"] .watch-hours {
+  transform: rotate(51.5deg);
+}
+.watch[start-minutes="42"][start-hours="2"] .watch-hours {
+  transform: rotate(81.5deg);
+}
+.watch[start-minutes="42"][start-hours="3"] .watch-hours {
+  transform: rotate(111.5deg);
+}
+.watch[start-minutes="42"][start-hours="4"] .watch-hours {
+  transform: rotate(141.5deg);
+}
+.watch[start-minutes="42"][start-hours="5"] .watch-hours {
+  transform: rotate(171.5deg);
+}
+.watch[start-minutes="42"][start-hours="6"] .watch-hours {
+  transform: rotate(201.5deg);
+}
+.watch[start-minutes="42"][start-hours="7"] .watch-hours {
+  transform: rotate(231.5deg);
+}
+.watch[start-minutes="42"][start-hours="8"] .watch-hours {
+  transform: rotate(261.5deg);
+}
+.watch[start-minutes="42"][start-hours="9"] .watch-hours {
+  transform: rotate(291.5deg);
+}
+.watch[start-minutes="42"][start-hours="10"] .watch-hours {
+  transform: rotate(321.5deg);
+}
+.watch[start-minutes="42"][start-hours="11"] .watch-hours {
+  transform: rotate(351.5deg);
+}
+.watch[start-minutes="42"][start-hours="12"] .watch-hours {
+  transform: rotate(381.5deg);
+}
+.watch[start-seconds="43"] .watch-seconds {
+  transform: rotate(258deg);
+}
+.watch[start-seconds="43"] .watch-minutes__hand {
+  animation-delay: 17s;
+}
+.watch[start-minutes="43"] .watch-minutes {
+  transform: rotate(264deg);
+}
+.watch[start-minutes="43"][start-hours="0"] .watch-hours {
+  transform: rotate(22deg);
+}
+.watch[start-minutes="43"][start-hours="1"] .watch-hours {
+  transform: rotate(52deg);
+}
+.watch[start-minutes="43"][start-hours="2"] .watch-hours {
+  transform: rotate(82deg);
+}
+.watch[start-minutes="43"][start-hours="3"] .watch-hours {
+  transform: rotate(112deg);
+}
+.watch[start-minutes="43"][start-hours="4"] .watch-hours {
+  transform: rotate(142deg);
+}
+.watch[start-minutes="43"][start-hours="5"] .watch-hours {
+  transform: rotate(172deg);
+}
+.watch[start-minutes="43"][start-hours="6"] .watch-hours {
+  transform: rotate(202deg);
+}
+.watch[start-minutes="43"][start-hours="7"] .watch-hours {
+  transform: rotate(232deg);
+}
+.watch[start-minutes="43"][start-hours="8"] .watch-hours {
+  transform: rotate(262deg);
+}
+.watch[start-minutes="43"][start-hours="9"] .watch-hours {
+  transform: rotate(292deg);
+}
+.watch[start-minutes="43"][start-hours="10"] .watch-hours {
+  transform: rotate(322deg);
+}
+.watch[start-minutes="43"][start-hours="11"] .watch-hours {
+  transform: rotate(352deg);
+}
+.watch[start-minutes="43"][start-hours="12"] .watch-hours {
+  transform: rotate(382deg);
+}
+.watch[start-seconds="44"] .watch-seconds {
+  transform: rotate(264deg);
+}
+.watch[start-seconds="44"] .watch-minutes__hand {
+  animation-delay: 16s;
+}
+.watch[start-minutes="44"] .watch-minutes {
+  transform: rotate(270deg);
+}
+.watch[start-minutes="44"][start-hours="0"] .watch-hours {
+  transform: rotate(22.5deg);
+}
+.watch[start-minutes="44"][start-hours="1"] .watch-hours {
+  transform: rotate(52.5deg);
+}
+.watch[start-minutes="44"][start-hours="2"] .watch-hours {
+  transform: rotate(82.5deg);
+}
+.watch[start-minutes="44"][start-hours="3"] .watch-hours {
+  transform: rotate(112.5deg);
+}
+.watch[start-minutes="44"][start-hours="4"] .watch-hours {
+  transform: rotate(142.5deg);
+}
+.watch[start-minutes="44"][start-hours="5"] .watch-hours {
+  transform: rotate(172.5deg);
+}
+.watch[start-minutes="44"][start-hours="6"] .watch-hours {
+  transform: rotate(202.5deg);
+}
+.watch[start-minutes="44"][start-hours="7"] .watch-hours {
+  transform: rotate(232.5deg);
+}
+.watch[start-minutes="44"][start-hours="8"] .watch-hours {
+  transform: rotate(262.5deg);
+}
+.watch[start-minutes="44"][start-hours="9"] .watch-hours {
+  transform: rotate(292.5deg);
+}
+.watch[start-minutes="44"][start-hours="10"] .watch-hours {
+  transform: rotate(322.5deg);
+}
+.watch[start-minutes="44"][start-hours="11"] .watch-hours {
+  transform: rotate(352.5deg);
+}
+.watch[start-minutes="44"][start-hours="12"] .watch-hours {
+  transform: rotate(382.5deg);
+}
+.watch[start-seconds="45"] .watch-seconds {
+  transform: rotate(270deg);
+}
+.watch[start-seconds="45"] .watch-minutes__hand {
+  animation-delay: 15s;
+}
+.watch[start-minutes="45"] .watch-minutes {
+  transform: rotate(276deg);
+}
+.watch[start-minutes="45"][start-hours="0"] .watch-hours {
+  transform: rotate(23deg);
+}
+.watch[start-minutes="45"][start-hours="1"] .watch-hours {
+  transform: rotate(53deg);
+}
+.watch[start-minutes="45"][start-hours="2"] .watch-hours {
+  transform: rotate(83deg);
+}
+.watch[start-minutes="45"][start-hours="3"] .watch-hours {
+  transform: rotate(113deg);
+}
+.watch[start-minutes="45"][start-hours="4"] .watch-hours {
+  transform: rotate(143deg);
+}
+.watch[start-minutes="45"][start-hours="5"] .watch-hours {
+  transform: rotate(173deg);
+}
+.watch[start-minutes="45"][start-hours="6"] .watch-hours {
+  transform: rotate(203deg);
+}
+.watch[start-minutes="45"][start-hours="7"] .watch-hours {
+  transform: rotate(233deg);
+}
+.watch[start-minutes="45"][start-hours="8"] .watch-hours {
+  transform: rotate(263deg);
+}
+.watch[start-minutes="45"][start-hours="9"] .watch-hours {
+  transform: rotate(293deg);
+}
+.watch[start-minutes="45"][start-hours="10"] .watch-hours {
+  transform: rotate(323deg);
+}
+.watch[start-minutes="45"][start-hours="11"] .watch-hours {
+  transform: rotate(353deg);
+}
+.watch[start-minutes="45"][start-hours="12"] .watch-hours {
+  transform: rotate(383deg);
+}
+.watch[start-seconds="46"] .watch-seconds {
+  transform: rotate(276deg);
+}
+.watch[start-seconds="46"] .watch-minutes__hand {
+  animation-delay: 14s;
+}
+.watch[start-minutes="46"] .watch-minutes {
+  transform: rotate(282deg);
+}
+.watch[start-minutes="46"][start-hours="0"] .watch-hours {
+  transform: rotate(23.5deg);
+}
+.watch[start-minutes="46"][start-hours="1"] .watch-hours {
+  transform: rotate(53.5deg);
+}
+.watch[start-minutes="46"][start-hours="2"] .watch-hours {
+  transform: rotate(83.5deg);
+}
+.watch[start-minutes="46"][start-hours="3"] .watch-hours {
+  transform: rotate(113.5deg);
+}
+.watch[start-minutes="46"][start-hours="4"] .watch-hours {
+  transform: rotate(143.5deg);
+}
+.watch[start-minutes="46"][start-hours="5"] .watch-hours {
+  transform: rotate(173.5deg);
+}
+.watch[start-minutes="46"][start-hours="6"] .watch-hours {
+  transform: rotate(203.5deg);
+}
+.watch[start-minutes="46"][start-hours="7"] .watch-hours {
+  transform: rotate(233.5deg);
+}
+.watch[start-minutes="46"][start-hours="8"] .watch-hours {
+  transform: rotate(263.5deg);
+}
+.watch[start-minutes="46"][start-hours="9"] .watch-hours {
+  transform: rotate(293.5deg);
+}
+.watch[start-minutes="46"][start-hours="10"] .watch-hours {
+  transform: rotate(323.5deg);
+}
+.watch[start-minutes="46"][start-hours="11"] .watch-hours {
+  transform: rotate(353.5deg);
+}
+.watch[start-minutes="46"][start-hours="12"] .watch-hours {
+  transform: rotate(383.5deg);
+}
+.watch[start-seconds="47"] .watch-seconds {
+  transform: rotate(282deg);
+}
+.watch[start-seconds="47"] .watch-minutes__hand {
+  animation-delay: 13s;
+}
+.watch[start-minutes="47"] .watch-minutes {
+  transform: rotate(288deg);
+}
+.watch[start-minutes="47"][start-hours="0"] .watch-hours {
+  transform: rotate(24deg);
+}
+.watch[start-minutes="47"][start-hours="1"] .watch-hours {
+  transform: rotate(54deg);
+}
+.watch[start-minutes="47"][start-hours="2"] .watch-hours {
+  transform: rotate(84deg);
+}
+.watch[start-minutes="47"][start-hours="3"] .watch-hours {
+  transform: rotate(114deg);
+}
+.watch[start-minutes="47"][start-hours="4"] .watch-hours {
+  transform: rotate(144deg);
+}
+.watch[start-minutes="47"][start-hours="5"] .watch-hours {
+  transform: rotate(174deg);
+}
+.watch[start-minutes="47"][start-hours="6"] .watch-hours {
+  transform: rotate(204deg);
+}
+.watch[start-minutes="47"][start-hours="7"] .watch-hours {
+  transform: rotate(234deg);
+}
+.watch[start-minutes="47"][start-hours="8"] .watch-hours {
+  transform: rotate(264deg);
+}
+.watch[start-minutes="47"][start-hours="9"] .watch-hours {
+  transform: rotate(294deg);
+}
+.watch[start-minutes="47"][start-hours="10"] .watch-hours {
+  transform: rotate(324deg);
+}
+.watch[start-minutes="47"][start-hours="11"] .watch-hours {
+  transform: rotate(354deg);
+}
+.watch[start-minutes="47"][start-hours="12"] .watch-hours {
+  transform: rotate(384deg);
+}
+.watch[start-seconds="48"] .watch-seconds {
+  transform: rotate(288deg);
+}
+.watch[start-seconds="48"] .watch-minutes__hand {
+  animation-delay: 12s;
+}
+.watch[start-minutes="48"] .watch-minutes {
+  transform: rotate(294deg);
+}
+.watch[start-minutes="48"][start-hours="0"] .watch-hours {
+  transform: rotate(24.5deg);
+}
+.watch[start-minutes="48"][start-hours="1"] .watch-hours {
+  transform: rotate(54.5deg);
+}
+.watch[start-minutes="48"][start-hours="2"] .watch-hours {
+  transform: rotate(84.5deg);
+}
+.watch[start-minutes="48"][start-hours="3"] .watch-hours {
+  transform: rotate(114.5deg);
+}
+.watch[start-minutes="48"][start-hours="4"] .watch-hours {
+  transform: rotate(144.5deg);
+}
+.watch[start-minutes="48"][start-hours="5"] .watch-hours {
+  transform: rotate(174.5deg);
+}
+.watch[start-minutes="48"][start-hours="6"] .watch-hours {
+  transform: rotate(204.5deg);
+}
+.watch[start-minutes="48"][start-hours="7"] .watch-hours {
+  transform: rotate(234.5deg);
+}
+.watch[start-minutes="48"][start-hours="8"] .watch-hours {
+  transform: rotate(264.5deg);
+}
+.watch[start-minutes="48"][start-hours="9"] .watch-hours {
+  transform: rotate(294.5deg);
+}
+.watch[start-minutes="48"][start-hours="10"] .watch-hours {
+  transform: rotate(324.5deg);
+}
+.watch[start-minutes="48"][start-hours="11"] .watch-hours {
+  transform: rotate(354.5deg);
+}
+.watch[start-minutes="48"][start-hours="12"] .watch-hours {
+  transform: rotate(384.5deg);
+}
+.watch[start-seconds="49"] .watch-seconds {
+  transform: rotate(294deg);
+}
+.watch[start-seconds="49"] .watch-minutes__hand {
+  animation-delay: 11s;
+}
+.watch[start-minutes="49"] .watch-minutes {
+  transform: rotate(300deg);
+}
+.watch[start-minutes="49"][start-hours="0"] .watch-hours {
+  transform: rotate(25deg);
+}
+.watch[start-minutes="49"][start-hours="1"] .watch-hours {
+  transform: rotate(55deg);
+}
+.watch[start-minutes="49"][start-hours="2"] .watch-hours {
+  transform: rotate(85deg);
+}
+.watch[start-minutes="49"][start-hours="3"] .watch-hours {
+  transform: rotate(115deg);
+}
+.watch[start-minutes="49"][start-hours="4"] .watch-hours {
+  transform: rotate(145deg);
+}
+.watch[start-minutes="49"][start-hours="5"] .watch-hours {
+  transform: rotate(175deg);
+}
+.watch[start-minutes="49"][start-hours="6"] .watch-hours {
+  transform: rotate(205deg);
+}
+.watch[start-minutes="49"][start-hours="7"] .watch-hours {
+  transform: rotate(235deg);
+}
+.watch[start-minutes="49"][start-hours="8"] .watch-hours {
+  transform: rotate(265deg);
+}
+.watch[start-minutes="49"][start-hours="9"] .watch-hours {
+  transform: rotate(295deg);
+}
+.watch[start-minutes="49"][start-hours="10"] .watch-hours {
+  transform: rotate(325deg);
+}
+.watch[start-minutes="49"][start-hours="11"] .watch-hours {
+  transform: rotate(355deg);
+}
+.watch[start-minutes="49"][start-hours="12"] .watch-hours {
+  transform: rotate(385deg);
+}
+.watch[start-seconds="50"] .watch-seconds {
+  transform: rotate(300deg);
+}
+.watch[start-seconds="50"] .watch-minutes__hand {
+  animation-delay: 10s;
+}
+.watch[start-minutes="50"] .watch-minutes {
+  transform: rotate(306deg);
+}
+.watch[start-minutes="50"][start-hours="0"] .watch-hours {
+  transform: rotate(25.5deg);
+}
+.watch[start-minutes="50"][start-hours="1"] .watch-hours {
+  transform: rotate(55.5deg);
+}
+.watch[start-minutes="50"][start-hours="2"] .watch-hours {
+  transform: rotate(85.5deg);
+}
+.watch[start-minutes="50"][start-hours="3"] .watch-hours {
+  transform: rotate(115.5deg);
+}
+.watch[start-minutes="50"][start-hours="4"] .watch-hours {
+  transform: rotate(145.5deg);
+}
+.watch[start-minutes="50"][start-hours="5"] .watch-hours {
+  transform: rotate(175.5deg);
+}
+.watch[start-minutes="50"][start-hours="6"] .watch-hours {
+  transform: rotate(205.5deg);
+}
+.watch[start-minutes="50"][start-hours="7"] .watch-hours {
+  transform: rotate(235.5deg);
+}
+.watch[start-minutes="50"][start-hours="8"] .watch-hours {
+  transform: rotate(265.5deg);
+}
+.watch[start-minutes="50"][start-hours="9"] .watch-hours {
+  transform: rotate(295.5deg);
+}
+.watch[start-minutes="50"][start-hours="10"] .watch-hours {
+  transform: rotate(325.5deg);
+}
+.watch[start-minutes="50"][start-hours="11"] .watch-hours {
+  transform: rotate(355.5deg);
+}
+.watch[start-minutes="50"][start-hours="12"] .watch-hours {
+  transform: rotate(385.5deg);
+}
+.watch[start-seconds="51"] .watch-seconds {
+  transform: rotate(306deg);
+}
+.watch[start-seconds="51"] .watch-minutes__hand {
+  animation-delay: 9s;
+}
+.watch[start-minutes="51"] .watch-minutes {
+  transform: rotate(312deg);
+}
+.watch[start-minutes="51"][start-hours="0"] .watch-hours {
+  transform: rotate(26deg);
+}
+.watch[start-minutes="51"][start-hours="1"] .watch-hours {
+  transform: rotate(56deg);
+}
+.watch[start-minutes="51"][start-hours="2"] .watch-hours {
+  transform: rotate(86deg);
+}
+.watch[start-minutes="51"][start-hours="3"] .watch-hours {
+  transform: rotate(116deg);
+}
+.watch[start-minutes="51"][start-hours="4"] .watch-hours {
+  transform: rotate(146deg);
+}
+.watch[start-minutes="51"][start-hours="5"] .watch-hours {
+  transform: rotate(176deg);
+}
+.watch[start-minutes="51"][start-hours="6"] .watch-hours {
+  transform: rotate(206deg);
+}
+.watch[start-minutes="51"][start-hours="7"] .watch-hours {
+  transform: rotate(236deg);
+}
+.watch[start-minutes="51"][start-hours="8"] .watch-hours {
+  transform: rotate(266deg);
+}
+.watch[start-minutes="51"][start-hours="9"] .watch-hours {
+  transform: rotate(296deg);
+}
+.watch[start-minutes="51"][start-hours="10"] .watch-hours {
+  transform: rotate(326deg);
+}
+.watch[start-minutes="51"][start-hours="11"] .watch-hours {
+  transform: rotate(356deg);
+}
+.watch[start-minutes="51"][start-hours="12"] .watch-hours {
+  transform: rotate(386deg);
+}
+.watch[start-seconds="52"] .watch-seconds {
+  transform: rotate(312deg);
+}
+.watch[start-seconds="52"] .watch-minutes__hand {
+  animation-delay: 8s;
+}
+.watch[start-minutes="52"] .watch-minutes {
+  transform: rotate(318deg);
+}
+.watch[start-minutes="52"][start-hours="0"] .watch-hours {
+  transform: rotate(26.5deg);
+}
+.watch[start-minutes="52"][start-hours="1"] .watch-hours {
+  transform: rotate(56.5deg);
+}
+.watch[start-minutes="52"][start-hours="2"] .watch-hours {
+  transform: rotate(86.5deg);
+}
+.watch[start-minutes="52"][start-hours="3"] .watch-hours {
+  transform: rotate(116.5deg);
+}
+.watch[start-minutes="52"][start-hours="4"] .watch-hours {
+  transform: rotate(146.5deg);
+}
+.watch[start-minutes="52"][start-hours="5"] .watch-hours {
+  transform: rotate(176.5deg);
+}
+.watch[start-minutes="52"][start-hours="6"] .watch-hours {
+  transform: rotate(206.5deg);
+}
+.watch[start-minutes="52"][start-hours="7"] .watch-hours {
+  transform: rotate(236.5deg);
+}
+.watch[start-minutes="52"][start-hours="8"] .watch-hours {
+  transform: rotate(266.5deg);
+}
+.watch[start-minutes="52"][start-hours="9"] .watch-hours {
+  transform: rotate(296.5deg);
+}
+.watch[start-minutes="52"][start-hours="10"] .watch-hours {
+  transform: rotate(326.5deg);
+}
+.watch[start-minutes="52"][start-hours="11"] .watch-hours {
+  transform: rotate(356.5deg);
+}
+.watch[start-minutes="52"][start-hours="12"] .watch-hours {
+  transform: rotate(386.5deg);
+}
+.watch[start-seconds="53"] .watch-seconds {
+  transform: rotate(318deg);
+}
+.watch[start-seconds="53"] .watch-minutes__hand {
+  animation-delay: 7s;
+}
+.watch[start-minutes="53"] .watch-minutes {
+  transform: rotate(324deg);
+}
+.watch[start-minutes="53"][start-hours="0"] .watch-hours {
+  transform: rotate(27deg);
+}
+.watch[start-minutes="53"][start-hours="1"] .watch-hours {
+  transform: rotate(57deg);
+}
+.watch[start-minutes="53"][start-hours="2"] .watch-hours {
+  transform: rotate(87deg);
+}
+.watch[start-minutes="53"][start-hours="3"] .watch-hours {
+  transform: rotate(117deg);
+}
+.watch[start-minutes="53"][start-hours="4"] .watch-hours {
+  transform: rotate(147deg);
+}
+.watch[start-minutes="53"][start-hours="5"] .watch-hours {
+  transform: rotate(177deg);
+}
+.watch[start-minutes="53"][start-hours="6"] .watch-hours {
+  transform: rotate(207deg);
+}
+.watch[start-minutes="53"][start-hours="7"] .watch-hours {
+  transform: rotate(237deg);
+}
+.watch[start-minutes="53"][start-hours="8"] .watch-hours {
+  transform: rotate(267deg);
+}
+.watch[start-minutes="53"][start-hours="9"] .watch-hours {
+  transform: rotate(297deg);
+}
+.watch[start-minutes="53"][start-hours="10"] .watch-hours {
+  transform: rotate(327deg);
+}
+.watch[start-minutes="53"][start-hours="11"] .watch-hours {
+  transform: rotate(357deg);
+}
+.watch[start-minutes="53"][start-hours="12"] .watch-hours {
+  transform: rotate(387deg);
+}
+.watch[start-seconds="54"] .watch-seconds {
+  transform: rotate(324deg);
+}
+.watch[start-seconds="54"] .watch-minutes__hand {
+  animation-delay: 6s;
+}
+.watch[start-minutes="54"] .watch-minutes {
+  transform: rotate(330deg);
+}
+.watch[start-minutes="54"][start-hours="0"] .watch-hours {
+  transform: rotate(27.5deg);
+}
+.watch[start-minutes="54"][start-hours="1"] .watch-hours {
+  transform: rotate(57.5deg);
+}
+.watch[start-minutes="54"][start-hours="2"] .watch-hours {
+  transform: rotate(87.5deg);
+}
+.watch[start-minutes="54"][start-hours="3"] .watch-hours {
+  transform: rotate(117.5deg);
+}
+.watch[start-minutes="54"][start-hours="4"] .watch-hours {
+  transform: rotate(147.5deg);
+}
+.watch[start-minutes="54"][start-hours="5"] .watch-hours {
+  transform: rotate(177.5deg);
+}
+.watch[start-minutes="54"][start-hours="6"] .watch-hours {
+  transform: rotate(207.5deg);
+}
+.watch[start-minutes="54"][start-hours="7"] .watch-hours {
+  transform: rotate(237.5deg);
+}
+.watch[start-minutes="54"][start-hours="8"] .watch-hours {
+  transform: rotate(267.5deg);
+}
+.watch[start-minutes="54"][start-hours="9"] .watch-hours {
+  transform: rotate(297.5deg);
+}
+.watch[start-minutes="54"][start-hours="10"] .watch-hours {
+  transform: rotate(327.5deg);
+}
+.watch[start-minutes="54"][start-hours="11"] .watch-hours {
+  transform: rotate(357.5deg);
+}
+.watch[start-minutes="54"][start-hours="12"] .watch-hours {
+  transform: rotate(387.5deg);
+}
+.watch[start-seconds="55"] .watch-seconds {
+  transform: rotate(330deg);
+}
+.watch[start-seconds="55"] .watch-minutes__hand {
+  animation-delay: 5s;
+}
+.watch[start-minutes="55"] .watch-minutes {
+  transform: rotate(336deg);
+}
+.watch[start-minutes="55"][start-hours="0"] .watch-hours {
+  transform: rotate(28deg);
+}
+.watch[start-minutes="55"][start-hours="1"] .watch-hours {
+  transform: rotate(58deg);
+}
+.watch[start-minutes="55"][start-hours="2"] .watch-hours {
+  transform: rotate(88deg);
+}
+.watch[start-minutes="55"][start-hours="3"] .watch-hours {
+  transform: rotate(118deg);
+}
+.watch[start-minutes="55"][start-hours="4"] .watch-hours {
+  transform: rotate(148deg);
+}
+.watch[start-minutes="55"][start-hours="5"] .watch-hours {
+  transform: rotate(178deg);
+}
+.watch[start-minutes="55"][start-hours="6"] .watch-hours {
+  transform: rotate(208deg);
+}
+.watch[start-minutes="55"][start-hours="7"] .watch-hours {
+  transform: rotate(238deg);
+}
+.watch[start-minutes="55"][start-hours="8"] .watch-hours {
+  transform: rotate(268deg);
+}
+.watch[start-minutes="55"][start-hours="9"] .watch-hours {
+  transform: rotate(298deg);
+}
+.watch[start-minutes="55"][start-hours="10"] .watch-hours {
+  transform: rotate(328deg);
+}
+.watch[start-minutes="55"][start-hours="11"] .watch-hours {
+  transform: rotate(358deg);
+}
+.watch[start-minutes="55"][start-hours="12"] .watch-hours {
+  transform: rotate(388deg);
+}
+.watch[start-seconds="56"] .watch-seconds {
+  transform: rotate(336deg);
+}
+.watch[start-seconds="56"] .watch-minutes__hand {
+  animation-delay: 4s;
+}
+.watch[start-minutes="56"] .watch-minutes {
+  transform: rotate(342deg);
+}
+.watch[start-minutes="56"][start-hours="0"] .watch-hours {
+  transform: rotate(28.5deg);
+}
+.watch[start-minutes="56"][start-hours="1"] .watch-hours {
+  transform: rotate(58.5deg);
+}
+.watch[start-minutes="56"][start-hours="2"] .watch-hours {
+  transform: rotate(88.5deg);
+}
+.watch[start-minutes="56"][start-hours="3"] .watch-hours {
+  transform: rotate(118.5deg);
+}
+.watch[start-minutes="56"][start-hours="4"] .watch-hours {
+  transform: rotate(148.5deg);
+}
+.watch[start-minutes="56"][start-hours="5"] .watch-hours {
+  transform: rotate(178.5deg);
+}
+.watch[start-minutes="56"][start-hours="6"] .watch-hours {
+  transform: rotate(208.5deg);
+}
+.watch[start-minutes="56"][start-hours="7"] .watch-hours {
+  transform: rotate(238.5deg);
+}
+.watch[start-minutes="56"][start-hours="8"] .watch-hours {
+  transform: rotate(268.5deg);
+}
+.watch[start-minutes="56"][start-hours="9"] .watch-hours {
+  transform: rotate(298.5deg);
+}
+.watch[start-minutes="56"][start-hours="10"] .watch-hours {
+  transform: rotate(328.5deg);
+}
+.watch[start-minutes="56"][start-hours="11"] .watch-hours {
+  transform: rotate(358.5deg);
+}
+.watch[start-minutes="56"][start-hours="12"] .watch-hours {
+  transform: rotate(388.5deg);
+}
+.watch[start-seconds="57"] .watch-seconds {
+  transform: rotate(342deg);
+}
+.watch[start-seconds="57"] .watch-minutes__hand {
+  animation-delay: 3s;
+}
+.watch[start-minutes="57"] .watch-minutes {
+  transform: rotate(348deg);
+}
+.watch[start-minutes="57"][start-hours="0"] .watch-hours {
+  transform: rotate(29deg);
+}
+.watch[start-minutes="57"][start-hours="1"] .watch-hours {
+  transform: rotate(59deg);
+}
+.watch[start-minutes="57"][start-hours="2"] .watch-hours {
+  transform: rotate(89deg);
+}
+.watch[start-minutes="57"][start-hours="3"] .watch-hours {
+  transform: rotate(119deg);
+}
+.watch[start-minutes="57"][start-hours="4"] .watch-hours {
+  transform: rotate(149deg);
+}
+.watch[start-minutes="57"][start-hours="5"] .watch-hours {
+  transform: rotate(179deg);
+}
+.watch[start-minutes="57"][start-hours="6"] .watch-hours {
+  transform: rotate(209deg);
+}
+.watch[start-minutes="57"][start-hours="7"] .watch-hours {
+  transform: rotate(239deg);
+}
+.watch[start-minutes="57"][start-hours="8"] .watch-hours {
+  transform: rotate(269deg);
+}
+.watch[start-minutes="57"][start-hours="9"] .watch-hours {
+  transform: rotate(299deg);
+}
+.watch[start-minutes="57"][start-hours="10"] .watch-hours {
+  transform: rotate(329deg);
+}
+.watch[start-minutes="57"][start-hours="11"] .watch-hours {
+  transform: rotate(359deg);
+}
+.watch[start-minutes="57"][start-hours="12"] .watch-hours {
+  transform: rotate(389deg);
+}
+.watch[start-seconds="58"] .watch-seconds {
+  transform: rotate(348deg);
+}
+.watch[start-seconds="58"] .watch-minutes__hand {
+  animation-delay: 2s;
+}
+.watch[start-minutes="58"] .watch-minutes {
+  transform: rotate(354deg);
+}
+.watch[start-minutes="58"][start-hours="0"] .watch-hours {
+  transform: rotate(29.5deg);
+}
+.watch[start-minutes="58"][start-hours="1"] .watch-hours {
+  transform: rotate(59.5deg);
+}
+.watch[start-minutes="58"][start-hours="2"] .watch-hours {
+  transform: rotate(89.5deg);
+}
+.watch[start-minutes="58"][start-hours="3"] .watch-hours {
+  transform: rotate(119.5deg);
+}
+.watch[start-minutes="58"][start-hours="4"] .watch-hours {
+  transform: rotate(149.5deg);
+}
+.watch[start-minutes="58"][start-hours="5"] .watch-hours {
+  transform: rotate(179.5deg);
+}
+.watch[start-minutes="58"][start-hours="6"] .watch-hours {
+  transform: rotate(209.5deg);
+}
+.watch[start-minutes="58"][start-hours="7"] .watch-hours {
+  transform: rotate(239.5deg);
+}
+.watch[start-minutes="58"][start-hours="8"] .watch-hours {
+  transform: rotate(269.5deg);
+}
+.watch[start-minutes="58"][start-hours="9"] .watch-hours {
+  transform: rotate(299.5deg);
+}
+.watch[start-minutes="58"][start-hours="10"] .watch-hours {
+  transform: rotate(329.5deg);
+}
+.watch[start-minutes="58"][start-hours="11"] .watch-hours {
+  transform: rotate(359.5deg);
+}
+.watch[start-minutes="58"][start-hours="12"] .watch-hours {
+  transform: rotate(389.5deg);
+}
+.watch[start-seconds="59"] .watch-seconds {
+  transform: rotate(354deg);
+}
+.watch[start-seconds="59"] .watch-minutes__hand {
+  animation-delay: 1s;
+}
+.watch[start-minutes="59"] .watch-minutes {
+  transform: rotate(360deg);
+}
+.watch[start-minutes="59"][start-hours="0"] .watch-hours {
+  transform: rotate(30deg);
+}
+.watch[start-minutes="59"][start-hours="1"] .watch-hours {
+  transform: rotate(60deg);
+}
+.watch[start-minutes="59"][start-hours="2"] .watch-hours {
+  transform: rotate(90deg);
+}
+.watch[start-minutes="59"][start-hours="3"] .watch-hours {
+  transform: rotate(120deg);
+}
+.watch[start-minutes="59"][start-hours="4"] .watch-hours {
+  transform: rotate(150deg);
+}
+.watch[start-minutes="59"][start-hours="5"] .watch-hours {
+  transform: rotate(180deg);
+}
+.watch[start-minutes="59"][start-hours="6"] .watch-hours {
+  transform: rotate(210deg);
+}
+.watch[start-minutes="59"][start-hours="7"] .watch-hours {
+  transform: rotate(240deg);
+}
+.watch[start-minutes="59"][start-hours="8"] .watch-hours {
+  transform: rotate(270deg);
+}
+.watch[start-minutes="59"][start-hours="9"] .watch-hours {
+  transform: rotate(300deg);
+}
+.watch[start-minutes="59"][start-hours="10"] .watch-hours {
+  transform: rotate(330deg);
+}
+.watch[start-minutes="59"][start-hours="11"] .watch-hours {
+  transform: rotate(360deg);
+}
+.watch[start-minutes="59"][start-hours="12"] .watch-hours {
+  transform: rotate(390deg);
+}
+.watch-seconds,
+.watch-minutes,
+.watch-hours {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.watch-seconds__hand,
+.watch-minutes__hand,
+.watch-hours__hand {
+  position: absolute;
+  display: block;
+  height: 80px;
+  width: 8px;
+  left: 50%;
+  top: 50%;
+  margin-left: -4px;
+  transform-origin: bottom center;
+  margin-top: -80px;
+  background-color: #000;
+  border-radius: 5px 5px 5px 5px;
+}
+.watch-seconds__hand:before,
+.watch-minutes__hand:before,
+.watch-hours__hand:before {
+  background-color: #000;
+  content: '';
+  position: absolute;
+  bottom: -8px;
+  left: 50%;
+  height: 16px;
+  width: 16px;
+  margin-left: -8px;
+  border-radius: 100%;
+}
+.watch-seconds {
+  z-index: 3;
+}
+.watch-seconds__hand {
+  background-color: #f00;
+  width: 2px;
+  margin-left: -1px;
+/* A full rotation will be 1 minute */
+  animation: rotate 60s linear infinite;
+}
+.watch-seconds__hand:before {
+  background-color: #f00;
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 50%;
+  height: 10px;
+  width: 10px;
+  margin-left: -5px;
+  border-radius: 100%;
+}
+.watch-minutes {
+  z-index: 2;
+}
+.watch-minutes__hand {
+/* A full rotation will be 60 minutes */
+  animation: rotate 3600s steps(60) infinite;
+}
+.watch-hours {
+  z-index: 1;
+}
+.watch-hours__hand {
+  height: 60px;
+  margin-top: -60px;
+/* A full rotation is 720 minutes */
+  animation: rotate 43200s infinite linear;
+}
+p {
+  background-color: #fafafa;
+  color: #808080;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  border: 4px solid #808080;
+}
+@-moz-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-webkit-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+
+
+
+body { font-size:62.5%; margin:1em; background:#232425 }
+ul { list-style:none; margin:0; padding:0 }
+#watch { font-size:1em; position:relative }
+#watch .frame-face {
+position:relative;
+width:30em;
+height:30em;
+margin:2em auto;
+border-radius:15em;
+background:-webkit-linear-gradient(top, #f9f9f9,#666);
+background:-moz-linear-gradient(top, #f9f9f9,#666);
+background:linear-gradient(to bottom, #f9f9f9,#666);
+box-shadow:rgba(0,0,0,.8) .5em .5em 4em;
+}
+#watch .frame-face:before {
+content:'';
+width:29.4em;
+height:29.4em;
+border-radius:14.7em;
+position:absolute;
+top:.3em; left:.3em;
+background:
+-webkit-linear-gradient(135deg, rgba(246,248,249,0) 0%,rgba(229,235,238,1) 50%,rgba(205,212,217,1) 51%,rgba(245,247,249,0) 100%),
+-webkit-radial-gradient(center, ellipse cover, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 65%,rgba(205,212,217,1) 66%,rgba(245,247,249,1) 100%);
+background:
+-moz-linear-gradient(135deg, rgba(246,248,249,0) 0%,rgba(229,235,238,1) 50%,rgba(205,212,217,1) 51%,rgba(245,247,249,0) 100%),
+-moz-radial-gradient(center, ellipse cover, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 65%,rgba(205,212,217,1) 66%,rgba(245,247,249,1) 100%);
+background:
+linear-gradient(135deg, rgba(246,248,249,0) 0%,rgba(229,235,238,1) 50%,rgba(205,212,217,1) 51%,rgba(245,247,249,0) 100%),
+radial-gradient(ellipse at center, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 65%,rgba(205,212,217,1) 66%,rgba(245,247,249,1) 100%);
+}
+#watch .frame-face:after {
+content:'';
+width:28em;
+height:28em;
+border-radius:14.2em;
+position:absolute;
+top:.9em; left:.9em;
+box-shadow:inset rgba(0,0,0,.2) .2em .2em 1em;
+border:.1em solid rgba(0,0,0,.2);
+background:-webkit-linear-gradient(top, #fff, #ccc);
+background:-moz-linear-gradient(top, #fff, #ccc);
+background:linear-gradient(to bottom, #fff, #ccc);
+}
+#watch .minute-marks li {
+display:block;
+width:.2em;
+height:.6em;
+background:#929394;
+position:absolute;
+top:50%; left:50%;
+margin:-.4em 0 0 -.1em;
+}
+#watch .minute-marks li:first-child {transform:rotate(6deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(2) {transform:rotate(12deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(3) {transform:rotate(18deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(4) {transform:rotate(24deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(5) {transform:rotate(36deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(6) {transform:rotate(42deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(7) {transform:rotate(48deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(8) {transform:rotate(54deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(9) {transform:rotate(66deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(10) {transform:rotate(72deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(11) {transform:rotate(78deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(12) {transform:rotate(84deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(13) {transform:rotate(96deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(14) {transform:rotate(102deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(15) {transform:rotate(108deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(16) {transform:rotate(114deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(17) {transform:rotate(126deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(18) {transform:rotate(132deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(19) {transform:rotate(138deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(20) {transform:rotate(144deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(21) {transform:rotate(156deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(22) {transform:rotate(162deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(23) {transform:rotate(168deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(24) {transform:rotate(174deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(25) {transform:rotate(186deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(26) {transform:rotate(192deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(27) {transform:rotate(198deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(28) {transform:rotate(204deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(29) {transform:rotate(216deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(30) {transform:rotate(222deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(31) {transform:rotate(228deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(32) {transform:rotate(234deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(33) {transform:rotate(246deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(34) {transform:rotate(252deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(35) {transform:rotate(258deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(36) {transform:rotate(264deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(37) {transform:rotate(276deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(38) {transform:rotate(282deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(39) {transform:rotate(288deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(40) {transform:rotate(294deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(41) {transform:rotate(306deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(42) {transform:rotate(312deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(43) {transform:rotate(318deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(44) {transform:rotate(324deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(45) {transform:rotate(336deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(46) {transform:rotate(342deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(47) {transform:rotate(348deg) translateY(-12.7em)}
+#watch .minute-marks li:nth-child(48) {transform:rotate(354deg) translateY(-12.7em)}
+#watch .digits {
+width:30em;
+height:30em;
+border-radius:15em;
+position:absolute;
+top:0; left:50%;
+margin-left:-15em;
+}
+#watch .digits li {
+font-size:1.6em;
+display:block;
+width:1.6em;
+height:1.6em;
+position:absolute;
+top:50%; left:50%;
+line-height:1.6em;
+text-align:center;
+margin:-.8em 0 0 -.8em;
+font-weight:bold;
+}
+#watch .digits li:nth-child(1) { transform:translate(3.9em, -6.9em) }
+#watch .digits li:nth-child(2) { transform:translate(6.9em, -4em) }
+#watch .digits li:nth-child(3) { transform:translate(8em, 0) }
+#watch .digits li:nth-child(4) { transform:translate(6.8em, 4em) }
+#watch .digits li:nth-child(5) { transform:translate(3.9em, 6.9em) }
+#watch .digits li:nth-child(6) { transform:translate(0, 8em) }
+#watch .digits li:nth-child(7) { transform:translate(-3.9em, 6.9em) }
+#watch .digits li:nth-child(8) { transform:translate(-6.8em, 4em) }
+#watch .digits li:nth-child(9) { transform:translate(-8em, 0) }
+#watch .digits li:nth-child(10) { transform:translate(-6.9em, -4em) }
+#watch .digits li:nth-child(11) { transform:translate(-3.9em, -6.9em) }
+#watch .digits li:nth-child(12) { transform:translate(0, -8em) }
+#watch .digits:before {
+content:'';
+width:1.6em;
+height:1.6em;
+border-radius:.8em;
+position:absolute;
+top:50%; left:50%;
+margin:-.8em 0 0 -.8em;
+background:#121314;
+}
+#watch .digits:after {
+content:'';
+width:4em;
+height:4em;
+border-radius:2.2em;
+position:absolute;
+top:50%; left:50%;
+margin:-2.1em 0 0 -2.1em;
+border:.1em solid #c6c6c6;
+background:-webkit-radial-gradient(center, ellipse cover, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+background:-moz-radial-gradient(center, ellipse cover, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+background:radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
+}
+@keyframes hours { to {transform:rotate(335deg)} }
+#watch .hours-hand {
+width:.8em;
+height:7em;
+border-radius:0 0 .9em .9em;
+background:#232425;
+position:absolute;
+bottom:50%; left:50%;
+margin:0 0 -.8em -.4em;
+box-shadow:#232425 0 0 2px;
+transform-origin:0.4em 6.2em;
+transform:rotate(-25deg);
+animation:hours 43200s linear 0s infinite;
+}
+#watch .hours-hand:before {
+content:'';
+background:inherit;
+width:1.8em;
+height:.8em;
+border-radius:0 0 .8em .8em;
+box-shadow:#232425 0 0 1px;
+position:absolute;
+top:-.7em; left:-.5em;
+}
+#watch .hours-hand:after {
+content:'';
+width:0; height:0;
+border:.9em solid #232425;
+border-width:0 .9em 2.4em .9em;
+border-left-color:transparent;
+border-right-color:transparent;
+position:absolute;
+top:-3.1em; left:-.5em;
+}
+@keyframes minutes { to {transform:rotate(422deg)} }
+#watch .minutes-hand {
+width:.8em;
+height:12.5em;
+border-radius:.5em;
+background:#343536;
+position:absolute;
+bottom:50%; left:50%;
+margin:0 0 -1.5em -.4em;
+box-shadow:#343536 0 0 2px;
+transform-origin:0.4em 11em;
+transform:rotate(62deg);
+animation:minutes 3600s linear 0s infinite;
+}
+@keyframes seconds { to {transform:rotate(480deg)} }
+#watch .seconds-hand {
+width:.2em;
+height:14em;
+border-radius:.1em .1em 0 0/10em 10em 0 0;
+background:#c00;
+position:absolute;
+bottom:50%; left:50%;
+margin:0 0 -2em -.1em;
+box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+transform-origin:0.1em 12em;
+transform:rotate(120deg);
+animation:seconds 60s steps(60, end) 0s infinite;
+}
+#watch .seconds-hand:after {
+content:'';
+width:1.4em;
+height:1.4em;
+border-radius:.7em;
+background:inherit;
+position:absolute;
+left:-.65em; bottom:1.35em;
+}
+#watch .seconds-hand:before {
+content:'';
+width:.8em;
+height:3em;
+border-radius:.2em .2em .4em .4em/.2em .2em 2em 2em;
+box-shadow:rgba(0,0,0,.8) 0 0 .2em;
+background:inherit;
+position:absolute;
+left:-.35em; bottom:-3em;
+}
+#watch .digital-wrap {
+width:9em;
+height:3em;
+border:.1em solid #222;
+border-radius:.2em;
+position:absolute;
+top:50%; left:50%;
+margin:3em 0 0 -4.5em;
+overflow:hidden;
+background:#4c4c4c;
+background:-webkit-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
+background:-moz-linear-gradient(top, #4c4c4c 0%, #0f0f0f 100%);
+background:-ms-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
+background:-o-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
+background:linear-gradient(to bottom, #4c4c4c 0%,#0f0f0f 100%);
+}
+#watch .digital-wrap ul {
+float:left;
+width:2.85em;
+height:3em;
+border-right:.1em solid #000;
+color:#ddd;
+font-family:Consolas, monaco, monospace;
+}
+#watch .digital-wrap ul:last-child { border:none }
+#watch .digital-wrap li {
+font-size:1.5em;
+line-height:2;
+letter-spacing:2px;
+text-align:center;
+position:relative;
+left:1px;
+}
+#watch .digit-minutes li {
+animation:dsm 3600s steps(60, end) 0s infinite;
+}
+#watch .digit-seconds li {
+animation:dsm 60s steps(60, end) 0s infinite;
+}
+@keyframes dsm {
+to { transform:translateY(-120em) }
+}

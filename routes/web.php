@@ -49,6 +49,10 @@ Route::get('/calculator', function () {
     return view('webDesign.webProjects.calculator.calculatorApp');
 });
 
+Route::get('/weather', function () {
+    return view('webDesign.webProjects.weather.weatherApp');
+});
+
 //--------GRAPHIC PROJECT ROUTES--------//
 
 // Route::get('/contact', 'ContactController@show');

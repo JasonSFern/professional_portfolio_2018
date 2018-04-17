@@ -2,13 +2,16 @@
 
 @section('content')
 
-<body style="background-color:black; height:100%;">
+<body class="splash-background">
 
-<a href="/contact" class="navItem navItemAbout2">
-	<span class="text">
-		<h2>ABOUT</h2>
-	</span>
-</a>
+	<a href="/" class="navItem navItemback-r">
+		<span class="text navlink">
+			<h2>H</h2>
+			<h2>O</h2>
+			<h2>M</h2>
+			<h2>E</h2>
+		</span>
+	</a>
 
 <div class="about-header">
   <h4>Hello</h4>

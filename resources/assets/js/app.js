@@ -315,7 +315,7 @@ var TxtType = function(el, toRotate, period) {
 //   var ay = ($(window).innerHeight()/2- e.pageY)/30;
 //   card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
 // });
-
+//
 
 
 //------------------image slider
