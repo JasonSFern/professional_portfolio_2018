@@ -4,7 +4,7 @@
 
 <body class="splash-background">
 
-<a href="/" class="navItem navItemback-l">
+<a href="/" class="navItem navItemback-l desktop">
 	<span class="text navlink">
 		<h2>E</h2>
 		<h2>M</h2>
@@ -19,7 +19,7 @@
 
 <div class="row contact">
 
-	<div class="col">
+	<div class="col desktop">
 		<div class="question-box-l">
 		<!-- <h4>How much do you charge for a website?</h4> -->
 		</br>
@@ -67,7 +67,7 @@
 		 </form>
 	</div>
 
-	<div class="col question">
+	<div class="col question desktop">
 		<div class="question-box-r">
 			<br>
 		<!-- <h4>How much do you charge for a website?</h4> -->

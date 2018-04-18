@@ -1,5 +1,45 @@
 @extends('layout')
 
+@section('content2')
+
+<!-- size:750px width -->
+
+<!-- <div class="mobile" style="background-color:black;">
+
+
+
+  <div class="logo-container-mobile">
+
+    <h4>Hi, my name is</h4>
+    <h4>Jason</h4>
+    <br>
+    <br>
+    <div class="card">
+      <div class="card3">
+        <div class="card2"></div>
+      </div>
+    </div>
+    <br>
+    <br>
+    <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
+      <span class="textswap" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
+    </div>
+    <br>
+
+    <div class="mobile-links">
+      <a href="/graphicProjects" class="navItem-mobile"><h4>GRAPHICS</h4></a>
+        <div class="divider"></div>
+      <a href="/webProjects" class="navItem-mobile"><h4>WEB</h4></a>
+        <div class="divider"></div>
+      <a href="/about" class="navItem-mobile"><h4>ABOUT</h4></a>
+        <div class="divider"></div>
+      <a href="/contact" class="navItem-mobile"><h4>CONTACT</h4></a>
+    </div>
+
+  </div> -->
+
+  @endsection
+
 @section('content')
 
         <title>Welcome</title>
@@ -7,24 +47,24 @@
 
 <body class="splash-background" id="bkg">
 
-<div class="logo-container">
+  <div class="logo-container">
 
-  <h4>Hi, my name is</h4>
-  <h4>Jason</h4>
-<br>
-  <br>
-  <div class="card">
-    <div class="card3">
-      <div class="card2"></div>
+    <h4>Hi, my name is</h4>
+    <h4>Jason</h4>
+    <br>
+    <br>
+    <div class="card">
+      <div class="card3">
+        <div class="card2"></div>
+      </div>
     </div>
-  </div>
-  <br>
-  <br>
-  <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
-    <span class="textswap" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
-  </div>
+    <br>
+    <br>
+    <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
+      <span class="textswap" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
+    </div>
 
-</div>
+  </div>
 
 <!-- <a href="/graphicd" class="navItem navItemNewsBlog">
   <span class="text">
@@ -40,7 +80,7 @@
 </a> -->
 
 
-    <a href="/weather" class="navItem navItemNewsBlog">
+    <a href="/graphicProjects" class="navItem navItemNewsBlog">
       <span class="text navlink">
         <h2>G</h2>
         <h2>R</h2>
@@ -54,7 +94,7 @@
       </span>
     </a>
 
-    <!-- <a href="/contact" class="navItem navItemContact">
+    <a href="/contact" class="navItem navItemContact">
       <span class="text navlink">
         <h2>T</h2>
         <h2>C</h2>
@@ -64,7 +104,7 @@
         <h2>O</h2>
         <h2>C</h2>
       </span>
-    </a> -->
+    </a>
 
     <a href="/webProjects" class="navItem navItemProjects">
       <span class="text navlink">
@@ -75,7 +115,7 @@
     </a>
 
 
-    <!-- <a href="/about" class="navItem navItemAbout">
+    <a href="/about" class="navItem navItemAbout">
       <span class="text navlink">
         <h2>A</h2>
         <h2>B</h2>
@@ -83,6 +123,6 @@
         <h2>U</h2>
         <h2>T</h2>
       </span>
-    </a> -->
+    </a>
 
 @endsection

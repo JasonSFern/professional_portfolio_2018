@@ -253,7 +253,7 @@ var TxtType = function(el, toRotate, period) {
 
 
 //-------------------inject code into html doc
-		        this.el.innerHTML = '<h2 class="typewrite" style="margin:0px 0px;">I am a<h2 style="margin:0px 0px;">** ' + this.txt + '**</h2><h2>based in Calgary, AB</h2>';
+		        this.el.innerHTML = '<h2 class="typewrite" style="margin:0px 0px;">I am a<h2 style="margin:0px 0px;">$( ' + this.txt + ' );</h2><h2>based in Calgary, AB</h2>';
 
 
 		        var that = this;
@@ -308,14 +308,14 @@ var TxtType = function(el, toRotate, period) {
 
 //-----------------------3D logo
 
-// var card = $(".card");
-//
-// $(document).on("mousemove",function(e) {
-//   var ax = -($(window).innerWidth()/2- e.pageX)/60;
-//   var ay = ($(window).innerHeight()/2- e.pageY)/30;
-//   card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
-// });
-//
+var card = $(".card");
+
+$(document).on("mousemove",function(e) {
+  var ax = -($(window).innerWidth()/2- e.pageX)/60;
+  var ay = ($(window).innerHeight()/2- e.pageY)/30;
+  card.attr("style", "transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-webkit-transform: rotateY("+ax+"deg) rotateX("+ay+"deg);-moz-transform: rotateY("+ax+"deg) rotateX("+ay+"deg)");
+});
+
 
 
 //------------------image slider
