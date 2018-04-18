@@ -37,13 +37,13 @@
 
 		<h4>Contact</h4>
 
-		<form class="form-horizontal" method="POST" action="/contact">
+		<form class="form-horizontal" method="POST" action="https://formspree.io/jsfernandes83@gmail.com">
 			{{ csrf_field() }}
 		<div class="form-group">
 			<br/>
 			<div class="input-group">
 				<div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
-				<input type="text" id="name" placeholder="Your Name"/>
+				<input type="text" id="name" name="name" placeholder="Your Name"/>
 			</div>
 		</div>
 
@@ -51,7 +51,7 @@
        <br />
        <div class="input-group">
           <div class="input-group-addon"><i class="fas fa-at"></i></i></div>
-          <input type="email" id="email" placeholder="Your Email"/>
+          <input type="email" id="email" name="_replyto" placeholder="Your Email"/>
           </div>
        </div>
 
@@ -59,12 +59,26 @@
 			 <br />
 			 <div class="input-group">
 					<div class="input-group-addon"><i class="fas fa-edit" aria-hidden="true"></i></div>
-					<textarea type="email" id="message" placeholder="Your Message"></textarea>
+					<textarea type="text" id="message" name="message" placeholder="Your Message"></textarea>
 					</div>
 			 </div>
 
+			 <input type="hidden" name="_next" value="//site.io/thanks.html" />
+			 <input type="text" name="_gotcha" style="display:none" />
+
+		<div class="form-group">
+			<br />
+			<div class="input-group">
+				 <div class="input-group-addon"><i class="fas fa-edit" aria-hidden="true"></i></div>
+				 <input type="text" name="_subject" placeholder="Your Subject"/>
+				 </div>
+			</div>
+
 				<button type="submit" class="butn-blue">Send</button>
 		 </form>
+
+		     <div id="map"></div>
+
 	</div>
 
 	<div class="col question desktop">

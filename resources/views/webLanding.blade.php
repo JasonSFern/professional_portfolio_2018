@@ -1,5 +1,31 @@
 @extends('layout')
 
+@section('content2')
+<title>Web Design</title>
+</head>
+
+<body>
+
+<?php foreach($websites as $website): ?>
+<section>
+
+<div class="mobile-card" style="background-image: linear-gradient(to bottom right,<?php echo $website->backdrop ?>);">
+  <div class="mobile-card-content">
+    <h4><?php echo $website->title ?></h4>
+    <h2><?php echo $website->subtitle ?></h2>
+    <img src="<?php echo $website->photo ?>"/>
+    <img class="logo" src="<?php echo $website->logo ?>"/>
+    <div class="bottom">
+      <a class="butn" href="/webProjects/{{ $website->id }}">EXPLORE</a>
+    </div>
+  </div>
+</div>
+
+</section>
+<?php endforeach; ?>
+
+@endsection
+
 @section('content')
 
   <title>Web Design</title>

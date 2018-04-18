@@ -253,7 +253,7 @@ var TxtType = function(el, toRotate, period) {
 
 
 //-------------------inject code into html doc
-		        this.el.innerHTML = '<h2 class="typewrite" style="margin:0px 0px;">I am a<h2 style="margin:0px 0px;">$( ' + this.txt + ' );</h2><h2>based in Calgary, AB</h2>';
+		        this.el.innerHTML = '<h2 class="typewrite" style="margin:0px 0px;">I am a<h2 style="margin:0px 0px;">$( ' + this.txt + ' );</h2><h2><i class="fas fa-map-marker-alt"></i> - Calgary, AB - 51.0486° N, 114.0708° W</h2>';
 
 
 		        var that = this;
@@ -352,3 +352,19 @@ $(document).on("mousemove",function(e) {
 
   });
 })(jQuery);
+
+
+
+//--------------Googlw maps api
+
+$(document).ready(function initMap() {
+  var uluru = {lat: -25.363, lng: 131.044};
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 4,
+    center: uluru
+  });
+  var marker = new google.maps.Marker({
+    position: uluru,
+    map: map
+  });
+});

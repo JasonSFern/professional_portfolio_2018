@@ -6,15 +6,16 @@ use App\Models\Website;
 use App\Models\Graphic;
 
 use Illuminate\Http\Request;
+use Illuminate\Database\Eloquent\Model;
 
 class WebsiteController extends Controller
 {
     public function index() {
-        $graphics = Graphic::all();
-        $websites = Website::all();
+        $websites = Website::select()
+                    ->whereNotIn('id', [5])
+                    ->get();
 
         $data = [
-            'graphics' => $graphics,
             'websites' => $websites,
         ];
 

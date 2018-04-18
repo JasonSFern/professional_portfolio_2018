@@ -11,11 +11,9 @@ class GraphicController extends Controller
 {
     public function index() {
         $graphics = Graphic::all();
-        $websites = Website::all();
 
         $data = [
             'graphics' => $graphics,
-            'websites' => $websites,
         ];
 
         return view('graphicLanding', $data);

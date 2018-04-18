@@ -17,6 +17,7 @@
   <script src='https://code.jquery.com/jquery-2.1.4.min.js'></script>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src='http://cdnjs.cloudflare.com/ajax/libs/gsap/1.16.1/TweenMax.min.js'></script>
+  <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBWv5Oi63T0HOU2FgWUU3QPwAAKhXyLfZY&callback=initMap"></script>
   <script src="/js/app.js"></script>
 
 </body>
