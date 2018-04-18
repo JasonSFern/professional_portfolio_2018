@@ -17,8 +17,8 @@ $(document).ready(function () {
 
 //---------barometer
 
-$(document).ready(function () {
-  var barometer = document.querySelector('.barometer');
-  var d = new Date();
-  barometer.setAttribute('pressure',
-})();
+// $(document).ready(function () {
+//   var barometer = document.querySelector('.barometer');
+//   var d = new Date();
+//   barometer.setAttribute('pressure',
+// })();

@@ -2,16 +2,10 @@
   box-sizing: border-box;
 }
 body {
-  background-color: #e74c3c;
-  color: #fafafa;
-  text-align: center;
+  font-size:62.5%;
+  background:#232425 }
 }
-.watch-case {
-  position: relative;
-  height: 300px;
-  width: 300px;
-  margin: 0 auto;
-}
+
 .watch {
   height: 200px;
   width: 200px;
@@ -21,49 +15,286 @@ body {
   margin-left: -100px;
   margin-top: -100px;
 }
-.watch__face {
-  height: 100%;
-  width: 100%;
-  border-radius: 200px;
-  background-color: #fafafa;
-  border: 8px solid #111;
+
+.weather-background {
+  background-image:url("/img/wood2.JPG");
+  background-size: 800px;
+  background-repeat: no-repeat;
 }
-.watch__face:before {
-  content: '';
-  height: 4px;
-  width: 4px;
-  display: block;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  border-radius: 4px;
-  margin-left: -2px;
-  margin-top: -2px;
-  background-color: #00f;
-  box-shadow: 85px 0px 0 2px #808080,73.61215934px 42.5px 0 0 #808080,42.5px 73.61215934px 0 0 #808080,0px 85px 0 2px #808080,-42.5px 73.61215934px 0 0 #808080,-73.61215934px 42.5px 0 0 #808080,-85px 0px 0 2px #808080,-73.61215934px -42.5px 0 0 #808080,-42.5px -73.61215934px 0 0 #808080,0px -85px 0 2px #808080,42.5px -73.61215934px 0 0 #808080,73.61215934px -42.5px 0 0 #808080;
+
+
+.watch[baro-pressure="966"] .baro-hours {
+  transform: rotate(246deg);
 }
-.watch__dial {
-  position: absolute;
-  left: 100%;
-  background-color: #808080;
-  height: 40px;
-  width: 20px;
-  top: 50%;
-  margin-top: -20px;
-  margin-left: -10px;
-  z-index: -1;
+.watch[baro-pressure="967"] .baro-hours {
+  transform: rotate(248deg);
 }
-.watch__strap {
-  position: absolute;
-  width: 50%;
-  height: 150%;
-  background-color: #000;
-  top: 50%;
-  left: 50%;
-  margin-left: -25%;
-  margin-top: -75%;
-  z-index: -1;
+.watch[baro-pressure="968"] .baro-hours {
+  transform: rotate(250deg);
 }
+.watch[baro-pressure="969"] .baro-hours {
+  transform: rotate(252deg);
+}
+.watch[baro-pressure="970"] .baro-hours {
+  transform: rotate(254deg);
+}
+.watch[baro-pressure="971"] .baro-hours {
+  transform: rotate(256deg);
+}
+.watch[baro-pressure="972"] .baro-hours {
+  transform: rotate(258deg);
+}
+.watch[baro-pressure="973"] .baro-hours {
+  transform: rotate(260deg);
+}
+.watch[baro-pressure="974"] .baro-hours {
+  transform: rotate(262deg);
+}
+.watch[baro-pressure="975"] .baro-hours {
+  transform: rotate(264deg);
+}
+.watch[baro-pressure="976"] .baro-hours {
+  transform: rotate(266deg);
+}
+.watch[baro-pressure="977"] .baro-hours {
+  transform: rotate(268deg);
+}
+.watch[baro-pressure="978"] .baro-hours {
+  transform: rotate(270deg);
+}
+.watch[baro-pressure="979"] .baro-hours {
+  transform: rotate(272deg);
+}
+.watch[baro-pressure="980"] .baro-hours {
+  transform: rotate(274deg);
+}
+.watch[baro-pressure="981"] .baro-hours {
+  transform: rotate(276deg);
+}
+.watch[baro-pressure="982"] .baro-hours {
+  transform: rotate(278deg);
+}
+.watch[baro-pressure="983"] .baro-hours {
+  transform: rotate(280deg);
+}
+.watch[baro-pressure="984"] .baro-hours {
+  transform: rotate(282deg);
+}
+.watch[baro-pressure="985"] .baro-hours {
+  transform: rotate(284deg);
+}
+.watch[baro-pressure="986"] .baro-hours {
+  transform: rotate(286deg);
+}
+.watch[baro-pressure="987"] .baro-hours {
+  transform: rotate(288deg);
+}
+.watch[baro-pressure="988"] .baro-hours {
+  transform: rotate(290deg);
+}
+.watch[baro-pressure="989"] .baro-hours {
+  transform: rotate(292deg);
+}
+.watch[baro-pressure="990"] .baro-hours {
+  transform: rotate(294deg);
+}
+.watch[baro-pressure="991"] .baro-hours {
+  transform: rotate(296deg);
+}
+.watch[baro-pressure="992"] .baro-hours {
+  transform: rotate(298deg);
+}
+.watch[baro-pressure="993"] .baro-hours {
+  transform: rotate(300deg);
+}
+.watch[baro-pressure="994"] .baro-hours {
+  transform: rotate(302deg);
+}
+.watch[baro-pressure="995"] .baro-hours {
+  transform: rotate(304deg);
+}
+.watch[baro-pressure="996"] .baro-hours {
+  transform: rotate(306deg);
+}
+.watch[baro-pressure="997"] .baro-hours {
+  transform: rotate(308deg);
+}
+.watch[baro-pressure="998"] .baro-hours {
+  transform: rotate(310deg);
+}
+.watch[baro-pressure="999"] .baro-hours {
+  transform: rotate(312deg);
+}
+.watch[baro-pressure="1000"] .baro-hours {
+  transform: rotate(314deg);
+}
+.watch[baro-pressure="1001"] .baro-hours {
+  transform: rotate(316deg);
+}
+.watch[baro-pressure="1002"] .baro-hours {
+  transform: rotate(318deg);
+}
+.watch[baro-pressure="1003"] .baro-hours {
+  transform: rotate(320deg);
+}
+.watch[baro-pressure="1004"] .baro-hours {
+  transform: rotate(322deg);
+}
+.watch[baro-pressure="1005"] .baro-hours {
+  transform: rotate(324deg);
+}
+.watch[baro-pressure="1006"] .baro-hours {
+  transform: rotate(326deg);
+}
+.watch[baro-pressure="1007"] .baro-hours {
+  transform: rotate(328deg);
+}
+.watch[baro-pressure="1008"] .baro-hours {
+  transform: rotate(330deg);
+}
+.watch[baro-pressure="1009"] .baro-hours {
+  transform: rotate(332deg);
+}
+.watch[baro-pressure="1010"] .baro-hours {
+  transform: rotate(334deg);
+}
+.watch[baro-pressure="1011"] .baro-hours {
+  transform: rotate(336deg);
+}
+.watch[baro-pressure="1012"] .baro-hours {
+  transform: rotate(338deg);
+}
+.watch[baro-pressure="1013"] .baro-hours {
+  transform: rotate(340deg);
+}
+.watch[baro-pressure="1014"] .baro-hours {
+  transform: rotate(342deg);
+}
+.watch[baro-pressure="1015"] .baro-hours {
+  transform: rotate(344deg);
+}
+.watch[baro-pressure="1016"] .baro-hours {
+  transform: rotate(346deg);
+}
+.watch[baro-pressure="1017"] .baro-hours {
+  transform: rotate(348deg);
+}
+.watch[baro-pressure="1018"] .baro-hours {
+  transform: rotate(350deg);
+}
+.watch[baro-pressure="1019"] .baro-hours {
+  transform: rotate(352deg);
+}
+.watch[baro-pressure="1020"] .baro-hours {
+  transform: rotate(354deg);
+}
+.watch[baro-pressure="1021"] .baro-hours {
+  transform: rotate(356deg);
+}
+.watch[baro-pressure="1022"] .baro-hours {
+  transform: rotate(358deg);
+}
+.watch[baro-pressure="1023"] .baro-hours {
+  transform: rotate(360deg);
+}
+.watch[baro-pressure="1024"] .baro-hours {
+  transform: rotate(362deg);
+}
+.watch[baro-pressure="1025"] .baro-hours {
+  transform: rotate(364deg);
+}
+.watch[baro-pressure="1026"] .baro-hours {
+  transform: rotate(366deg);
+}
+.watch[baro-pressure="1027"] .baro-hours {
+  transform: rotate(368deg);
+}
+.watch[baro-pressure="1028"] .baro-hours {
+  transform: rotate(370deg);
+}
+.watch[baro-pressure="1029"] .baro-hours {
+  transform: rotate(372deg);
+}
+.watch[baro-pressure="1030"] .baro-hours {
+  transform: rotate(374deg);
+}
+.watch[baro-pressure="1031"] .baro-hours {
+  transform: rotate(376deg);
+}
+.watch[baro-pressure="1032"] .baro-hours {
+  transform: rotate(378deg);
+}
+.watch[baro-pressure="1033"] .baro-hours {
+  transform: rotate(380deg);
+}
+.watch[baro-pressure="1034"] .baro-hours {
+  transform: rotate(382deg);
+}
+.watch[baro-pressure="1035"] .baro-hours {
+  transform: rotate(384deg);
+}
+.watch[baro-pressure="1036"] .baro-hours {
+  transform: rotate(386deg);
+}
+.watch[baro-pressure="1037"] .baro-hours {
+  transform: rotate(388deg);
+}
+.watch[baro-pressure="1038"] .baro-hours {
+  transform: rotate(390deg);
+}
+.watch[baro-pressure="1039"] .baro-hours {
+  transform: rotate(392deg);
+}
+.watch[baro-pressure="1040"] .baro-hours {
+  transform: rotate(394deg);
+}
+.watch[baro-pressure="1041"] .baro-hours {
+  transform: rotate(396deg);
+}
+.watch[baro-pressure="1042"] .baro-hours {
+  transform: rotate(398deg);
+}
+.watch[baro-pressure="1043"] .baro-hours {
+  transform: rotate(400deg);
+}
+.watch[baro-pressure="1044"] .baro-hours {
+  transform: rotate(402deg);
+}
+.watch[baro-pressure="1045"] .baro-hours {
+  transform: rotate(404deg);
+}
+.watch[baro-pressure="1046"] .baro-hours {
+  transform: rotate(406deg);
+}
+.watch[baro-pressure="1047"] .baro-hours {
+  transform: rotate(408deg);
+}
+.watch[baro-pressure="1048"] .baro-hours {
+  transform: rotate(410deg);
+}
+.watch[baro-pressure="1049"] .baro-hours {
+  transform: rotate(412deg);
+}
+.watch[baro-pressure="1050"] .baro-hours {
+  transform: rotate(414deg);
+}
+.watch[baro-pressure="1051"] .baro-hours {
+  transform: rotate(416deg);
+}
+.watch[baro-pressure="1052"] .baro-hours {
+  transform: rotate(418deg);
+}
+.watch[baro-pressure="1053"] .baro-hours {
+  transform: rotate(420deg);
+}
+.watch[baro-pressure="1054"] .baro-hours {
+  transform: rotate(422deg);
+}
+
+
+
+
+
 .watch[start-seconds="0"] .watch-seconds {
   transform: rotate(0deg);
 }
@@ -2950,6 +3181,7 @@ body {
   left: 0;
   height: 100%;
   width: 100%;
+  /* box-shadow:rgba(0,0,0,.8) 0 0 .2em; */
 }
 .watch-seconds__hand,
 .watch-minutes__hand,
@@ -2957,19 +3189,20 @@ body {
   position: absolute;
   display: block;
   height: 80px;
-  width: 8px;
+  width: 4px;
   left: 50%;
   top: 50%;
-  margin-left: -4px;
+  margin-left: -2px;
   transform-origin: bottom center;
   margin-top: -80px;
-  background-color: #000;
+  background-color: black;
   border-radius: 5px 5px 5px 5px;
+    box-shadow:rgba(0,0,0,.8) 0 0 .2em;
 }
 .watch-seconds__hand:before,
 .watch-minutes__hand:before,
 .watch-hours__hand:before {
-  background-color: #000;
+  background-color: black;
   content: '';
   position: absolute;
   bottom: -8px;
@@ -2979,6 +3212,26 @@ body {
   margin-left: -8px;
   border-radius: 100%;
 }
+
+.watch-minutes__hand:after,
+.watch-hours__hand:after {
+  content:'';
+  width:0; height:0;
+  border:.9em solid black;
+  border-width:0 .4em 3em .4em;
+  border-left-color:transparent;
+  border-right-color:transparent;
+  position:absolute;
+  bottom: 50px;
+  left: -2px;
+}
+
+
+.watch-minutes__hand:after {
+  bottom: 70px;
+  left: -2px;
+}
+
 .watch-seconds {
   z-index: 3;
 }
@@ -2990,7 +3243,7 @@ body {
   animation: rotate 60s linear infinite;
 }
 .watch-seconds__hand:before {
-  background-color: #f00;
+  background-color: #c00;
   content: '';
   position: absolute;
   bottom: -5px;
@@ -3016,14 +3269,7 @@ body {
 /* A full rotation is 720 minutes */
   animation: rotate 43200s infinite linear;
 }
-p {
-  background-color: #fafafa;
-  color: #808080;
-  display: inline-block;
-  padding: 10px;
-  border-radius: 10px;
-  border: 4px solid #808080;
-}
+
 @-moz-keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -3059,110 +3305,119 @@ p {
 
 
 
-
-
-body { font-size:62.5%; margin:1em; background:#232425 }
 ul { list-style:none; margin:0; padding:0 }
 #watch { font-size:1em; position:relative }
 #watch .frame-face {
 position:relative;
 width:30em;
 height:30em;
-margin:2em auto;
-border-radius:15em;
-background:-webkit-linear-gradient(top, #f9f9f9,#666);
-background:-moz-linear-gradient(top, #f9f9f9,#666);
-background:linear-gradient(to bottom, #f9f9f9,#666);
-box-shadow:rgba(0,0,0,.8) .5em .5em 4em;
+margin:auto 2em;
+border-radius:20em;
+background: rgba(217,217,217,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(217,217,217,1) 0%, rgba(205,204,205,1) 14%, rgba(141,139,141,1) 87%, rgba(130,127,130,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(217,217,217,1)), color-stop(14%, rgba(205,204,205,1)), color-stop(87%, rgba(141,139,141,1)), color-stop(100%, rgba(130,127,130,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(217,217,217,1) 0%, rgba(205,204,205,1) 14%, rgba(141,139,141,1) 87%, rgba(130,127,130,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(217,217,217,1) 0%, rgba(205,204,205,1) 14%, rgba(141,139,141,1) 87%, rgba(130,127,130,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(217,217,217,1) 0%, rgba(205,204,205,1) 14%, rgba(141,139,141,1) 87%, rgba(130,127,130,1) 100%);
+background: radial-gradient(ellipse at center, rgba(217,217,217,1) 0%, rgba(205,204,205,1) 14%, rgba(141,139,141,1) 87%, rgba(130,127,130,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#d9d9d9', endColorstr='#827f82', GradientType=1 );
 }
 #watch .frame-face:before {
 content:'';
-width:29.4em;
-height:29.4em;
-border-radius:14.7em;
+width:30.4em;
+height:30.4em;
+border-radius:15.7em;
 position:absolute;
-top:.3em; left:.3em;
-background:
--webkit-linear-gradient(135deg, rgba(246,248,249,0) 0%,rgba(229,235,238,1) 50%,rgba(205,212,217,1) 51%,rgba(245,247,249,0) 100%),
--webkit-radial-gradient(center, ellipse cover, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 65%,rgba(205,212,217,1) 66%,rgba(245,247,249,1) 100%);
-background:
--moz-linear-gradient(135deg, rgba(246,248,249,0) 0%,rgba(229,235,238,1) 50%,rgba(205,212,217,1) 51%,rgba(245,247,249,0) 100%),
--moz-radial-gradient(center, ellipse cover, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 65%,rgba(205,212,217,1) 66%,rgba(245,247,249,1) 100%);
-background:
-linear-gradient(135deg, rgba(246,248,249,0) 0%,rgba(229,235,238,1) 50%,rgba(205,212,217,1) 51%,rgba(245,247,249,0) 100%),
-radial-gradient(ellipse at center, rgba(246,248,249,1) 0%,rgba(229,235,238,1) 65%,rgba(205,212,217,1) 66%,rgba(245,247,249,1) 100%);
+top:-.2em; left:-.2em;
+background: rgba(255,255,255,1);
+background: -moz-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(189,188,189,1) 88%, rgba(189,188,189,1) 100%);
+background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, rgba(255,255,255,1)), color-stop(88%, rgba(189,188,189,1)), color-stop(100%, rgba(189,188,189,1)));
+background: -webkit-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(189,188,189,1) 88%, rgba(189,188,189,1) 100%);
+background: -o-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(189,188,189,1) 88%, rgba(189,188,189,1) 100%);
+background: -ms-radial-gradient(center, ellipse cover, rgba(255,255,255,1) 0%, rgba(189,188,189,1) 88%, rgba(189,188,189,1) 100%);
+background: radial-gradient(ellipse at center, rgba(255,255,255,1) 0%, rgba(189,188,189,1) 88%, rgba(189,188,189,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#bdbcbd', GradientType=1 );
+
 }
 #watch .frame-face:after {
 content:'';
-width:28em;
-height:28em;
+width:25em;
+height:25em;
 border-radius:14.2em;
 position:absolute;
-top:.9em; left:.9em;
+top:2.4em; left:2.4em;
 box-shadow:inset rgba(0,0,0,.2) .2em .2em 1em;
 border:.1em solid rgba(0,0,0,.2);
-background:-webkit-linear-gradient(top, #fff, #ccc);
-background:-moz-linear-gradient(top, #fff, #ccc);
-background:linear-gradient(to bottom, #fff, #ccc);
+
+background: rgba(184,184,184,0.9);
+background: -moz-linear-gradient(-45deg, rgba(184,184,184,0.9) 0%, rgba(199,196,191,0.9) 14%, rgba(240,228,211,0.98) 51%, rgba(136,133,129,0.9) 87%, rgba(99,99,99,0.9) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(184,184,184,0.9)), color-stop(14%, rgba(199,196,191,0.9)), color-stop(51%, rgba(240,228,211,0.98)), color-stop(87%, rgba(136,133,129,0.9)), color-stop(100%, rgba(99,99,99,0.9)));
+background: -webkit-linear-gradient(-45deg, rgba(184,184,184,0.9) 0%, rgba(199,196,191,0.9) 14%, rgba(240,228,211,0.98) 51%, rgba(136,133,129,0.9) 87%, rgba(99,99,99,0.9) 100%);
+background: -o-linear-gradient(-45deg, rgba(184,184,184,0.9) 0%, rgba(199,196,191,0.9) 14%, rgba(240,228,211,0.98) 51%, rgba(136,133,129,0.9) 87%, rgba(99,99,99,0.9) 100%);
+background: -ms-linear-gradient(-45deg, rgba(184,184,184,0.9) 0%, rgba(199,196,191,0.9) 14%, rgba(240,228,211,0.98) 51%, rgba(136,133,129,0.9) 87%, rgba(99,99,99,0.9) 100%);
+background: linear-gradient(135deg, rgba(184,184,184,0.9) 0%, rgba(199,196,191,0.9) 14%, rgba(240,228,211,0.98) 51%, rgba(136,133,129,0.9) 87%, rgba(99,99,99,0.9) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b8b8b8', endColorstr='#636363', GradientType=1 );
 }
+
 #watch .minute-marks li {
 display:block;
 width:.2em;
 height:.6em;
-background:#929394;
+background:black;
 position:absolute;
 top:50%; left:50%;
 margin:-.4em 0 0 -.1em;
 }
-#watch .minute-marks li:first-child {transform:rotate(6deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(2) {transform:rotate(12deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(3) {transform:rotate(18deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(4) {transform:rotate(24deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(5) {transform:rotate(36deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(6) {transform:rotate(42deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(7) {transform:rotate(48deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(8) {transform:rotate(54deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(9) {transform:rotate(66deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(10) {transform:rotate(72deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(11) {transform:rotate(78deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(12) {transform:rotate(84deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(13) {transform:rotate(96deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(14) {transform:rotate(102deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(15) {transform:rotate(108deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(16) {transform:rotate(114deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(17) {transform:rotate(126deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(18) {transform:rotate(132deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(19) {transform:rotate(138deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(20) {transform:rotate(144deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(21) {transform:rotate(156deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(22) {transform:rotate(162deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(23) {transform:rotate(168deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(24) {transform:rotate(174deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(25) {transform:rotate(186deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(26) {transform:rotate(192deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(27) {transform:rotate(198deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(28) {transform:rotate(204deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(29) {transform:rotate(216deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(30) {transform:rotate(222deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(31) {transform:rotate(228deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(32) {transform:rotate(234deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(33) {transform:rotate(246deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(34) {transform:rotate(252deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(35) {transform:rotate(258deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(36) {transform:rotate(264deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(37) {transform:rotate(276deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(38) {transform:rotate(282deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(39) {transform:rotate(288deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(40) {transform:rotate(294deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(41) {transform:rotate(306deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(42) {transform:rotate(312deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(43) {transform:rotate(318deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(44) {transform:rotate(324deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(45) {transform:rotate(336deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(46) {transform:rotate(342deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(47) {transform:rotate(348deg) translateY(-12.7em)}
-#watch .minute-marks li:nth-child(48) {transform:rotate(354deg) translateY(-12.7em)}
-#watch .digits {
+#watch .minute-marks li:first-child {transform:rotate(6deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(2) {transform:rotate(12deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(3) {transform:rotate(18deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(4) {transform:rotate(24deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(5) {transform:rotate(36deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(6) {transform:rotate(42deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(7) {transform:rotate(48deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(8) {transform:rotate(54deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(9) {transform:rotate(66deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(10) {transform:rotate(72deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(11) {transform:rotate(78deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(12) {transform:rotate(84deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(13) {transform:rotate(96deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(14) {transform:rotate(102deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(15) {transform:rotate(108deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(16) {transform:rotate(114deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(17) {transform:rotate(126deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(18) {transform:rotate(132deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(19) {transform:rotate(138deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(20) {transform:rotate(144deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(21) {transform:rotate(156deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(22) {transform:rotate(162deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(23) {transform:rotate(168deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(24) {transform:rotate(174deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(25) {transform:rotate(186deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(26) {transform:rotate(192deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(27) {transform:rotate(198deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(28) {transform:rotate(204deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(29) {transform:rotate(216deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(30) {transform:rotate(222deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(31) {transform:rotate(228deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(32) {transform:rotate(234deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(33) {transform:rotate(246deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(34) {transform:rotate(252deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(35) {transform:rotate(258deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(36) {transform:rotate(264deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(37) {transform:rotate(276deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(38) {transform:rotate(282deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(39) {transform:rotate(288deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(40) {transform:rotate(294deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(41) {transform:rotate(306deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(42) {transform:rotate(312deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(43) {transform:rotate(318deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(44) {transform:rotate(324deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(45) {transform:rotate(336deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(46) {transform:rotate(342deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(47) {transform:rotate(348deg) translateY(-10.7em)}
+#watch .minute-marks li:nth-child(48) {transform:rotate(354deg) translateY(-10.7em)}
+
+.digits {
 width:30em;
 height:30em;
 border-radius:15em;
@@ -3170,8 +3425,10 @@ position:absolute;
 top:0; left:50%;
 margin-left:-15em;
 }
-#watch .digits li {
+
+.digits li {
 font-size:1.6em;
+font-family: 'Cinzel', serif;
 display:block;
 width:1.6em;
 height:1.6em;
@@ -3180,21 +3437,23 @@ top:50%; left:50%;
 line-height:1.6em;
 text-align:center;
 margin:-.8em 0 0 -.8em;
-font-weight:bold;
+font-weight:lighter;
+color:black;
 }
-#watch .digits li:nth-child(1) { transform:translate(3.9em, -6.9em) }
-#watch .digits li:nth-child(2) { transform:translate(6.9em, -4em) }
-#watch .digits li:nth-child(3) { transform:translate(8em, 0) }
-#watch .digits li:nth-child(4) { transform:translate(6.8em, 4em) }
-#watch .digits li:nth-child(5) { transform:translate(3.9em, 6.9em) }
-#watch .digits li:nth-child(6) { transform:translate(0, 8em) }
-#watch .digits li:nth-child(7) { transform:translate(-3.9em, 6.9em) }
-#watch .digits li:nth-child(8) { transform:translate(-6.8em, 4em) }
-#watch .digits li:nth-child(9) { transform:translate(-8em, 0) }
-#watch .digits li:nth-child(10) { transform:translate(-6.9em, -4em) }
-#watch .digits li:nth-child(11) { transform:translate(-3.9em, -6.9em) }
-#watch .digits li:nth-child(12) { transform:translate(0, -8em) }
-#watch .digits:before {
+
+.digits li:nth-child(1) { transform:translate(2.9em, -4.8em) }
+.digits li:nth-child(2) { transform:translate(4.9em, -2.8em) }
+.digits li:nth-child(3) { transform:translate(5.5em, 0) }
+.digits li:nth-child(4) { transform:translate(5em, 2.8em) }
+.digits li:nth-child(5) { transform:translate(3em, 4.8em) }
+.digits li:nth-child(6) { transform:translate(0, 5.7em) }
+.digits li:nth-child(7) { transform:translate(-3em, 4.8em) }
+.digits li:nth-child(8) { transform:translate(-5em, 2.8em) }
+.digits li:nth-child(9) { transform:translate(-5.5em, 0) }
+.digits li:nth-child(10) { transform:translate(-4.9em, -2.8em) }
+.digits li:nth-child(11) { transform:translate(-2.7em, -4.8em) }
+.digits li:nth-child(12) { transform:translate(0, -5.6em) }
+.digits:before {
 content:'';
 width:1.6em;
 height:1.6em;
@@ -3204,139 +3463,107 @@ top:50%; left:50%;
 margin:-.8em 0 0 -.8em;
 background:#121314;
 }
-#watch .digits:after {
-content:'';
-width:4em;
-height:4em;
-border-radius:2.2em;
+
+.baro-digits {
+width:30em;
+height:30em;
+border-radius:15em;
+position:absolute;
+top:0; left:50%;
+margin-left:-15em;
+}
+
+.baro-digits li {
+font-size:1.6em;
+font-family: 'Cinzel', serif;
+display:block;
+width:1.6em;
+height:1.6em;
 position:absolute;
 top:50%; left:50%;
-margin:-2.1em 0 0 -2.1em;
-border:.1em solid #c6c6c6;
-background:-webkit-radial-gradient(center, ellipse cover, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
-background:-moz-radial-gradient(center, ellipse cover, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
-background:radial-gradient(ellipse at center, rgba(200,200,200,0), rgba(190,190,190,1) 90%, rgba(130,130,130,1) 100%);
-}
-@keyframes hours { to {transform:rotate(335deg)} }
-#watch .hours-hand {
-width:.8em;
-height:7em;
-border-radius:0 0 .9em .9em;
-background:#232425;
-position:absolute;
-bottom:50%; left:50%;
-margin:0 0 -.8em -.4em;
-box-shadow:#232425 0 0 2px;
-transform-origin:0.4em 6.2em;
-transform:rotate(-25deg);
-animation:hours 43200s linear 0s infinite;
-}
-#watch .hours-hand:before {
-content:'';
-background:inherit;
-width:1.8em;
-height:.8em;
-border-radius:0 0 .8em .8em;
-box-shadow:#232425 0 0 1px;
-position:absolute;
-top:-.7em; left:-.5em;
-}
-#watch .hours-hand:after {
-content:'';
-width:0; height:0;
-border:.9em solid #232425;
-border-width:0 .9em 2.4em .9em;
-border-left-color:transparent;
-border-right-color:transparent;
-position:absolute;
-top:-3.1em; left:-.5em;
-}
-@keyframes minutes { to {transform:rotate(422deg)} }
-#watch .minutes-hand {
-width:.8em;
-height:12.5em;
-border-radius:.5em;
-background:#343536;
-position:absolute;
-bottom:50%; left:50%;
-margin:0 0 -1.5em -.4em;
-box-shadow:#343536 0 0 2px;
-transform-origin:0.4em 11em;
-transform:rotate(62deg);
-animation:minutes 3600s linear 0s infinite;
-}
-@keyframes seconds { to {transform:rotate(480deg)} }
-#watch .seconds-hand {
-width:.2em;
-height:14em;
-border-radius:.1em .1em 0 0/10em 10em 0 0;
-background:#c00;
-position:absolute;
-bottom:50%; left:50%;
-margin:0 0 -2em -.1em;
-box-shadow:rgba(0,0,0,.8) 0 0 .2em;
-transform-origin:0.1em 12em;
-transform:rotate(120deg);
-animation:seconds 60s steps(60, end) 0s infinite;
-}
-#watch .seconds-hand:after {
-content:'';
-width:1.4em;
-height:1.4em;
-border-radius:.7em;
-background:inherit;
-position:absolute;
-left:-.65em; bottom:1.35em;
-}
-#watch .seconds-hand:before {
-content:'';
-width:.8em;
-height:3em;
-border-radius:.2em .2em .4em .4em/.2em .2em 2em 2em;
-box-shadow:rgba(0,0,0,.8) 0 0 .2em;
-background:inherit;
-position:absolute;
-left:-.35em; bottom:-3em;
-}
-#watch .digital-wrap {
-width:9em;
-height:3em;
-border:.1em solid #222;
-border-radius:.2em;
-position:absolute;
-top:50%; left:50%;
-margin:3em 0 0 -4.5em;
-overflow:hidden;
-background:#4c4c4c;
-background:-webkit-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
-background:-moz-linear-gradient(top, #4c4c4c 0%, #0f0f0f 100%);
-background:-ms-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
-background:-o-linear-gradient(top, #4c4c4c 0%,#0f0f0f 100%);
-background:linear-gradient(to bottom, #4c4c4c 0%,#0f0f0f 100%);
-}
-#watch .digital-wrap ul {
-float:left;
-width:2.85em;
-height:3em;
-border-right:.1em solid #000;
-color:#ddd;
-font-family:Consolas, monaco, monospace;
-}
-#watch .digital-wrap ul:last-child { border:none }
-#watch .digital-wrap li {
-font-size:1.5em;
-line-height:2;
-letter-spacing:2px;
+line-height:1.6em;
 text-align:center;
-position:relative;
-left:1px;
+margin:-.8em 0 0 -.8em;
+font-weight:lighter;
+color:black;
 }
-#watch .digit-minutes li {
-animation:dsm 3600s steps(60, end) 0s infinite;
+
+.baro-digits li:nth-child(1) { transform:translate(-5.3em, .8em) }
+.baro-digits li:nth-child(2) { transform:translate(-5em, -1.6em) }
+.baro-digits li:nth-child(3) { transform:translate(-4em, -3.6em) }
+.baro-digits li:nth-child(4) { transform:translate(-2.5em, -5em) }
+.baro-digits li:nth-child(5) { transform:translate(-.3em, -5.6em) }
+.baro-digits li:nth-child(6) { transform:translate(1.8em, -5em) }
+.baro-digits li:nth-child(7) { transform:translate(3.6em, -3.6em) }
+.baro-digits li:nth-child(8) { transform:translate(4.4em, -1.7em) }
+.baro-digits li:nth-child(9) { transform:translate(4.8em, .7em) }
+.baro-digits:before {
+content:'';
+width:1.6em;
+height:1.6em;
+border-radius:.8em;
+position:absolute;
+top:50%; left:50%;
+margin:-.8em 0 0 -.8em;
+background:#121314;
 }
-#watch .digit-seconds li {
-animation:dsm 60s steps(60, end) 0s infinite;
+
+
+#watch .baro-marks li {
+display:block;
+width:.2em;
+height:.6em;
+background:black;
+position:absolute;
+top:50%; left:50%;
+margin:-.4em 0 0 -.1em;
 }
-@keyframes dsm {
-to { transform:translateY(-120em) }
-}
+#watch .baro-marks li:first-child {transform:rotate(246deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(2) {transform:rotate(250deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(3) {transform:rotate(254deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(4) {transform:rotate(258deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(5) {transform:rotate(266deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(6) {transform:rotate(270deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(7) {transform:rotate(274deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(8) {transform:rotate(278deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(9) {transform:rotate(282deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(10) {transform:rotate(290deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(11) {transform:rotate(294deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(12) {transform:rotate(298deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(13) {transform:rotate(302deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(14) {transform:rotate(306deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(15) {transform:rotate(314deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(16) {transform:rotate(318deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(17) {transform:rotate(322deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(18) {transform:rotate(326deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(19) {transform:rotate(330deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(20) {transform:rotate(338deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(21) {transform:rotate(342deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(22) {transform:rotate(346deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(23) {transform:rotate(350deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(24) {transform:rotate(354deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(25) {transform:rotate(362deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(26) {transform:rotate(366deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(27) {transform:rotate(370deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(28) {transform:rotate(374deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(29) {transform:rotate(378deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(30) {transform:rotate(386deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(31) {transform:rotate(390deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(32) {transform:rotate(394deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(33) {transform:rotate(398deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(34) {transform:rotate(402deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(35) {transform:rotate(410deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(36) {transform:rotate(414deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(37) {transform:rotate(418deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(38) {transform:rotate(422deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(39) {transform:rotate(426deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(40) {transform:rotate(434deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(41) {transform:rotate(438deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(42) {transform:rotate(442deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(43) {transform:rotate(446deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(44) {transform:rotate(450deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(45) {transform:rotate(458deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(46) {transform:rotate(462deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(47) {transform:rotate(466deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(48) {transform:rotate(470deg) translateY(-10.7em)}
+#watch .baro-marks li:nth-child(49) {transform:rotate(474deg) translateY(-10.7em)}
