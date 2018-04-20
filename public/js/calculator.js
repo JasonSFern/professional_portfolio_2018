@@ -1,6 +1,4 @@
-// TO DO
-// character Limit for calculations(display/string length)
-// hide placeholder dot for funk display
+
 
 // function to retrieve elements
 var el = function(element) {
@@ -94,7 +92,7 @@ var disableDecimal = function(){
     // If NaN or Infinity returned
     if (!isFinite(resultNum)) {
       if (isNaN(resultNum)) { // If result is not a number; set off by double-clicking operators, clicking only equals, etc.
-        resultNum = "Error";
+        resultNum = ">:(  RLY?";
       } else { // If you should divide by zero
         resultNum = "No, No, No!!! >:( ";
       }
@@ -131,9 +129,9 @@ var displayRoot = function() {
         var getFront = resultStr.substring(0, resultStr.indexOf('e'));
         var getFrontSubstring = getFront.substring(0,8);
         var getBack = resultStr.substring(resultStr.indexOf('e'), resultStr.length);
-        display.innerHTML = getFrontSubstring + getBack;  
+        display.innerHTML = getFrontSubstring + getBack;
       } else {
-        display.innerHTML = resultStr;  
+        display.innerHTML = resultStr;
       }
 
       funkDisplay.innerHTML = "x²";
@@ -164,11 +162,11 @@ newNum = parseFloat(newNum);
         var getFront = resultStr.substring(0, resultStr.indexOf('e'));
         var getFrontSubstring = getFront.substring(0,8);
         var getBack = resultStr.substring(resultStr.indexOf('e'), resultStr.length);
-        display.innerHTML = getFrontSubstring + getBack;  
+        display.innerHTML = getFrontSubstring + getBack;
       } else {
-        display.innerHTML = resultStr;  
+        display.innerHTML = resultStr;
       }
-      
+
       funkDisplay.innerHTML = "√";
       equals.setAttribute("data-result", resultNum);
       decimal.disabled=false;
@@ -198,11 +196,11 @@ newNum = parseFloat(newNum);
         var getFront = resultStr.substring(0, resultStr.indexOf('e'));
         var getFrontSubstring = getFront.substring(0,8);
         var getBack = resultStr.substring(resultStr.indexOf('e'), resultStr.length);
-        display.innerHTML = getFrontSubstring + getBack;  
+        display.innerHTML = getFrontSubstring + getBack;
       } else {
-        display.innerHTML = resultStr;  
+        display.innerHTML = resultStr;
       }
-      
+
       funkDisplay.innerHTML = "%";
       equals.setAttribute("data-result", resultNum);
       decimal.disabled=false;
@@ -211,7 +209,7 @@ newNum = parseFloat(newNum);
       }
 }
 
-// AC button 
+// AC button
 var clearDisplay = function() {
   oldNum = "";
   newNum = "";

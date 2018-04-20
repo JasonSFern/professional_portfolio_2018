@@ -13910,7 +13910,7 @@ typingText.prototype.tick = function () {
     this.text = fulltext.substring(0, this.text.length + 1);
   }
 
-  this.el.innerHTML = '<h2 class="typewrite" style="margin:0px 0px;">I am a<h2 style="margin:0px 0px;">$( ' + this.text + ' );</h2><h2><i class="fas fa-map-marker-alt"></i> - Calgary, AB - 51.0486° N, 114.0708° W</h2>';
+  this.el.innerHTML = '<h2 class="typewrite" style="margin:0px 0px;">I am a<h2 style="margin:5px 0px;">$( ' + this.text + ' );</h2><h2><i class="fas fa-map-marker-alt"></i> - Calgary, AB - 51.0486° N, 114.0708° W</h2>';
 
   var that = this;
   //---------speed of typing(bigger number longer type time)
@@ -14099,9 +14099,9 @@ $("#n5").click(function () {
 // GOOGLE MAPS INTEGRATION
 
 $(document).ready(function initMap() {
-  var uluru = { lat: -51.0486, lng: -114.0708 };
+  var uluru = { lat: 51.0486, lng: -114.0708 };
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 4,
+    zoom: 8,
     center: uluru
   });
   var marker = new google.maps.Marker({

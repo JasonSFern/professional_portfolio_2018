@@ -22,7 +22,7 @@
 
 	<div class="desktop col">
 		<div class="question-box-left">
-		<h4>How much do you charge for a website?</h4>
+		<!-- <h4>How much do you charge for a website?</h4> -->
 		</br>
 		</div>
 	</div>
@@ -43,7 +43,7 @@
 			<br/>
 			<div class="input-group">
 				<div class="input-group-addon"><i class="fa fa-user" aria-hidden="true"></i></div>
-				<input type="text" id="name" name="name" placeholder="Your Name"/>
+				<input type="name" id="name" name="name" placeholder="Your Name" required autofocus/>
 			</div>
 		</div>
 
@@ -51,7 +51,7 @@
        <br />
        <div class="input-group">
           <div class="input-group-addon"><i class="fas fa-at"></i></i></div>
-          <input type="email" id="email" name="_replyto" placeholder="Your Email"/>
+          <input type="email" id="email" name="_replyto" placeholder="Your Email" required autofocus/>
           </div>
        </div>
 
@@ -59,7 +59,7 @@
 				<br />
 				<div class="input-group">
 					<div class="input-group-addon"><i class="far fa-envelope"></i></div>
-					<input type="text" name="_subject" placeholder="Your Subject"/>
+					<input type="text" name="_subject" placeholder="Your Subject" required autofocus/>
 					</div>
 		 </div>
 
@@ -67,11 +67,11 @@
 			 <br />
 			 <div class="input-group">
 					<div class="input-group-addon"><i class="fas fa-edit" aria-hidden="true"></i></div>
-					<textarea type="text" id="message" name="message" placeholder="Your Message"></textarea>
+					<textarea type="text" id="message" name="message" placeholder="Your Message" required autofocus></textarea>
 					</div>
 			 </div>
 
-			 <input type="hidden" name="_next" value="//site.io/thanks.html" />
+			 <input type="hidden" name="_next" value="/thanks" />
 			 <input type="text" name="_gotcha" style="display:none" />
 
 				<button type="submit" class="button-blue">Send</button>
@@ -84,7 +84,7 @@
 	<div class="col question desktop">
 		<div class="question-box-right">
 			<br>
-		<h4>How much do you charge for a website?</h4>
+		<!-- <h4>How much do you charge for a website?</h4> -->
 		</div>
 	</div>
 

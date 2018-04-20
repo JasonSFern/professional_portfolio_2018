@@ -19,9 +19,9 @@
         <p><?php echo $graphics->contents ?></p>
       </div>
 
-      <div class="desktop photo-slider">
+      <!-- <div class="desktop photo-slider"> -->
 
-      <ul class="photo-slider-nav">
+      <!-- <ul class="photo-slider-nav">
         <li class="button button-graphic"><a id="prev" class="photo-slider-link" href="#">Prev</a></li>
         <li class="button button-graphic"><a id="next" class="photo-slider-link" href="#">Next</a></li>
       </ul>
@@ -31,11 +31,11 @@
         <li class="photo-slider-entry"><img src="{{ $graphics->photo2 }}" alt=""/></li>
         <li class="photo-slider-entry"><img src="{{ $graphics->photo3 }}" alt=""/></li>
         <li class="photo-slider-entry"><img src="{{ $graphics->photo4 }}" alt=""/></li>
-      </ul>
+      </ul> -->
 
-    </div>
+    <!-- </div> -->
 
-    <div class="mobile photo-slider-mobile">
+    <div class="photo-slider-mobile">
       <img src="{{ $graphics->photo }}" alt=""/></li>
       <img src="{{ $graphics->photo2 }}" alt=""/></li>
       <img src="{{ $graphics->photo3 }}" alt=""/></li>

@@ -10,6 +10,7 @@
         <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono|Ubuntu|Asap:500|Kanit:800" rel="stylesheet">
         <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
         <link rel="stylesheet" href="/css/app.css">
+        <link rel="shortcut icon" href="{{ asset('favicon.ico') }}">
 
 @yield('content')
 

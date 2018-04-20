@@ -26,7 +26,7 @@
   <br>
 
   <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
-    <span class="typewriter" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
+    <span class="typewriter" data-period="2000" data-type='[ "Graphic Designer", "Web Developer" ]'>
   </div>
 
 </div>
@@ -96,12 +96,12 @@
   <br>
 
   <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
-    <span class="typewriter" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
+    <span class="typewriter" data-period="2000" data-type='[ "Graphic Designer", "Web Developer" ]'>
   </div>
 
   <br>
 
-  <div class="links-mobile">
+  <div class="mobile-links">
     <a href="/graphicProjects" class="mobile"><h4>GRAPHICS</h4></a>
       <div class="divider"></div>
     <a href="/webProjects" class="mobile"><h4>WEB</h4></a>

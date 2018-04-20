@@ -23,6 +23,11 @@ Route::get('/contact', function () {
     return view('contact');
 });
 
+Route::get('/thanks', function () {
+    return view('thanks');
+});
+
+
 Route::get('/webProjects', 'WebsiteController@index');
 Route::get('/graphicProjects', 'GraphicController@index');
 

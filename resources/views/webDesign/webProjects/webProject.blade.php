@@ -30,7 +30,7 @@
         </ul>
 
         <ul class="photo-slider-nav">
-          <li class="button button-expanded"><a href="{{ $websites->local_route }}">Launch</a></li>
+          <li class="button button-web"><a href="{{ $websites->local_route }}">Launch</a></li>
         </ul>
         <br>
         <br>

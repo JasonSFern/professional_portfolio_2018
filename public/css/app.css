@@ -92,6 +92,7 @@ Buttons
   padding: 10px 30px;
   font-size: 22px;
   font-weight: bold;
+  font-family: "ubuntu";
   color: #262626;
   text-decoration: none;
   border: none;
@@ -108,11 +109,13 @@ Buttons
   background-color: #c6c6c6;
   -webkit-box-shadow: 0px 4px 0px 0px #9b9b9b;
           box-shadow: 0px 4px 0px 0px #9b9b9b;
+  text-decoration: none;
   border: none;
   outline: none;
 }
 
 .button:focus {
+  text-decoration: none;
   border: none;
   outline: none;
 }
@@ -120,6 +123,7 @@ Buttons
 .button:active {
   -webkit-box-shadow: 0px 2px 0px 0px #9b9b9b;
           box-shadow: 0px 2px 0px 0px #9b9b9b;
+  text-decoration: none;
   border: none;
   outline: none;
 }
@@ -146,11 +150,13 @@ Buttons
   background-color: #0070bf;
   -webkit-box-shadow: 0px 4px 0px 0px #014a7f;
           box-shadow: 0px 4px 0px 0px #014a7f;
+  text-decoration: none;
   border: none;
   outline: none;
 }
 
 .button-blue:focus {
+  text-decoration: none;
   border: none;
   outline: none;
 }
@@ -158,25 +164,70 @@ Buttons
 .button-blue:active {
   -webkit-box-shadow: 0px 2px 0px 0px #014a7f;
           box-shadow: 0px 2px 0px 0px #014a7f;
+  text-decoration: none;
   border: none;
   outline: none;
 }
 
-.button-web {
+.button-web a {
   display: inline-block;
   list-style: none;
   margin: 20px 0.25rem;
   text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.button-web a:hover {
+  background-color: #c6c6c6;
+  -webkit-box-shadow: 0px 4px 0px 0px #9b9b9b;
+          box-shadow: 0px 4px 0px 0px #9b9b9b;
   text-decoration: none;
   border: none;
   outline: none;
 }
 
-.button-graphic {
+.button-web a:focus {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.button-web a:active {
+  -webkit-box-shadow: 0px 2px 0px 0px #9b9b9b;
+          box-shadow: 0px 2px 0px 0px #9b9b9b;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.button-graphic a {
   display: inline-block;
   list-style: none;
   margin: 0 0.25rem 50px .25rem;
   text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.button-graphic a:hover {
+  background-color: #c6c6c6;
+  -webkit-box-shadow: 0px 4px 0px 0px #9b9b9b;
+          box-shadow: 0px 4px 0px 0px #9b9b9b;
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.button-graphic a:focus {
+  text-decoration: none;
+  border: none;
+  outline: none;
+}
+
+.button-graphic a:active {
+  -webkit-box-shadow: 0px 2px 0px 0px #9b9b9b;
+          box-shadow: 0px 2px 0px 0px #9b9b9b;
   text-decoration: none;
   border: none;
   outline: none;
@@ -193,7 +244,7 @@ BACKGROUND STYLES
 *********************************************** */
 
 .background-splash {
-  background-image: url("/img/skyline.png");
+  background-image: url("/img/splashb.png");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -242,7 +293,7 @@ SPLASH STYLES
   -webkit-transform: scale(0.75);
           transform: scale(0.75);
   text-align: center;
-  max-width: 400px;
+  max-width: 450px;
   margin-left: auto;
   margin-right: auto;
   margin-top: -100px;
@@ -251,7 +302,6 @@ SPLASH STYLES
 .logo-container-mobile h4 {
   margin: 0px,0px;
   text-align: center;
-  font-size: 10vw;
   text-transform: uppercase;
 }
 
@@ -946,8 +996,7 @@ PROJECT DETAILS
 }
 
 .project-paragraph-expanded {
-  margin-top: 30px;
-  margin: 30px 100px;
+  margin: 30px 10%;
 }
 
 .project-titles-expanded {
@@ -1054,7 +1103,7 @@ ABOUT STYLES
 
 .about-body {
   padding: 0 80px;
-  width: 55%;
+  width: calc(65vw - 6%);
   color: white;
 }
 
@@ -1088,7 +1137,7 @@ CONTACT STYLES
   position: absolute;
   top: 0;
   right: 0;
-  width: 90%;
+  width: 50%;
   margin-right: 25px;
 }
 
@@ -1098,7 +1147,7 @@ CONTACT STYLES
   position: absolute;
   bottom: 0;
   left: 0;
-  width: 90%;
+  width: 50%;
   margin-left: 25px;
 }
 
@@ -1117,5 +1166,6 @@ textarea {
   height: 200px;
   width: 100%;
   margin-top: 20px;
+  border-radius: 10px;
 }
 
