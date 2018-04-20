@@ -1,128 +1,116 @@
 @extends('layout')
 
-@section('content2')
-
-<!-- size:750px width -->
-
-<!-- <div class="mobile" style="background-color:black;">
-
-
-
-  <div class="logo-container-mobile">
-
-    <h4>Hi, my name is</h4>
-    <h4>Jason</h4>
-    <br>
-    <br>
-    <div class="card">
-      <div class="card3">
-        <div class="card2"></div>
-      </div>
-    </div>
-    <br>
-    <br>
-    <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
-      <span class="textswap" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
-    </div>
-    <br>
-
-    <div class="mobile-links">
-      <a href="/graphicProjects" class="navItem-mobile"><h4>GRAPHICS</h4></a>
-        <div class="divider"></div>
-      <a href="/webProjects" class="navItem-mobile"><h4>WEB</h4></a>
-        <div class="divider"></div>
-      <a href="/about" class="navItem-mobile"><h4>ABOUT</h4></a>
-        <div class="divider"></div>
-      <a href="/contact" class="navItem-mobile"><h4>CONTACT</h4></a>
-    </div>
-
-  </div> -->
-
-  @endsection
-
 @section('content')
 
-        <title>Welcome</title>
-      </head>
+  <title>Welcome</title>
+</head>
 
-<body class="splash-background" id="bkg">
+<body class="background-splash" id="bkg">
 
-  <div class="logo-container">
+<div class="desktop">
+<div class="logo-container">
 
-    <h4>Hi, my name is</h4>
-    <h4>Jason</h4>
-    <br>
-    <br>
-    <div class="card">
-      <div class="card3">
-        <div class="card2"></div>
-      </div>
+  <h4>Hi, my name is</h4>
+  <h4>Jason</h4>
+
+  <br>
+  <br>
+
+  <div class="layer1">
+    <div class="layer2">
+      <div class="layer3"></div>
     </div>
-    <br>
-    <br>
-    <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
-      <span class="textswap" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
-    </div>
-
   </div>
 
-<!-- <a href="/graphicd" class="navItem navItemNewsBlog">
-  <span class="text">
+  <br>
+  <br>
 
-    <><a href=""><i class="far fa-file fa-3x"></i></i></a>
-    <a href=""><i class="fab fa-linkedin fa-3x"></i></a>
-    <a href=""><i class="fab fa-tumblr-square fa-3x"></i></a>
-    <a href=""><i class="fab fa-flickr fa-3x"></i></a>
-    <a href=""><i class="fab fa-instagram fa-3x"></i></a>
-    <a href=""><i class="fab fa-blogger fa-3x"></i></a>
+  <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
+    <span class="typewriter" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
+  </div>
 
-  </span>
-</a> -->
+</div>
 
+  <a href="/graphicProjects" class="navigation graphics">
+    <span class="text link">
+      <h2>G</h2>
+      <h2>R</h2>
+      <h2>A</h2>
+      <h2>P</h2>
+      <h2>H</h2>
+      <h2>I</h2>
+      <h2>C</h2>
+      <h2>S</h2>
+    </span>
+  </a>
 
-    <a href="/graphicProjects" class="navItem navItemNewsBlog">
-      <span class="text navlink">
-        <h2>G</h2>
-        <h2>R</h2>
-        <h2>A</h2>
-        <h2>P</h2>
-        <h2>H</h2>
-        <h2>I</h2>
-        <h2>C</h2>
-        <h2>S</h2>
+  <a href="/contact" class="navigation contact">
+    <span class="text link">
+      <h2>T</h2>
+      <h2>C</h2>
+      <h2>A</h2>
+      <h2>T</h2>
+      <h2>N</h2>
+      <h2>O</h2>
+      <h2>C</h2>
+    </span>
+  </a>
 
-      </span>
-    </a>
-
-    <a href="/contact" class="navItem navItemContact">
-      <span class="text navlink">
-        <h2>T</h2>
-        <h2>C</h2>
-        <h2>A</h2>
-        <h2>T</h2>
-        <h2>N</h2>
-        <h2>O</h2>
-        <h2>C</h2>
-      </span>
-    </a>
-
-    <a href="/webProjects" class="navItem navItemProjects">
-      <span class="text navlink">
-        <h2>W</h2>
-        <h2>E</h2>
-        <h2>B</h2>
-      </span>
-    </a>
+  <a href="/webProjects" class="navigation websites">
+    <span class="text link">
+      <h2>W</h2>
+      <h2>E</h2>
+      <h2>B</h2>
+    </span>
+  </a>
 
 
-    <a href="/about" class="navItem navItemAbout">
-      <span class="text navlink">
-        <h2>A</h2>
-        <h2>B</h2>
-        <h2>O</h2>
-        <h2>U</h2>
-        <h2>T</h2>
-      </span>
-    </a>
+  <a href="/about" class="navigation about">
+    <span class="text link">
+      <h2>A</h2>
+      <h2>B</h2>
+      <h2>O</h2>
+      <h2>U</h2>
+      <h2>T</h2>
+    </span>
+  </a>
+
+</div>
+</div>
+
+<div class="mobile logo-container-mobile">
+
+  <h4>Hi, my name is</h4>
+  <h4>Jason</h4>
+
+  <br>
+  <br>
+
+  <div class="layer1">
+    <div class="layer2">
+      <div class="layer3"></div>
+    </div>
+  </div>
+
+  <br>
+  <br>
+
+  <div class="" style="color:White; text-align:center; margin:10px 0px 0px 0px;">
+    <span class="typewriter" data-period="2000" data-type='[ "Graphic Designer", "Web Developer", "SEO Expert", "Entrepreneur" ]'>
+  </div>
+
+  <br>
+
+  <div class="links-mobile">
+    <a href="/graphicProjects" class="mobile"><h4>GRAPHICS</h4></a>
+      <div class="divider"></div>
+    <a href="/webProjects" class="mobile"><h4>WEB</h4></a>
+      <div class="divider"></div>
+    <a href="/about" class="mobile"><h4>ABOUT</h4></a>
+      <div class="divider"></div>
+    <a href="/contact" class="mobile"><h4>CONTACT</h4></a>
+  </div>
+
+</div>
 
 @endsection

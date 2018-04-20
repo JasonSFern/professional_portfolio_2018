@@ -2,28 +2,28 @@
 
 @section('content')
 
-<title>Graphic Design</title>
+  <title><?php echo $graphics->title ?></title>
 </head>
 
-<body class="expanded-project" style="background-image:url({{ $graphics->background }});">
+<body class="project-expanded" style="background-image:url({{ $graphics->background }});">
 
 <section>
 
-    <div class="expanded-card" style="background-image: linear-gradient(to bottom right,{{ $graphics->backdrop }});">
-      <div class="titles-expanded">
+    <div class="project-card-expanded" style="background-image: linear-gradient(to bottom right,{{ $graphics->backdrop }});">
+      <div class="project-titles-expanded">
         <h4><?php echo $graphics->title ?></h4>
         <h2><?php echo $graphics->subtitle ?></h2>
       </div>
 
-      <div class="expanded-paragraph">
+      <div class="project-paragraph-expanded">
         <p><?php echo $graphics->contents ?></p>
       </div>
 
-      <div class="photo-slider">
+      <div class="desktop photo-slider">
 
-      <ul class="photo-slidernav">
-        <li class="butn expanded-b"><a id="prev" class="photo-slider-link" href="#">Prev</a></li>
-        <li class="butn expanded-b"><a id="next" class="photo-slider-link" href="#">Next</a></li>
+      <ul class="photo-slider-nav">
+        <li class="button button-graphic"><a id="prev" class="photo-slider-link" href="#">Prev</a></li>
+        <li class="button button-graphic"><a id="next" class="photo-slider-link" href="#">Next</a></li>
       </ul>
 
       <ul class="photo-slider-wrapper">
@@ -34,6 +34,14 @@
       </ul>
 
     </div>
+
+    <div class="mobile photo-slider-mobile">
+      <img src="{{ $graphics->photo }}" alt=""/></li>
+      <img src="{{ $graphics->photo2 }}" alt=""/></li>
+      <img src="{{ $graphics->photo3 }}" alt=""/></li>
+      <img src="{{ $graphics->photo4 }}" alt=""/></li>
+    </div>
+
   </div>
 
 </section>

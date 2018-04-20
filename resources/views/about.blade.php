@@ -2,10 +2,10 @@
 
 @section('content')
 
-<body class="splash-background">
+<body class="background-about" id="bkg">
 
-	<a href="/" class="navItem navItemback-r">
-		<span class="text navlink">
+	<a href="/" class="navigation back-right">
+		<span class="text link">
 			<h2>H</h2>
 			<h2>O</h2>
 			<h2>M</h2>
@@ -19,9 +19,9 @@
 
 <div class="">
   <div class="about-body">
-    <h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce commodo metus metus, sit amet eleifend mi rhoncus scelerisque. Quisque eu justo dignissim, lacinia nunc a, eleifend ex. Fusce ac ultricies magna. Vivamus blandit magna in nisl ullamcorper, a eleifend sem fringilla. Sed a luctus magna. Aliquam auctor, massa ac sodales eleifend, velit est viverra neque, dignissim pharetra velit nibh id enim. Suspendisse potenti.
+    <h2>From since I could remember I have always been intrigued by the art of persuasion and have been drawn to advertising. I found myself often wondering, “what makes a brand connect to it’s audience?”</h2>
     <br>
-    Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque sit amet sapien id ligula rutrum mattis. In a vestibulum elit. Morbi consectetur scelerisque sagittis. In hac habitasse platea dictumst. Aliquam et ligula suscipit, tincidunt ipsum et, sodales quam. In hac habitasse platea dictumst. Ut auctor lorem tortor, quis tincidunt urna aliquet sed. Integer vel ex varius, porttitor orci vitae, tincidunt est.<h2>
+		<h2>After finishing university with a degree in marketing and general management, I began to focus on refining what I know are essential marketing skills for any business to succeed in the modern environment. These boil down to graphic design, social media management and search engine optimization. So much about marketing has changed in the past six years than in the prior fifty years before it. In todays current climate, online presence is everything, and managing it can make the difference between a business making it big or falling by the wayside.</h2>
   </div>
 
   <!-- <div class="about-image col"></div> -->

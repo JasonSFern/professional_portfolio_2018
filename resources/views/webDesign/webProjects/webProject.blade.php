@@ -2,20 +2,20 @@
 
 @section('content')
 
-  <title>Web Design</title>
+  <title><?php echo $websites->title ?></title>
 </head>
 
-<body class="expanded-project" style="background-image:url({{ $websites->background }});">
+<body class="project-expanded" style="background-image:url({{ $websites->background }});">
 
 <section>
 
-    <div class="expanded-card" style="background-image: linear-gradient(to bottom right,{{ $websites->backdrop }});">
-      <div class="titles-expanded">
+    <div class="project-card-expanded" style="background-image: linear-gradient(to bottom right,{{ $websites->backdrop }});">
+      <div class="project-titles-expanded">
         <h4><?php echo $websites->title ?></h4>
         <h2><?php echo $websites->subtitle ?></h2>
       </div>
 
-      <div class="expanded-paragraph">
+      <div class="project-paragraph-expanded">
         <p><?php echo $websites->contents ?></p>
       </div>
 
@@ -30,7 +30,7 @@
         </ul>
 
         <ul class="photo-slider-nav">
-          <li class="butn expanded-b"><a href="{{ $websites->local_route }}">Launch</a></li>
+          <li class="button button-expanded"><a href="{{ $websites->local_route }}">Launch</a></li>
         </ul>
         <br>
         <br>
