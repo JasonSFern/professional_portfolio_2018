@@ -1,4 +1,4 @@
-@extends('webDesign.webProjects.avix.avixlayout')
+@extends('webDesign.webProjects.avix.avixLayout')
 
 @section('content')
 
