@@ -252,7 +252,7 @@ BACKGROUND AND IMAGE GENERAL STYLES
 .halo-overlay {
     width: 100%;
     height: 100%;
-    background-image: url("/img/halo.png");
+    background-image: url("/img/halo.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -703,7 +703,7 @@ HALO STYLES
         rgba(0, 0, 0, 0),
         rgba(0, 9, 14, .1),
         rgba(0, 9, 14, 1)),
-        url("/img/halo.png");
+        url("/img/halo.jpg");
     background-position: 75%;
 }
 

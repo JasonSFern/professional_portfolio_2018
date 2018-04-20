@@ -244,7 +244,7 @@ BACKGROUND STYLES
 *********************************************** */
 
 .background-splash {
-  background-image: url("/img/splashb.png");
+  background-image: url("/img/splashb.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -253,7 +253,7 @@ BACKGROUND STYLES
 }
 
 .background-contact {
-  background-image: url("/img/contactb.png");
+  background-image: url("/img/contactb.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
@@ -262,7 +262,7 @@ BACKGROUND STYLES
 }
 
 .background-about {
-  background-image: url("/img/aboutb.png");
+  background-image: url("/img/aboutb.jpg");
   background-repeat: no-repeat;
   background-position: right 100px bottom;
   background-size: contain;
