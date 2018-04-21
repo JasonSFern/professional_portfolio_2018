@@ -10,8 +10,10 @@
 <div class="desktop">
 <div class="logo-container">
 
-  <h4>Hi, my name is</h4>
+  <h4>Hello</h4>
+  <h4>my name is</h4>
   <h4>Jason</h4>
+  <h4>Fernandes</h4>
 
   <br>
   <br>

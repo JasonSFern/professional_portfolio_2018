@@ -19,7 +19,7 @@
 
 	<div class="about-header">
 	  <h4>Hello</h4>
-		<h3 style="font-size:60px;">My Name is Jason</h3>
+		<h3 style="font-size:60px;">My Name is Jason Fernandes</h3>
 		<br>
 	</div>
 
